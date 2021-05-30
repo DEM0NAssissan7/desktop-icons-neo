@@ -1,5 +1,7 @@
 # Desktop Icons: Neo
 
+![Desktop Icons: Neo picture](https://github.com/DEM0NAssissan7/desktop-icons-neo/edit/main/README.md)
+
 ## What is Desktop Icons: Neo?
 
 **Desktop Icons: Neo** is an extension for GNOME. It is a fork of the **Desktop Icons NG** extension. It comes with a large host of new features, customizations, and bug fixes.
