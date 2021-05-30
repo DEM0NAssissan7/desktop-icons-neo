@@ -1,20 +1,20 @@
-# DING Desktop Icons New Generation
+# Desktop Icons: Neo
 
-## What  is it
+## What is Desktop Icons: Neo?
 
-Desktop Icons NG for GNOME Shell. It is a fork/rewrite of the official 'Desktop Icons' extension,
-with these advantages:
+**Desktop Icons: Neo** is an extension for GNOME. It is a fork of the **Desktop Icons NG** extension. It comes with a large host of new features, customizations, and bug fixes.
 
- * Drag'n'Drop, both inside the desktop, between desktop and applications, and nautilus windows
- * Allows to use "Open with..." option with several files
- * When hovering or clicking on an icon with a name too large to fit, it shows the full name
- * Doesn't hang the compositor when there is too much activity in the desktop folder
 
-But it is still an alpha development, so it probably still have a lot of bugs. Use with care.
+ * Customizable icon shapes
+ * Fixed many many bugs
+ * Performance improvements
+ * 
+
+Keep in mind that the extension is still an early beta and has many bugs. We try our hardest to fix every one.
 
 ## Current version
 
-Version 0.15.0
+Version 1.1
 
 ## Requirements
 
@@ -92,7 +92,7 @@ files must be in the current path.
 
 ## Manual installation
 
-The easiest way of installing DING is to run the `local_install.sh` script. It performs the build steps
+The easiest way of installing DIneo is to run the `local_install.sh` script. It performs the build steps
 specified in the next section.
 
 
@@ -107,7 +107,7 @@ For a regular use and local development these are the steps to build the
 project and install it:
 
 ```bash
-meson --prefix=$HOME/.local/ --localedir=share/gnome-shell/extensions/ding@rastersoft.com/locale .build
+meson --prefix=$HOME/.local/ --localedir=share/gnome-shell/extensions/desktopicons-neo@rastersoft.com/locale .build
 ninja -C .build install
 ```
 It is strongly recommended to delete the destination folder
@@ -116,16 +116,16 @@ data is kept.
 
 ## Export extension ZIP file for extensions.gnome.org
 
-To create a ZIP file with the extension, just run:
+To create a ZIP file with the extension, run:
 
 ```bash
 ./export-zip.sh
 ```
 
-This will create the file `ding@rastersoft.com.zip` with the extension, following the rules for publishing at extensions.gnome.org.
+This will create the file `desktopicons-neo@rastersoft.com.zip` with the extension, following the rules for publishing at extensions.gnome.org.
 
 ## Source code and contacting the author
 
 Sergio Costas  
-https://gitlab.com/rastersoft/desktop-icons-ng  
-rastersoft@gmail.com  
+https://github.com/DEM0NAssissan7/desktop-icons-neo/
+rastersoft@gmail.com
