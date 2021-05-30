@@ -1,7 +1,5 @@
 # Desktop Icons: Neo
 
-![Desktop Icons: Neo picture](https://github.com/DEM0NAssissan7/desktop-icons-neo/blob/main/Desktop%20Icons:%20Neo.jpg)
-
 ## What is Desktop Icons: Neo?
 
 **Desktop Icons: Neo** is an extension for GNOME. It is a fork of the **Desktop Icons NG** extension. It comes with a large host of new features, customizations, and bug fixes.
@@ -113,7 +111,7 @@ meson --prefix=$HOME/.local/ --localedir=share/gnome-shell/extensions/desktopico
 ninja -C .build install
 ```
 It is strongly recommended to delete the destination folder
-($HOME/.local/share/gnome-shell/extensions/ding@rastersoft.com) before doing this, to ensure that no old
+($HOME/.local/share/gnome-shell/extensions/desktopicons-neo@rastersoft.com) before doing this, to ensure that no old
 data is kept.
 
 ## Export extension ZIP file for extensions.gnome.org

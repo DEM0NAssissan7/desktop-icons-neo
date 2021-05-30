@@ -28,7 +28,7 @@ const Enums = imports.enums;
 
 const Gettext = imports.gettext;
 
-var _ = Gettext.domain('ding').gettext;
+var _ = Gettext.domain('desktopicons-neo').gettext;
 
 var extensionPath;
 

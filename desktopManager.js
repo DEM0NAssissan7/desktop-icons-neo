@@ -173,7 +173,7 @@ var DesktopManager = class {
             if (this._asDesktop) {
                 var desktopName = `@!${desktop.x},${desktop.y};BDH`;
             } else {
-                var desktopName = `DING ${desktopIndex}`;
+                var desktopName = `Desktop Icons: Neo ${desktopIndex}`;
             }
             this._desktops.push(new DesktopGrid.DesktopGrid(this, desktopName, desktop, this._asDesktop, this._premultiplied));
         }
@@ -381,7 +381,7 @@ var DesktopManager = class {
         let atom;
         switch(info) {
             case 0:
-                atom = Gdk.atom_intern('x-special/ding-icon-list', false);
+                atom = Gdk.atom_intern('x-special/desktopicons-neo-icon-list', false);
                 break;
             case 1:
                 atom = Gdk.atom_intern('x-special/gnome-icon-list', false);

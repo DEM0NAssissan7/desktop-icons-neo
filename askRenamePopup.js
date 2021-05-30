@@ -21,7 +21,7 @@ const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const DBusUtils = imports.dbusUtils;
 const DesktopIconsUtil = imports.desktopIconsUtil;
-const Gettext = imports.gettext.domain('ding');
+const Gettext = imports.gettext.domain('desktopicons-neo');
 
 const _ = Gettext.gettext;
 

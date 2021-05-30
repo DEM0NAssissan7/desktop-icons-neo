@@ -1,5 +1,5 @@
-project('ding',
-  version: '0.17.0',
+project('desktopicons-neo',
+  version: '1.1',
   license: 'GPL3'
 )
 
@@ -10,7 +10,7 @@ prefix = get_option('prefix')
 datadir = join_paths (prefix, get_option('datadir'))
 schema_dir = join_paths(datadir, 'glib-2.0', 'schemas')
 
-extensions_dir = join_paths(prefix, 'share', 'gnome-shell', 'extensions', 'ding@rastersoft.com')
+extensions_dir = join_paths(prefix, 'share', 'gnome-shell', 'extensions', 'desktopicons-neo@rastersoft.com')
 
 install_data([
 #    'createFolderDialog.js',

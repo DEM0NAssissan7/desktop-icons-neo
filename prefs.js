@@ -23,7 +23,7 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const Gettext = imports.gettext;
 
 
-var _ = Gettext.domain('ding').gettext;
+var _ = Gettext.domain('desktopicons-neo').gettext;
 
 function init() {}
 
@@ -32,9 +32,9 @@ function buildPrefsWidget() {
 
     let localedir = extension.dir.get_child('locale');
     if (localedir.query_exists(null))
-        Gettext.bindtextdomain('ding', localedir.get_path());
+        Gettext.bindtextdomain('desktopicons-neo', localedir.get_path());
 
-    let frame = new Gtk.Label({ label: _("To configure Desktop Icons NG, do right-click in the desktop and choose the last item: 'Desktop Icons settings'"),
+    let frame = new Gtk.Label({ label: _("To configure Desktop Icons: Neo, do right-click in the desktop and choose the last item: 'Desktop Icons settings'"),
                                 lines: 5,
                                 justify: Gtk.Justification.CENTER,
                                 wrap: true,

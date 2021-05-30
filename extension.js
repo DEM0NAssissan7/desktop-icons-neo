@@ -263,7 +263,7 @@ function launchDesktop() {
         first = false;
     }
 
-    data.currentProcess = new LaunchSubprocess(0, "DING", "-U");
+    data.currentProcess = new LaunchSubprocess(0, "Desktop Icons: Neo", "-U");
     data.currentProcess.set_cwd(GLib.get_home_dir());
     data.currentProcess.spawnv(argv);
     data.x11Manager.set_wayland_client(data.currentProcess);

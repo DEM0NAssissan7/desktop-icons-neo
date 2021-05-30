@@ -18,7 +18,7 @@
 
 const Gtk = imports.gi.Gtk;
 const Pango = imports.gi.Pango;
-const Gettext = imports.gettext.domain('ding');
+const Gettext = imports.gettext.domain('desktopicons-neo');
 
 const _ = Gettext.gettext;
 

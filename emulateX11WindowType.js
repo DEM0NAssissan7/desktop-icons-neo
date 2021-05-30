@@ -182,8 +182,8 @@ var EmulateX11WindowType = class {
     set_wayland_client(client) {
         this._wayland_client = client;
         for(let window of this._windowList) {
-            if (window.customJS_ding) {
-                window.customJS_ding.set_wayland_client(this._wayland_client);
+            if (window.customJS_desktopiconsneo) {
+                window.customJS_desktopiconsneo.set_wayland_client(this._wayland_client);
             }
         }
     }
@@ -277,18 +277,18 @@ var EmulateX11WindowType = class {
         if (window.get_meta_window) { // it is a MetaWindowActor
             window = window.get_meta_window();
         }
-        window.customJS_ding = new ManageWindow(window, this._wayland_client);
+        window.customJS_desktopiconsneo = new ManageWindow(window, this._wayland_client);
         this._windowList.push(window);
-        window.customJS_ding.unmanagedID = window.connect("unmanaged", (window) => {
+        window.customJS_desktopiconsneo.unmanagedID = window.connect("unmanaged", (window) => {
             this._clearWindow(window);
             this._windowList = this._windowList.filter(item => item !== window);
         });
     }
 
     _clearWindow(window) {
-        window.disconnect(window.customJS_ding.unmanagedID);
-        window.customJS_ding.disconnect();
-        window.customJS_ding = null;
+        window.disconnect(window.customJS_desktopiconsneo.unmanagedID);
+        window.customJS_desktopiconsneo.disconnect();
+        window.customJS_desktopiconsneo = null;
     }
 
     _refreshWindows(checkWorkspace) {
@@ -296,13 +296,13 @@ var EmulateX11WindowType = class {
             this._activate_window_ID = GLib.idle_add(GLib.PRIORITY_LOW, () => {
                 if (this._enableRefresh) {
                     for (let window of this._windowList) {
-                        window.customJS_ding.refreshState(checkWorkspace);
+                        window.customJS_desktopiconsneo.refreshState(checkWorkspace);
                     }
                     if (checkWorkspace) {
                         // activate the top-most window
                         let windows = global.display.get_tab_list(Meta.TabList.NORMAL_ALL, global.workspace_manager.get_active_workspace());
                         for (let window of windows) {
-                            if ((!window.customJS_ding || !window.customJS_ding._keepAtBottom) && !window.minimized) {
+                            if ((!window.customJS_desktopiconsneo || !window.customJS_desktopiconsneo._keepAtBottom) && !window.minimized) {
                                 Main.activateWindow(window);
                                 break;
                             }
@@ -360,7 +360,7 @@ function removeDesktopWindowFromList(windowList) {
         if (window.get_meta_window) { // it is a MetaWindowActor
             window = window.get_meta_window();
         }
-        if (!window.customJS_ding || !window.customJS_ding.hideFromWindowList) {
+        if (!window.customJS_desktopiconsneo || !window.customJS_desktopiconsneo.hideFromWindowList) {
             returnVal.push(element);
         }
     }
