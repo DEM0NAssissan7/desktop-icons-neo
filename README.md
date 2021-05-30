@@ -102,6 +102,14 @@ in most Linux distributions as "meson". You also need "ninja" and xgettext.
 
 It's possible to read more information in the Meson docs to tweak the configuration if needed.
 
+If you are pulling directly from the master branch, you must set the permissions by doing these commands:
+**If you do not do this, it will FAIL completely.**
+
+```bash
+chmod +x set-permissions.sh
+./set-permissions.sh
+```
+
 For a regular use and local development these are the steps to build the
 project and install it:
 
@@ -109,6 +117,7 @@ project and install it:
 meson --prefix=$HOME/.local/ --localedir=share/gnome-shell/extensions/desktopicons-neo@rastersoft.com/locale .build
 ninja -C .build install
 ```
+
 It is strongly recommended to delete the destination folder
 ($HOME/.local/share/gnome-shell/extensions/desktopicons-neo@rastersoft.com) before doing this, to ensure that no old
 data is kept.
