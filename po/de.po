@@ -1,0 +1,440 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ding package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Tim Hofstede <timhofstede@mail.de>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ding\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"PO-Revision-Date: 2021-04-18 11:43+0200\n"
+"Last-Translator: Tim Hofstede <phokas@mail.de>\n"
+"Language-Team: German <phokas@mail.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: askConfirmPopup.js:36
+msgid "Delete"
+msgstr "Löschen"
+
+#: askNamePopup.js:35
+msgid "OK"
+msgstr "OK"
+
+#: askRenamePopup.js:40
+msgid "Folder name"
+msgstr "Ordnername"
+
+#: askRenamePopup.js:40
+msgid "File name"
+msgstr "Dateiname"
+
+#: askRenamePopup.js:47
+msgid "Rename"
+msgstr "Umbenennen"
+
+#: desktopIconsUtil.js:79
+msgid "Command not found"
+msgstr "Kommando nicht gefunden"
+
+#: desktopIconsUtil.js:195
+msgid "Do you want to run “{0}”, or display its contents?"
+msgstr "Möchten Sie “{0}” ausführen oder dessen Inhalt anzeigen lassen?"
+
+#: desktopIconsUtil.js:196
+msgid "“{0}” is an executable text file."
+msgstr "“{0}” ist eine ausführbare Textdatei."
+
+#: desktopIconsUtil.js:200
+msgid "Execute in a terminal"
+msgstr "Im Terminal öffnen"
+
+#: desktopIconsUtil.js:202
+msgid "Show"
+msgstr "Anzeigen"
+
+#: desktopIconsUtil.js:206
+msgid "Execute"
+msgstr "Ausführen"
+
+#: desktopManager.js:131
+msgid "Nautilus File Manager not found"
+msgstr "Nautilus-Dateiverwaltung nicht gefunden"
+
+#: desktopManager.js:132
+msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
+msgstr "Die Nautilus-Dateiverwaltung wird für Desktop Icons NG benötigt."
+
+#: desktopManager.js:543
+msgid "New Folder"
+msgstr "Neuer Ordner"
+
+#: desktopManager.js:547
+msgid "New Document"
+msgstr "Neues Dokument"
+
+#: desktopManager.js:552
+msgid "Paste"
+msgstr "Einfügen"
+
+#: desktopManager.js:556
+msgid "Undo"
+msgstr "Rückgängig"
+
+#: desktopManager.js:560
+msgid "Redo"
+msgstr "Wiederholen"
+
+#: desktopManager.js:566
+msgid "Select all"
+msgstr "Alles auswählen"
+
+#: desktopManager.js:572
+msgid "Show Desktop in Files"
+msgstr "Schreibtisch in Dateien anzeigen"
+
+#: desktopManager.js:576 fileItem.js:891
+msgid "Open in Terminal"
+msgstr "Im Terminal öffnen"
+
+#: desktopManager.js:582
+msgid "Change Background…"
+msgstr "Hintergrund ändern…"
+
+#: desktopManager.js:591
+msgid "Display Settings"
+msgstr "Anzeigeeinstellungen"
+
+#: desktopManager.js:598
+msgid "Desktop Icons settings"
+msgstr "Arbeitsfläche-Einstellungen"
+
+#: desktopManager.js:609
+msgid "Scripts"
+msgstr "Skripte"
+
+#: desktopManager.js:1127 desktopManager.js:1175
+msgid "Error while deleting files"
+msgstr "Fehler beim Löschen der Dateien"
+
+#: desktopManager.js:1201
+msgid "Are you sure you want to permanently delete these items?"
+msgstr "Sind Sie sicher, dass Sie diese Dateien dauerhaft löschen wollen?"
+
+#: desktopManager.js:1202
+msgid "If you delete an item, it will be permanently lost."
+msgstr "Sobald Sie ein Objekt löschen, geht es dauerhaft verloren."
+
+#: desktopManager.js:1310
+msgid "New folder"
+msgstr "Neuer Ordner"
+
+#: desktopManager.js:1385
+msgid "Can not email a Directory"
+msgstr "Kann Verzeichnis nicht per E-Mail verschicken"
+
+#: desktopManager.js:1386
+msgid "Selection includes a Directory, compress the directory to a file first."
+msgstr ""
+"Auswahl beinhaltet ein Verzeichnis, komprimiere zunächst Verzeichnis zu "
+"einer Datei."
+
+#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
+#: fileItem.js:151
+msgid "Home"
+msgstr "Persönlicher Ordner"
+
+#: fileItem.js:794
+msgid "Open All..."
+msgstr "Alle öffnen…"
+
+#: fileItem.js:794
+msgid "Open"
+msgstr "Öffnen"
+
+#: fileItem.js:801
+msgid "Open All With Other Application..."
+msgstr "Alle mit anderer Anwendung öffnen."
+
+#: fileItem.js:801
+msgid "Open With Other Application"
+msgstr "Mit anderer Anwendung öffnen"
+
+#: fileItem.js:805
+msgid "Launch using Dedicated Graphics Card"
+msgstr "Mit dedizierter Grafikkarte starten"
+
+#: fileItem.js:813
+msgid "Cut"
+msgstr "Ausschneiden"
+
+#: fileItem.js:816
+msgid "Copy"
+msgstr "Kopieren"
+
+#: fileItem.js:820
+msgid "Rename…"
+msgstr "Umbenennen…"
+
+#: fileItem.js:824
+msgid "Move to Trash"
+msgstr "In den Papierkorb verschieben"
+
+#: fileItem.js:828
+msgid "Delete permanently"
+msgstr "Dauerhaft löschen"
+
+#: fileItem.js:834
+msgid "Don't Allow Launching"
+msgstr "Start nicht erlauben"
+
+#: fileItem.js:834
+msgid "Allow Launching"
+msgstr "Start erlauben"
+
+#: fileItem.js:841
+msgid "Empty Trash"
+msgstr "Papierkorb leeren"
+
+#: fileItem.js:848
+msgid "Eject"
+msgstr "Auswerfen"
+
+#: fileItem.js:855
+msgid "Unmount"
+msgstr "Aushängen"
+
+#: fileItem.js:870
+msgid "Send to..."
+msgstr "Senden an…"
+
+#: fileItem.js:874
+msgid "Compress {0} file"
+msgid_plural "Compress {0} files"
+msgstr[0] "Komprimiere {0} Datei"
+msgstr[1] "Komprimiere {0} Dateien"
+
+#: fileItem.js:877
+msgid "New Folder with {0} item"
+msgid_plural "New Folder with {0} items"
+msgstr[0] "Neuer Ordner mit {0} Datei"
+msgstr[1] "Neuer Ordner mit {0} Dateien"
+
+#: fileItem.js:883
+msgid "Common Properties"
+msgstr "Eigenschaften"
+
+#: fileItem.js:883
+msgid "Properties"
+msgstr "Eigenschaften"
+
+#: fileItem.js:887
+msgid "Show All in Files"
+msgstr "Alle in Dateiverwaltung anzeigen"
+
+#: fileItem.js:887
+msgid "Show in Files"
+msgstr "In Dateiverwaltung anzeigen"
+
+#: preferences.js:88
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: preferences.js:94
+msgid "Size for the desktop icons"
+msgstr "Größe der Arbeitsflächensymbole"
+
+#: preferences.js:94
+msgid "Tiny"
+msgstr "Winzig"
+
+#: preferences.js:94
+msgid "Small"
+msgstr "Klein"
+
+#: preferences.js:94
+msgid "Standard"
+msgstr "Standard"
+
+#: preferences.js:94
+msgid "Large"
+msgstr "Groß"
+
+#: preferences.js:95
+msgid "Show the personal folder in the desktop"
+msgstr "Den persönlichen Ordner auf der Arbeitsfläche anzeigen"
+
+#: preferences.js:96
+msgid "Show the trash icon in the desktop"
+msgstr "Papierkorb-Symbol auf der Arbeitsfläche anzeigen"
+
+#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+msgid "Show external drives in the desktop"
+msgstr "Externe Laufwerke auf der Arbeitsfläche anzeigen"
+
+#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+msgid "Show network drives in the desktop"
+msgstr "Netzwerk-Laufwerke auf der Arbeitsfläche anzeigen"
+
+#: preferences.js:101
+msgid "New icons alignment"
+msgstr "Ausrichtung der Arbeitsflächensymbole"
+
+#: preferences.js:102
+msgid "Top-left corner"
+msgstr "Ecke oben links"
+
+#: preferences.js:103
+msgid "Top-right corner"
+msgstr "Ecke oben rechts"
+
+#: preferences.js:104
+msgid "Bottom-left corner"
+msgstr "Ecke unten links"
+
+#: preferences.js:105
+msgid "Bottom-right corner"
+msgstr "Ecke unten rechts"
+
+#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+msgid "Add new drives to the opposite side of the screen"
+msgstr "Neue Laufwerke gegenüber auf dem Bildschirm hinzufügen"
+
+#: preferences.js:108
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr "Zielposition bei Drag'n'Drop hervorheben"
+
+#: preferences.js:112
+msgid "Settings shared with Nautilus"
+msgstr "Anpassung an Nautilus-Dateiverwaltung"
+
+#: preferences.js:118
+msgid "Click type for open files"
+msgstr "Öffnen-Aktion"
+
+#: preferences.js:118
+msgid "Single click"
+msgstr "Einfacher Klick"
+
+#: preferences.js:118
+msgid "Double click"
+msgstr "Doppelklick"
+
+#: preferences.js:119
+msgid "Show hidden files"
+msgstr "Verborgene Dateien anzeigen"
+
+#: preferences.js:120
+msgid "Show a context menu item to delete permanently"
+msgstr "Aktion zum dauerhaften Löschen anzeigen"
+
+#: preferences.js:123
+msgid "Action to do when launching a program from the desktop"
+msgstr "Ausführbare Textdateien auf dem Schreibtisch"
+
+#: preferences.js:124
+msgid "Display the content of the file"
+msgstr "Anzeigen"
+
+#: preferences.js:125
+msgid "Launch the file"
+msgstr "Ausführen"
+
+#: preferences.js:126
+msgid "Ask what to do"
+msgstr "Nachfragen, was geschehen soll"
+
+#: preferences.js:130
+msgid "Show image thumbnails"
+msgstr "Miniatur-Vorschaubilder anzeigen"
+
+#: preferences.js:131
+msgid "Never"
+msgstr "Nie"
+
+#: preferences.js:132
+msgid "Local files only"
+msgstr "Nur Dateien auf diesem Rechner"
+
+#: preferences.js:133
+msgid "Always"
+msgstr "Alle Dateien"
+
+#: prefs.js:37
+msgid ""
+"To configure Desktop Icons NG, do right-click in the desktop and choose the "
+"last item: 'Desktop Icons settings'"
+msgstr ""
+"Um Desktop Icons NG zu konfigurieren, Rechtsklick auf die Arbeitsfläche und "
+"'Einstellungen' wählen"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+msgid "Icon size"
+msgstr "Symbolgröße"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+msgid "Set the size for the desktop icons."
+msgstr "Die Größe der Arbeitsflächensymbole festlegen."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+msgid "Show personal folder"
+msgstr "Persönlichen Ordner anzeigen"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+msgid "Show the personal folder in the desktop."
+msgstr "Den persönlichen Ordner auf der Arbeitsfläche anzeigen."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+msgid "Show trash icon"
+msgstr "Papierkorb-Symbol anzeigen"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+msgid "Show the trash icon in the desktop."
+msgstr "Das Papierkorb-Symbol auf der Arbeitsfläche anzeigen."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+msgid "New icons start corner"
+msgstr "Ecke für neue Arbeitsflächensymbole"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+msgid "Set the corner from where the icons will start to be placed."
+msgstr ""
+"Lege die Ecke fest, von der aus neue Arbeitsflächensymbole platziert werden."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+msgid "Show the disk drives connected to the computer."
+msgstr "Mit dem PC verbundene Festplattenlaufwerke anzeigen."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+msgid "Show mounted network volumes in the desktop."
+msgstr "Eingehängte Netzwerk-Datenträger auf der Arbeitsfläche anzeigen."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+msgid ""
+"When adding drives and volumes to the desktop, add them to the opposite side "
+"of the screen."
+msgstr ""
+"Laufwerke und Datenträger auf gegenüberliegender Seite der Arbeitsfläche "
+"hinzufügen."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+msgid "Shows a rectangle in the destination place during DnD"
+msgstr "Zeigt ein Rechteck in der Zielposition bei DnD an"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+msgid ""
+"When doing a Drag'n'Drop operation, marks the place in the grid where the "
+"icon will be put with a semitransparent rectangle."
+msgstr ""
+"Bei einer Drag'n'Drop-Operation wird die Position im Raster, wohin das "
+"Symbol gelegt werden soll, durch ein semitransparentes Rechteck angezeigt."

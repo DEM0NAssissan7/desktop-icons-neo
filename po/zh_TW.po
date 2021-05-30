@@ -1,0 +1,457 @@
+# Chinese (Taiwan) translation for desktop-icons.
+# Copyright (C) 2018 desktop-icons's COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop-icons package.
+# Yi-Jyun Pan <pan93412@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-icons master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"PO-Revision-Date: 2018-10-24 21:31+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+
+#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
+msgid "Cancel"
+msgstr ""
+
+#: askConfirmPopup.js:36
+msgid "Delete"
+msgstr ""
+
+#: askNamePopup.js:35
+msgid "OK"
+msgstr ""
+
+#: askRenamePopup.js:40
+msgid "Folder name"
+msgstr ""
+
+#: askRenamePopup.js:40
+msgid "File name"
+msgstr ""
+
+#: askRenamePopup.js:47
+msgid "Rename"
+msgstr ""
+
+#: desktopIconsUtil.js:79
+msgid "Command not found"
+msgstr ""
+
+#: desktopIconsUtil.js:195
+msgid "Do you want to run “{0}”, or display its contents?"
+msgstr ""
+
+#: desktopIconsUtil.js:196
+msgid "“{0}” is an executable text file."
+msgstr ""
+
+#: desktopIconsUtil.js:200
+#, fuzzy
+msgid "Execute in a terminal"
+msgstr "開啟終端器"
+
+#: desktopIconsUtil.js:202
+msgid "Show"
+msgstr ""
+
+#: desktopIconsUtil.js:206
+msgid "Execute"
+msgstr ""
+
+#: desktopManager.js:131
+msgid "Nautilus File Manager not found"
+msgstr ""
+
+#: desktopManager.js:132
+msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
+msgstr ""
+
+#: desktopManager.js:543
+msgid "New Folder"
+msgstr "新增資料夾"
+
+#: desktopManager.js:547
+msgid "New Document"
+msgstr ""
+
+#: desktopManager.js:552
+msgid "Paste"
+msgstr "貼上"
+
+#: desktopManager.js:556
+msgid "Undo"
+msgstr "復原"
+
+#: desktopManager.js:560
+msgid "Redo"
+msgstr "重做"
+
+#: desktopManager.js:566
+msgid "Select all"
+msgstr ""
+
+#: desktopManager.js:572
+#, fuzzy
+msgid "Show Desktop in Files"
+msgstr "在《檔案》中開啟桌面"
+
+#: desktopManager.js:576 fileItem.js:891
+#, fuzzy
+msgid "Open in Terminal"
+msgstr "開啟終端器"
+
+#: desktopManager.js:582
+msgid "Change Background…"
+msgstr "變更背景圖片…"
+
+#: desktopManager.js:591
+msgid "Display Settings"
+msgstr "顯示設定"
+
+#: desktopManager.js:598
+msgid "Desktop Icons settings"
+msgstr ""
+
+#: desktopManager.js:609
+msgid "Scripts"
+msgstr ""
+
+#: desktopManager.js:1127 desktopManager.js:1175
+msgid "Error while deleting files"
+msgstr ""
+
+#: desktopManager.js:1201
+msgid "Are you sure you want to permanently delete these items?"
+msgstr ""
+
+#: desktopManager.js:1202
+msgid "If you delete an item, it will be permanently lost."
+msgstr ""
+
+#: desktopManager.js:1310
+#, fuzzy
+msgid "New folder"
+msgstr "新增資料夾"
+
+#: desktopManager.js:1385
+msgid "Can not email a Directory"
+msgstr ""
+
+#: desktopManager.js:1386
+msgid "Selection includes a Directory, compress the directory to a file first."
+msgstr ""
+
+#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
+#: fileItem.js:151
+msgid "Home"
+msgstr ""
+
+#: fileItem.js:794
+msgid "Open All..."
+msgstr ""
+
+#: fileItem.js:794
+msgid "Open"
+msgstr "開啟"
+
+#: fileItem.js:801
+msgid "Open All With Other Application..."
+msgstr ""
+
+#: fileItem.js:801
+msgid "Open With Other Application"
+msgstr ""
+
+#: fileItem.js:805
+msgid "Launch using Dedicated Graphics Card"
+msgstr ""
+
+#: fileItem.js:813
+msgid "Cut"
+msgstr "剪下"
+
+#: fileItem.js:816
+msgid "Copy"
+msgstr "複製"
+
+#: fileItem.js:820
+msgid "Rename…"
+msgstr ""
+
+#: fileItem.js:824
+msgid "Move to Trash"
+msgstr "移動到垃圾桶"
+
+#: fileItem.js:828
+msgid "Delete permanently"
+msgstr ""
+
+#: fileItem.js:834
+msgid "Don't Allow Launching"
+msgstr ""
+
+#: fileItem.js:834
+msgid "Allow Launching"
+msgstr ""
+
+#: fileItem.js:841
+#, fuzzy
+msgid "Empty Trash"
+msgstr "清空回收桶"
+
+#: fileItem.js:848
+msgid "Eject"
+msgstr ""
+
+#: fileItem.js:855
+msgid "Unmount"
+msgstr ""
+
+#: fileItem.js:870
+msgid "Send to..."
+msgstr ""
+
+#: fileItem.js:874
+msgid "Compress {0} file"
+msgid_plural "Compress {0} files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: fileItem.js:877
+msgid "New Folder with {0} item"
+msgid_plural "New Folder with {0} items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: fileItem.js:883
+#, fuzzy
+msgid "Common Properties"
+msgstr "屬性"
+
+#: fileItem.js:883
+msgid "Properties"
+msgstr "屬性"
+
+#: fileItem.js:887
+#, fuzzy
+msgid "Show All in Files"
+msgstr "在《檔案》中顯示"
+
+#: fileItem.js:887
+msgid "Show in Files"
+msgstr "在《檔案》中顯示"
+
+#: preferences.js:88
+msgid "Settings"
+msgstr "設定"
+
+#: preferences.js:94
+msgid "Size for the desktop icons"
+msgstr "桌面圖示的大小"
+
+#: preferences.js:94
+msgid "Tiny"
+msgstr ""
+
+#: preferences.js:94
+msgid "Small"
+msgstr "小圖示"
+
+#: preferences.js:94
+msgid "Standard"
+msgstr "標準大小圖示"
+
+#: preferences.js:94
+msgid "Large"
+msgstr "大圖示"
+
+#: preferences.js:95
+msgid "Show the personal folder in the desktop"
+msgstr "在桌面顯示個人資料夾"
+
+#: preferences.js:96
+msgid "Show the trash icon in the desktop"
+msgstr "在桌面顯示垃圾桶圖示"
+
+#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+#, fuzzy
+msgid "Show external drives in the desktop"
+msgstr "在桌面顯示個人資料夾"
+
+#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+#, fuzzy
+msgid "Show network drives in the desktop"
+msgstr "在桌面顯示個人資料夾。"
+
+#: preferences.js:101
+#, fuzzy
+msgid "New icons alignment"
+msgstr "圖示大小"
+
+#: preferences.js:102
+msgid "Top-left corner"
+msgstr ""
+
+#: preferences.js:103
+msgid "Top-right corner"
+msgstr ""
+
+#: preferences.js:104
+msgid "Bottom-left corner"
+msgstr ""
+
+#: preferences.js:105
+msgid "Bottom-right corner"
+msgstr ""
+
+#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+msgid "Add new drives to the opposite side of the screen"
+msgstr ""
+
+#: preferences.js:108
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr ""
+
+#: preferences.js:112
+msgid "Settings shared with Nautilus"
+msgstr ""
+
+#: preferences.js:118
+msgid "Click type for open files"
+msgstr ""
+
+#: preferences.js:118
+msgid "Single click"
+msgstr ""
+
+#: preferences.js:118
+msgid "Double click"
+msgstr ""
+
+#: preferences.js:119
+#, fuzzy
+msgid "Show hidden files"
+msgstr "在《檔案》中顯示"
+
+#: preferences.js:120
+msgid "Show a context menu item to delete permanently"
+msgstr ""
+
+#: preferences.js:123
+msgid "Action to do when launching a program from the desktop"
+msgstr ""
+
+#: preferences.js:124
+msgid "Display the content of the file"
+msgstr ""
+
+#: preferences.js:125
+msgid "Launch the file"
+msgstr ""
+
+#: preferences.js:126
+msgid "Ask what to do"
+msgstr ""
+
+#: preferences.js:130
+msgid "Show image thumbnails"
+msgstr ""
+
+#: preferences.js:131
+msgid "Never"
+msgstr ""
+
+#: preferences.js:132
+msgid "Local files only"
+msgstr ""
+
+#: preferences.js:133
+msgid "Always"
+msgstr ""
+
+#: prefs.js:37
+msgid ""
+"To configure Desktop Icons NG, do right-click in the desktop and choose the "
+"last item: 'Desktop Icons settings'"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+msgid "Icon size"
+msgstr "圖示大小"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+msgid "Set the size for the desktop icons."
+msgstr "設定桌面圖示的大小。"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+msgid "Show personal folder"
+msgstr "顯示個人資料夾"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+msgid "Show the personal folder in the desktop."
+msgstr "在桌面顯示個人資料夾。"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+msgid "Show trash icon"
+msgstr "顯示垃圾桶圖示"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+msgid "Show the trash icon in the desktop."
+msgstr "在桌面顯示垃圾桶圖示。"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+#, fuzzy
+msgid "New icons start corner"
+msgstr "圖示大小"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+msgid "Set the corner from where the icons will start to be placed."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+msgid "Show the disk drives connected to the computer."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+#, fuzzy
+msgid "Show mounted network volumes in the desktop."
+msgstr "在桌面顯示個人資料夾。"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+msgid ""
+"When adding drives and volumes to the desktop, add them to the opposite side "
+"of the screen."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+msgid "Shows a rectangle in the destination place during DnD"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+msgid ""
+"When doing a Drag'n'Drop operation, marks the place in the grid where the "
+"icon will be put with a semitransparent rectangle."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Show external disk drives in the desktop"
+#~ msgstr "在桌面顯示個人資料夾"
+
+#, fuzzy
+#~ msgid "Show the external drives"
+#~ msgstr "在桌面顯示個人資料夾"
+
+#, fuzzy
+#~ msgid "Show network volumes"
+#~ msgstr "在《檔案》中顯示"
+
+#~ msgid "Huge"
+#~ msgstr "巨大圖示"

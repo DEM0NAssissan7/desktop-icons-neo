@@ -1,0 +1,448 @@
+# French translation for desktop-icons.
+# Copyright (C) 2018 desktop-icons's COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop-icons package.
+# ghentdebian <ghent.debian@gmail.com>, 2018.
+# Charles Monzat <charles.monzat@numericable.fr>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-icons master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"PO-Revision-Date: 2020-11-04 15:48+0100\n"
+"Last-Translator: Davy Defaud <davy.defaud@free.fr>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n >= 2);\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
+msgid "Cancel"
+msgstr "Annuler"
+
+#: askConfirmPopup.js:36
+msgid "Delete"
+msgstr "Supprimer"
+
+#: askNamePopup.js:35
+msgid "OK"
+msgstr "Valider"
+
+#: askRenamePopup.js:40
+msgid "Folder name"
+msgstr "Nom du dossier"
+
+#: askRenamePopup.js:40
+msgid "File name"
+msgstr "Nom du fichier"
+
+#: askRenamePopup.js:47
+msgid "Rename"
+msgstr "Renommer"
+
+#: desktopIconsUtil.js:79
+msgid "Command not found"
+msgstr "Commande non trouvée"
+
+#: desktopIconsUtil.js:195
+msgid "Do you want to run “{0}”, or display its contents?"
+msgstr "Voulez‑vous exécuter « {0} » ou afficher son contenu ?"
+
+#: desktopIconsUtil.js:196
+msgid "“{0}” is an executable text file."
+msgstr "« {0} » est un fichier texte exécutable."
+
+#: desktopIconsUtil.js:200
+msgid "Execute in a terminal"
+msgstr "Exécuter dans un terminal"
+
+#: desktopIconsUtil.js:202
+msgid "Show"
+msgstr "Afficher"
+
+#: desktopIconsUtil.js:206
+msgid "Execute"
+msgstr "Exécuter"
+
+#: desktopManager.js:131
+msgid "Nautilus File Manager not found"
+msgstr "Gestionnaire de fichiers Nautilus introuvable"
+
+#: desktopManager.js:132
+msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
+msgstr ""
+"Le gestionnaire de fichiers Nautilus est nécessaire au fonctionnement de "
+"Desktop Icons NG."
+
+#: desktopManager.js:543
+msgid "New Folder"
+msgstr "Nouveau dossier"
+
+#: desktopManager.js:547
+msgid "New Document"
+msgstr "Nouveau document"
+
+#: desktopManager.js:552
+msgid "Paste"
+msgstr "Coller"
+
+#: desktopManager.js:556
+msgid "Undo"
+msgstr "Annuler"
+
+#: desktopManager.js:560
+msgid "Redo"
+msgstr "Refaire"
+
+#: desktopManager.js:566
+msgid "Select all"
+msgstr "Tout sélectionner"
+
+#: desktopManager.js:572
+msgid "Show Desktop in Files"
+msgstr "Ouvrir le bureau dans Fichiers"
+
+#: desktopManager.js:576 fileItem.js:891
+msgid "Open in Terminal"
+msgstr "Ouvrir un terminal"
+
+#: desktopManager.js:582
+msgid "Change Background…"
+msgstr "Changer l’arrière‑plan…"
+
+#: desktopManager.js:591
+msgid "Display Settings"
+msgstr "Paramètres d’affichage"
+
+#: desktopManager.js:598
+msgid "Desktop Icons settings"
+msgstr "Paramètres des icônes du bureau"
+
+#: desktopManager.js:609
+msgid "Scripts"
+msgstr "Scripts"
+
+#: desktopManager.js:1127 desktopManager.js:1175
+msgid "Error while deleting files"
+msgstr "Erreur lors de la suppression des fichiers"
+
+#: desktopManager.js:1201
+msgid "Are you sure you want to permanently delete these items?"
+msgstr "Êtes‑vous sûr de vouloir supprimer définitivement ces éléments ?"
+
+#: desktopManager.js:1202
+msgid "If you delete an item, it will be permanently lost."
+msgstr "Si vous supprimez un élément, il sera définitivement perdu."
+
+#: desktopManager.js:1310
+msgid "New folder"
+msgstr "Nouveau dossier"
+
+#: desktopManager.js:1385
+msgid "Can not email a Directory"
+msgstr ""
+
+#: desktopManager.js:1386
+msgid "Selection includes a Directory, compress the directory to a file first."
+msgstr ""
+
+#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
+#: fileItem.js:151
+msgid "Home"
+msgstr "Dossier personnel"
+
+#: fileItem.js:794
+msgid "Open All..."
+msgstr ""
+
+#: fileItem.js:794
+msgid "Open"
+msgstr "Ouvrir"
+
+#: fileItem.js:801
+#, fuzzy
+msgid "Open All With Other Application..."
+msgstr "Ouvrir avec une autre application"
+
+#: fileItem.js:801
+msgid "Open With Other Application"
+msgstr "Ouvrir avec une autre application"
+
+#: fileItem.js:805
+msgid "Launch using Dedicated Graphics Card"
+msgstr "Lancer avec la carte graphique dédiée"
+
+#: fileItem.js:813
+msgid "Cut"
+msgstr "Couper"
+
+#: fileItem.js:816
+msgid "Copy"
+msgstr "Copier"
+
+#: fileItem.js:820
+msgid "Rename…"
+msgstr "Renommer…"
+
+#: fileItem.js:824
+msgid "Move to Trash"
+msgstr "Mettre à la corbeille"
+
+#: fileItem.js:828
+msgid "Delete permanently"
+msgstr "Supprimer définitivement"
+
+#: fileItem.js:834
+#, fuzzy
+msgid "Don't Allow Launching"
+msgstr "Ne pas autoriser le lancement"
+
+#: fileItem.js:834
+msgid "Allow Launching"
+msgstr "Autoriser le lancement"
+
+#: fileItem.js:841
+msgid "Empty Trash"
+msgstr "Vider la corbeille"
+
+#: fileItem.js:848
+msgid "Eject"
+msgstr "Éjecter"
+
+#: fileItem.js:855
+msgid "Unmount"
+msgstr "Démonter"
+
+#: fileItem.js:870
+msgid "Send to..."
+msgstr "Envoyer vers..."
+
+#: fileItem.js:874
+msgid "Compress {0} file"
+msgid_plural "Compress {0} files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: fileItem.js:877
+msgid "New Folder with {0} item"
+msgid_plural "New Folder with {0} items"
+msgstr[0] "Nouveau dossier avec {0} élément"
+msgstr[1] "Nouveau dossier avec {0} éléments"
+
+#: fileItem.js:883
+#, fuzzy
+msgid "Common Properties"
+msgstr "Propriétés"
+
+#: fileItem.js:883
+msgid "Properties"
+msgstr "Propriétés"
+
+#: fileItem.js:887
+#, fuzzy
+msgid "Show All in Files"
+msgstr "Montrer dans Fichiers"
+
+#: fileItem.js:887
+msgid "Show in Files"
+msgstr "Montrer dans Fichiers"
+
+#: preferences.js:88
+msgid "Settings"
+msgstr "Paramètres"
+
+#: preferences.js:94
+msgid "Size for the desktop icons"
+msgstr "Taille des icônes du bureau"
+
+#: preferences.js:94
+msgid "Tiny"
+msgstr "Minuscule"
+
+#: preferences.js:94
+msgid "Small"
+msgstr "Petite"
+
+#: preferences.js:94
+msgid "Standard"
+msgstr "Normale"
+
+#: preferences.js:94
+msgid "Large"
+msgstr "Grande"
+
+#: preferences.js:95
+msgid "Show the personal folder in the desktop"
+msgstr "Afficher le dossier personnel sur le bureau"
+
+#: preferences.js:96
+msgid "Show the trash icon in the desktop"
+msgstr "Afficher la corbeille sur le bureau"
+
+#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+msgid "Show external drives in the desktop"
+msgstr "Afficher les volumes de stockage externes sur le bureau"
+
+#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+msgid "Show network drives in the desktop"
+msgstr "Afficher les volumes réseau sur le bureau"
+
+#: preferences.js:101
+msgid "New icons alignment"
+msgstr "Nouvel alignement des icônes"
+
+#: preferences.js:102
+msgid "Top-left corner"
+msgstr "Coin supérieur gauche"
+
+#: preferences.js:103
+msgid "Top-right corner"
+msgstr "Coin supérieur droit"
+
+#: preferences.js:104
+msgid "Bottom-left corner"
+msgstr "Coin inférieur gauche"
+
+#: preferences.js:105
+msgid "Bottom-right corner"
+msgstr "Coin inférieur droit"
+
+#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+msgid "Add new drives to the opposite side of the screen"
+msgstr "Ajouter les nouveaux volumes de stockage sur le côté opposé de l’écran"
+
+#: preferences.js:108
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr "Mettre en évidence la destination lors d’un glisser‑déposer"
+
+#: preferences.js:112
+msgid "Settings shared with Nautilus"
+msgstr "Paramètres partagés avec Nautilus"
+
+#: preferences.js:118
+msgid "Click type for open files"
+msgstr "Type de clic pour ouvrir les fichiers"
+
+#: preferences.js:118
+msgid "Single click"
+msgstr "Simple clic"
+
+#: preferences.js:118
+msgid "Double click"
+msgstr "Double clic"
+
+#: preferences.js:119
+msgid "Show hidden files"
+msgstr "Afficher les fichiers cachés"
+
+#: preferences.js:120
+msgid "Show a context menu item to delete permanently"
+msgstr ""
+"Afficher un élément « Supprimer définitivement » dans le menu contextuel"
+
+#: preferences.js:123
+msgid "Action to do when launching a program from the desktop"
+msgstr "Action à effectuer lors du lancement d’un programme depuis le bureau"
+
+#: preferences.js:124
+msgid "Display the content of the file"
+msgstr "Afficher le contenu du fichier"
+
+#: preferences.js:125
+msgid "Launch the file"
+msgstr "Lancer le fichier"
+
+#: preferences.js:126
+msgid "Ask what to do"
+msgstr "Demander quoi faire"
+
+#: preferences.js:130
+msgid "Show image thumbnails"
+msgstr "Afficher les imagettes"
+
+#: preferences.js:131
+msgid "Never"
+msgstr "Jamais"
+
+#: preferences.js:132
+msgid "Local files only"
+msgstr "Fichiers locaux uniquement"
+
+#: preferences.js:133
+msgid "Always"
+msgstr "Toujours"
+
+#: prefs.js:37
+#, fuzzy
+msgid ""
+"To configure Desktop Icons NG, do right-click in the desktop and choose the "
+"last item: 'Desktop Icons settings'"
+msgstr ""
+"Pour configurer Desktop Icons NG, faites un clic droit sur le bureau et "
+"choisissez le dernier élément : « Paramètres »"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+msgid "Icon size"
+msgstr "Taille des icônes"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+msgid "Set the size for the desktop icons."
+msgstr "Définit la taille des icônes du bureau."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+msgid "Show personal folder"
+msgstr "Afficher le dossier personnel"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+msgid "Show the personal folder in the desktop."
+msgstr "Affiche le dossier personnel sur le bureau."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+msgid "Show trash icon"
+msgstr "Afficher la corbeille"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+msgid "Show the trash icon in the desktop."
+msgstr "Affiche l’icône de la corbeille sur le bureau."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+msgid "New icons start corner"
+msgstr "Coin de référence des nouvelles icônes"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+msgid "Set the corner from where the icons will start to be placed."
+msgstr ""
+"Définit le coin à partir duquel les icônes commenceront à être placées."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+msgid "Show the disk drives connected to the computer."
+msgstr "Affiche les volumes de stockage connectées à l’ordinateur."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+msgid "Show mounted network volumes in the desktop."
+msgstr "Affiche sur le bureau les volumes réseau montés."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+msgid ""
+"When adding drives and volumes to the desktop, add them to the opposite side "
+"of the screen."
+msgstr ""
+"Lorsque des volumes de stockage locaux ou réseau sont ajoutés sur le bureau, "
+"les afficher sur le côté opposé de l’écran."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+msgid "Shows a rectangle in the destination place during DnD"
+msgstr ""
+"Affiche un rectangle sur l’emplacement de destination lors d’un "
+"glisser‑déposer"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+msgid ""
+"When doing a Drag'n'Drop operation, marks the place in the grid where the "
+"icon will be put with a semitransparent rectangle."
+msgstr ""
+"Lors d’un glisser‑déposer, affiche un rectangle semi‑transparent à "
+"l’emplacement de la grille où l’icône sera déposée."

@@ -1,0 +1,10 @@
+{
+    "description": "Adds icons to the desktop. Fork of the desktop icons NG extension. Adds a whole bunch of new features and polish, such as curved edges, square/conformed icons, and performance and bug fixes. Also, it has far more customizability.",
+    "name": "Desktop Icons Neo",
+    "shell-version": [
+      "40.beta",
+      "40"
+    ],
+    "uuid": "ding@rastersoft.com",
+    "url": "https://github.com/DEM0NAssissan7/desktop-icons-neo"
+  }
