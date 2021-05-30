@@ -114,8 +114,7 @@ For a regular use and local development these are the steps to build the
 project and install it:
 
 ```bash
-meson --prefix=$HOME/.local/ --localedir=share/gnome-shell/extensions/desktopicons-neo@rastersoft.com/locale .build
-ninja -C .build install
+./local-install.sh
 ```
 
 It is strongly recommended to delete the destination folder
