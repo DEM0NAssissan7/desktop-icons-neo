@@ -9,12 +9,12 @@ label.file-label:backdrop {
 }
 
 .file-item {
-    padding: 4px;
+    padding: 2px;
     border-radius: 6px;
 }
 
 .file-item-straight {
-    padding: 4px;
+    padding: 2px;
     border-radius: 0px;
 }
 
