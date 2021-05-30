@@ -2,11 +2,10 @@
 
 ## What is Desktop Icons: Neo?
 
-**Desktop Icons: Neo** is an extension for GNOME. It is a fork of the **Desktop Icons NG** extension. It comes with a large host of new features, customizations, and bug fixes.
+**Desktop Icons: Neo** is an extension for GNOME. It is a fork of the **Desktop Icons NG** extension. It comes with a large host of new features, customizations, and overall polish.
 
 ![Image of Desktop Icons: Neo](https://github.com/DEM0NAssissan7/desktop-icons-neo/blob/main/Desktop%20Icons:%20Neo.jpg)
  * Customizable icon shapes
- * Fixed many many bugs
  * Performance improvements
  * General polish
 
@@ -126,6 +125,6 @@ This will create the file `desktopicons-neo@rastersoft.com.zip` with the extensi
 
 ## Source code and contacting the author
 
-Sergio Costas  
+Abdurahman Elmawi
 https://github.com/DEM0NAssissan7/desktop-icons-neo/
-rastersoft@gmail.com
+user@email.com+
