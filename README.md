@@ -9,7 +9,7 @@
  * Performance improvements
  * General polish
 
-Keep in mind that the extension is still an early beta and has many bugs. We try our hardest to fix every one.
+Keep in mind that the extension is still an early beta and has many bugs. Feel free to try to fix them and submit your code here!
 
 ## Current version
 
