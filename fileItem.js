@@ -73,7 +73,6 @@ var FileItem = class {
         }
         this._labelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
         this._shieldLabelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
-        //this._shieldLabelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
 
 
         this._icon = new Gtk.Image();
