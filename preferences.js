@@ -107,7 +107,8 @@ function showPreferences() {
     frame.add(buildSelector(desktopSettings,
                             'icon-shape',
                             _("Icon shape"),
-                            {'square': _("Square"),
+                            {'conform': _("Conform"),
+                             'square': _("Square"),
                              'capsule': _("Capsule"),
                              'rectangular': _("Rectangular")
                             }));

@@ -221,20 +221,22 @@ var DesktopGrid = class {
     }
 
     _drawRounded(cr, x, y, width, height, r) {
-    	    let pi=Math.PI;
-	    if(width <= r){
-	    	width = r;
-	    }
-	    if(height <= r){
-	    	height = r;
-	    }
-	    else{
+	    let pi = Math.PI;
+	    
+        if(width <= r){
+            r = width-1;
+        }
+        if(height <= r){
+            r = height-1;
+        }
+        if(width <= r && height <= r){
+            r = Math.min(width,height);
+        }
 		cr.arc(x + r, y + r, r, pi, 3 * pi / 2);
 		cr.arc(x + width - r, y + r, r, 3 * pi / 2, 0);
 		cr.arc(x + width - r, y + height - r, r, 0, pi / 2);
 		cr.arc(x + r, y + height - r, r, pi / 2, pi);
 		cr.closePath();
-	    }
     }
     
     _doDrawRubberBand(cr) {
@@ -250,12 +252,12 @@ var DesktopGrid = class {
 
             let [xInit, yInit] = this._coordinatesGlobalToLocal(minX, minY);
             let [xFin, yFin] = this._coordinatesGlobalToLocal(maxX, maxY);
-            let _rubberBandCurveRadius = 5;
+            this._rubberBandCurveRadius = 4;
             
             this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
             
             if(this._curvedCorners){
-            	this._drawRounded(cr, xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit, _rubberBandCurveRadius);
+            	this._drawRounded(cr, xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit, this._rubberBandCurveRadius);
             }else{
             	cr.rectangle(xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit);
             }
@@ -267,7 +269,7 @@ var DesktopGrid = class {
             cr.fill();
             cr.setLineWidth(1);
             if(this._curvedCorners){
-            	this._drawRounded(cr, xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit, _rubberBandCurveRadius);
+            	this._drawRounded(cr, xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit, this._rubberBandCurveRadius);
             }else{
             	cr.rectangle(xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit);
             }
@@ -338,7 +340,7 @@ var DesktopGrid = class {
 
         let localX = Math.floor(this._width * column / this._maxColumns);
         let localY = Math.floor(this._height * row / this._maxRows);
-        this._container.put(fileItem.actor, localX + elementSpacing, localY + elementSpacing);
+        this._container.put(fileItem._container, localX + elementSpacing, localY + elementSpacing);
         this._setGridUse(column, row, true);
         this._fileItems[fileItem.uri] = [column, row, fileItem];
         let [x, y] = this._coordinatesLocalToGlobal(localX + elementSpacing, localY + elementSpacing);
@@ -364,7 +366,7 @@ var DesktopGrid = class {
         if (fileItem.uri in this._fileItems) {
             let [column, row, tmp] = this._fileItems[fileItem.uri];
             this._setGridUse(column, row, false);
-            this._container.remove(fileItem.actor);
+            this._container.remove(fileItem._container);
             delete this._fileItems[fileItem.uri];
         }
     }

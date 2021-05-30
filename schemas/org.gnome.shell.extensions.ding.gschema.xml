@@ -13,9 +13,10 @@
         <value value="3" nick="bottom-right"/>
     </enum>
     <enum id="org.gnome.shell.extension.ding.IconShape">
-        <value value="0" nick="square"/>
-        <value value="1" nick="capsule"/>
-        <value value="2" nick="rectangular"/>
+        <value value="0" nick="conform"/>
+        <value value="1" nick="square"/>
+        <value value="2" nick="capsule"/>
+        <value value="3" nick="rectangular"/>
     </enum>
     <schema path="/org/gnome/shell/extensions/ding/" id="org.gnome.shell.extensions.ding">
     <key name="icon-size" enum="org.gnome.shell.extension.ding.ZoomLevel">
@@ -39,7 +40,7 @@
         <description>Set the corner from where the icons will start to be placed.</description>
     </key>
     <key name="icon-shape" enum="org.gnome.shell.extension.ding.IconShape">
-        <default>'capsule'</default>
+        <default>'conform'</default>
         <summary>Icon shape</summary>
         <description>Set the shape of the icons</description>
     </key>

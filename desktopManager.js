@@ -720,15 +720,22 @@ var DesktopManager = class {
         if (this.rubberBand) {
             this.mouseX = x;
             this.mouseY = y;
+            this.x1 = Math.min(x, this.rubberBandInitX);
+            this.x2 = Math.max(x, this.rubberBandInitX);
+            this.y1 = Math.min(y, this.rubberBandInitY);
+            this.y2 = Math.max(y, this.rubberBandInitY);
+            this.selectionRectangle = new Gdk.Rectangle({'x':this.x1, 'y':this.y1, 'width':(this.x2-this.x1), 'height':(this.y2-this.y1)});
             for(let grid of this._desktops) {
                 grid.queue_draw();
             }
-            let x1 = Math.min(x, this.rubberBandInitX);
-            let x2 = Math.max(x, this.rubberBandInitX);
-            let y1 = Math.min(y, this.rubberBandInitY);
-            let y2 = Math.max(y, this.rubberBandInitY);
             for(let item of this._fileList) {
-                item.updateRubberband(x1, y1, x2, y2);
+                let labelintersect = item._labelRectangle.intersect(this.selectionRectangle)[0];
+                let iconintersect = item._iconRectangle.intersect(this.selectionRectangle)[0];
+                if (labelintersect || iconintersect) {
+                    item.setSelected();
+                } else {
+                    item.unsetSelected();
+                }
             }
         }
         return false;
@@ -737,9 +744,6 @@ var DesktopManager = class {
     onReleaseButton(grid) {
         if (this.rubberBand) {
             this.rubberBand = false;
-            for(let item of this._fileList) {
-                item.endRubberband();
-            }
         }
         for(let grid of this._desktops) {
             grid.queue_draw();
@@ -750,12 +754,7 @@ var DesktopManager = class {
     _startRubberband(x, y) {
         this.rubberBandInitX = x;
         this.rubberBandInitY = y;
-        this.mouseX = x;
-        this.mouseY = y;
         this.rubberBand = true;
-        for(let item of this._fileList) {
-            item.startRubberband(x, y);
-        }
     }
 
     selected(fileItem, action) {

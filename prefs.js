@@ -22,6 +22,7 @@ const Pango = imports.gi.Pango;
 const ExtensionUtils = imports.misc.extensionUtils;
 const Gettext = imports.gettext;
 
+
 var _ = Gettext.domain('ding').gettext;
 
 function init() {}
