@@ -1,6 +1,6 @@
 # Desktop Icons: Neo
 
-![Desktop Icons: Neo picture](https://github.com/DEM0NAssissan7/desktop-icons-neo/edit/main/README.md)
+![Desktop Icons: Neo picture](https://github.com/DEM0NAssissan7/desktop-icons-neo/blob/main/Desktop%20Icons:%20Neo.png)
 
 ## What is Desktop Icons: Neo?
 
