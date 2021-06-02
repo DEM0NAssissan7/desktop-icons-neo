@@ -118,7 +118,7 @@ project and install it:
 ```
 
 It is strongly recommended to delete the destination folder
-($HOME/.local/share/gnome-shell/extensions/desktopicons-neo@rastersoft.com) before doing this, to ensure that no old
+($HOME/.local/share/gnome-shell/extensions/desktopicons-neo@darkdemon) before doing this, to ensure that no old
 data is kept.
 
 ## Export extension ZIP file for extensions.gnome.org
@@ -129,10 +129,10 @@ To create a ZIP file with the extension, run:
 ./export-zip.sh
 ```
 
-This will create the file `desktopicons-neo@rastersoft.com.zip` with the extension, following the rules for publishing at extensions.gnome.org.
+This will create the file `desktopicons-neo@darkdemon.zip` with the extension, following the rules for publishing at extensions.gnome.org.
 
 ## Source code and contacting the author
 
 Abdurahman Elmawi
 https://github.com/DEM0NAssissan7/desktop-icons-neo/
-user@email.com+
+cooper64doom@gmail.com

@@ -1,10 +1,10 @@
 {
-    "description": "Adds desktop icons. To access the settings, right click on the desktop and choose 'Desktop Icons Settings'.",
-    "name": "Desktop Icons: Neo",
+    "description": "This adds desktok icons to GNOME. A fork of Desktop Icons NG with a massive amount of features, customizations, bug fixes, and overall polish.",
     "shell-version": [
       "3.38",
-      "40"
+      "40",
+      "40.1"
     ],
-    "uuid": "desktopicons-neo@rastersoft.com",
+    "uuid": "desktopicons-neo@darkdemon",
     "url": "https://github.com/DEM0NAssissan7/desktop-icons-neo"
   }
