@@ -6,13 +6,13 @@
 
 ![Image of Desktop Icons: Neo](https://github.com/DEM0NAssissan7/desktop-icons-neo/blob/main/Desktop%20Icons:%20Neo.jpg)
 
-# A few notable features include:
+## A few notable features include:
  
- * Customizable icon shapes
+ * Heavily extensive icon and desktop customization
  * Performance improvements
- * General polish
+ * General polish and bug fixes
 
-Keep in mind that the extension is still an early beta and has many bugs. Feel free to try to fix them and submit your code here!
+Keep in mind that the extension is still an early beta and still has many bugs. Feel free to try to fix them and submit your code here!
 
 ## Current version
 
