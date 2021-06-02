@@ -38,8 +38,22 @@ function init() {
     data.launchDesktopId = 0;
     data.currentProcess = null;
     data.reloadTime = 100;
-    data.x11Manager = new EmulateX11.EmulateX11WindowType();
-    // Ensure that there aren't "rogue" processes
+
+    /* The constructor of the EmulateX11 class only initializes some
+     * internal properties, but nothing else. In fact, it has its own
+     * enable() and disable() methods. That's why it could have been
+     * created here, in init(). But since the rule seems to be NO CLASS
+     * CREATION IN INIT UNDER NO CIRCUMSTANCES...
+     */
+    data.x11Manager = null;
+
+    /* Ensures that there aren't "rogue" processes.
+     * This is a safeguard measure for the case of Gnome Shell being
+     * relaunched (for example, under X11, with Alt+F2 and R), to kill
+     * any old DING instance. That's why it must be here, in init(),
+     * and not in enable() or disable() (disable already guarantees that
+     * the current instance is killed).
+     */
     doKillAllOldDesktopProcesses();
 }
 
@@ -48,6 +62,9 @@ function init() {
  * Enables the extension
  */
 function enable() {
+    if (!data.x11Manager) {
+        data.x11Manager = new EmulateX11.EmulateX11WindowType();
+    }
     // If the desktop is still starting up, we wait until it is ready
     if (Main.layoutManager._startingUp) {
         data.startupPreparedId = Main.layoutManager.connect('startup-complete', () => { innerEnable(true); });
@@ -208,7 +225,7 @@ function doKillAllOldDesktopProcesses() {
                 contents += String.fromCharCode(data[i]);
             }
         }
-        let path = 'gjs ' + GLib.build_filenamev([ExtensionUtils.getCurrentExtension().path, 'ding.js']);
+        let path = 'gjs ' + GLib.build_filenamev([ExtensionUtils.getCurrentExtension().path, 'desktopicons-neo.js']);
         if (contents.startsWith(path)) {
             let proc = new Gio.Subprocess({argv: ['/bin/kill', filename]});
             proc.init(null);
@@ -227,7 +244,7 @@ function launchDesktop() {
 
     data.reloadTime = 100;
     let argv = [];
-    argv.push(GLib.build_filenamev([ExtensionUtils.getCurrentExtension().path, 'ding.js']));
+    argv.push(GLib.build_filenamev([ExtensionUtils.getCurrentExtension().path, 'desktopicons-neo.js']));
     // Specify that it must work as true desktop
     argv.push('-E');
     // The path. Allows the program to find translations, settings and modules.

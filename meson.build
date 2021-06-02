@@ -1,5 +1,5 @@
 project('desktopicons-neo',
-  version: '1.1',
+  version: '1.2',
   license: 'GPL3'
 )
 
@@ -22,7 +22,7 @@ install_data([
     'desktopGrid.js',
     'desktopIconsUtil.js',
     'desktopManager.js',
-    'ding.js',
+    'desktopicons-neo.js',
     'emulateX11WindowType.js',
     'enums.js',
     'extension.js',

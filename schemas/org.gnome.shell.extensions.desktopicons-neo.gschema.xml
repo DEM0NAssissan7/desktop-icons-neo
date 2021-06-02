@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="ding">
+<schemalist gettext-domain="desktopicons-neo">
     <enum id="org.gnome.shell.extension.desktopicons-neo.ZoomLevel">
         <value value="3" nick="tiny"/>
         <value value="0" nick="small"/>
@@ -14,9 +14,10 @@
     </enum>
     <enum id="org.gnome.shell.extension.desktopicons-neo.IconShape">
         <value value="0" nick="conform"/>
-        <value value="1" nick="square"/>
-        <value value="2" nick="capsule"/>
-        <value value="3" nick="rectangular"/>
+        <value value="1" nick="traditional"/>
+        <value value="2" nick="square"/>
+        <value value="3" nick="capsule"/>
+        <value value="4" nick="rectangular"/>
     </enum>
     <schema path="/org/gnome/shell/extensions/desktopicons-neo/" id="org.gnome.shell.extensions.desktopicons-neo">
     <key name="icon-size" enum="org.gnome.shell.extension.desktopicons-neo.ZoomLevel">
@@ -24,7 +25,7 @@
         <summary>Icon size</summary>
         <description>Set the size for the desktop icons.</description>
     </key>
-	<key type="b" name="show-home">
+    <key type="b" name="show-home">
         <default>true</default>
         <summary>Show personal folder</summary>
         <description>Show the personal folder in the desktop.</description>
@@ -44,10 +45,15 @@
         <summary>Icon shape</summary>
         <description>Set the shape of the icons</description>
     </key>
-	<key type="b" name="curved-corners">
+    <key type="b" name="curved-corners">
         <default>true</default>
         <summary>Curve corners</summary>
         <description>Curve the corners of the icons and rubber band.</description>
+    </key>
+    <key type="b" name="draw-symbols">
+        <default>false</default>
+        <summary>Draw icon symbols</summary>
+        <description>Draw the checkmarks and sym link symbols.</description>
     </key>
     <key type="b" name="show-volumes">
         <default>true</default>

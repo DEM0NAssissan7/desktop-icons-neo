@@ -13,7 +13,7 @@ Keep in mind that the extension is still an early beta and has many bugs. Feel f
 
 ## Current version
 
-Version 1.1
+Version 1.2
 
 ## Requirements
 
@@ -28,7 +28,7 @@ Version 1.1
 ## Internal architecture
 
 The code is divided in two parts: a classic Gtk program that manages the whole desktop
-(comprised by the files ding.js, askNamePopup.js, createThumbnail.js, dbusUtils.js, desktopGrid.js,
+(comprised by the files desktopicons-neo.js, askNamePopup.js, createThumbnail.js, dbusUtils.js, desktopGrid.js,
 desktopIconsUtil.js, desktopManager.js, enums.js, fileItem.js and preferences.js), and a little
 extension (extension.js) that have these roles:
 
@@ -69,7 +69,7 @@ from the tab switcher and the Activities mode. These are 'Meta.Display.get_tab_l
 It is possible to launch the desktop icons application in stand-alone mode to do debugging and
 testing, but, of course, it will behave as a classic Gtk program: there will be a window with its
 titlebar, and the background won't be transparent (it could be, but since the idea is to do debug,
-it is better this way). To do so, just launch './ding.js' from the repository directory. If it can't
+it is better this way). To do so, just launch './desktopicons-neo.js' from the repository directory. If it can't
 find the schemas file, just enter the 'schemas' folder and type 'glib-compile-schemas .', and retry.
 
 It accepts the following command line parameters:

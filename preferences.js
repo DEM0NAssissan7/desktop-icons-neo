@@ -108,11 +108,13 @@ function showPreferences() {
                             'icon-shape',
                             _("Icon shape"),
                             {'conform': _("Conform"),
+                             'traditional': _("Traditional"),
                              'square': _("Square"),
                              'capsule': _("Capsule"),
                              'rectangular': _("Rectangular")
                             }));
     frame.add(buildSwitcher(desktopSettings, 'curved-corners', _("Curve corners (theming)")));
+    frame.add(buildSwitcher(desktopSettings, 'draw-symbols', _("Draw icon symbols")));
     frame.add(buildSwitcher(desktopSettings, 'add-volumes-opposite', _("Add new drives to the opposite side of the screen")));
     frame.add(buildSwitcher(desktopSettings, 'show-drop-place', _("Highlight the drop place during Drag'n'Drop")));
 

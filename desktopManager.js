@@ -34,7 +34,7 @@ const AskConfirmPopup = imports.askConfirmPopup;
 const ShowErrorPopup = imports.showErrorPopup;
 const TemplateManager = imports.templateManager;
 
-const Gettext = imports.gettext.domain('ding');
+const Gettext = imports.gettext.domain('desktopicons-neo');
 
 const _ = Gettext.gettext;
 
