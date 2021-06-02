@@ -113,7 +113,6 @@ function getExtraFolders() {
 
 function getMounts(volumeMonitor) {
     let show_volumes = Prefs.desktopSettings.get_boolean('show-volumes');
-    let show_network = Prefs.desktopSettings.get_boolean('show-network-volumes');
 
     try {
         var mounts = volumeMonitor.get_mounts();
@@ -128,7 +127,7 @@ function getMounts(volumeMonitor) {
         try {
             let is_drive = (mount.get_drive() != null) || (mount.get_volume() != null);
             let uri = mount.get_root().get_uri();
-            if (((is_drive && show_volumes) || (!is_drive && show_network)) && (!(uris.includes(uri)))) {
+            if ((is_drive && show_volumes) && (!(uris.includes(uri)))) {
                 result.push([mount.get_root(), Enums.FileType.EXTERNAL_DRIVE, mount]);
                 uris.push(uri);
             }
