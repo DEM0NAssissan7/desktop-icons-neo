@@ -1,9 +1,9 @@
 {
-    "description": "This adds desktok icons to GNOME. A fork of Desktop Icons NG with a massive amount of features, customizations, bug fixes, and overall polish.",
+    "description": "This adds desktop icons to GNOME. A fork of Desktop Icons NG with a massive amount of customization, features, bug fixes, and overall polish.",
+    "name": "Desktop Icons: Neo",
     "shell-version": [
       "3.38",
-      "40",
-      "40.1"
+      "40"
     ],
     "uuid": "desktopicons-neo@darkdemon",
     "url": "https://github.com/DEM0NAssissan7/desktop-icons-neo"
