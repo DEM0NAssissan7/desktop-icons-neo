@@ -41,7 +41,7 @@
         <description>Set the corner from where the icons will start to be placed.</description>
     </key>
     <key name="icon-shape" enum="org.gnome.shell.extension.desktopicons-neo.IconShape">
-        <default>'conform'</default>
+        <default>'square'</default>
         <summary>Icon shape</summary>
         <description>Set the shape of the icons</description>
     </key>
