@@ -97,7 +97,7 @@ var DesktopManager = class {
         });
         Prefs.desktopSettings.connect('changed', (obj, key) => {
             if (key == 'curved-corners') {
-                this._showHidden = Prefs.desktopSettings.get_boolean('curved-corners');
+                this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
                 this._updateDesktop();
             }
         });
