@@ -1,4 +1,5 @@
 #!/bin/sh
+chmod +x set-permissions.sh
 chmod +x createThumbnail.js
 chmod +x desktopicons-neo.js
 chmod +x export-zip.sh
