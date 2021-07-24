@@ -69,5 +69,7 @@ This will create the file `desktopicons-neo@darkdemon.zip` containing the extens
 ## Source code and contacting the author
 
 Abdurahman Elmawi
+
 https://github.com/DEM0NAssissan7/desktop-icons-neo/
+
 cooper64doom@gmail.com
