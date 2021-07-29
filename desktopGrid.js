@@ -1,5 +1,4 @@
-/*
- *   LICENSE INFORMATION
+/* LICENSE INFORMATION
  * 
  * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
  * customizations, and optimizations.
@@ -14,7 +13,6 @@
  * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
  * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
  * regarding this project's license.
- * 
  */
 
 const Gtk = imports.gi.Gtk;

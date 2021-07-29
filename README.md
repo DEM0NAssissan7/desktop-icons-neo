@@ -1,4 +1,4 @@
-* Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
+Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
 
 # Desktop Icons: Neo
 
