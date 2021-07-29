@@ -23,7 +23,7 @@ const Gtk = imports.gi.Gtk;
 const GObject = imports.gi.GObject;
 const Gio = imports.gi.Gio;
 const GioSSS = Gio.SettingsSchemaSource;
-
+const DesktopIconsUtil = imports.desktopIconsUtil;
 const Enums = imports.enums;
 
 const Gettext = imports.gettext;
@@ -82,12 +82,16 @@ function get_schema(schema) {
 }
 
 function showPreferences() {
-
-    let window = new Gtk.Window({ resizable: false,
+    if (this.window) {
+        return;
+    }
+    this.window = new Gtk.Window({ resizable: false,
                                   window_position: Gtk.WindowPosition.CENTER });
-    window.set_title(_("Settings"));
+    this.window.connect('destroy', () => {this.window = null});
+    this.window.set_title(_("Desktop Icon Settings"));
+    DesktopIconsUtil.windowHidePagerTaskbarModal(this.window, true);
     let frame = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL });
-    window.add(frame);
+    this.window.add(frame);
     frame.set_spacing(10);
     frame.set_border_width(10);
 
@@ -95,6 +99,7 @@ function showPreferences() {
     frame.add(buildSwitcher(desktopSettings, 'show-home', _("Show the personal folder in the desktop")));
     frame.add(buildSwitcher(desktopSettings, 'show-trash', _("Show the trash icon in the desktop")));
     frame.add(buildSwitcher(desktopSettings, 'show-volumes', _("Show external drives in the desktop")));
+    frame.add(buildSwitcher(desktopSettings, 'show-network-volumes', _("Show network drives in the desktop")));
     frame.add(buildSelector(desktopSettings,
                             'start-corner',
                             _("New icons alignment"),
@@ -146,7 +151,7 @@ function showPreferences() {
                                       'local-only': _("Local files only"),
                                       'always': _("Always")
                                    }));
-    window.show_all();
+    this.window.show_all();
 }
 
 function buildSwitcher(settings, key, labelText) {
@@ -202,6 +207,15 @@ function get_desired_height() {
 
 function get_start_corner() {
     return Enums.START_CORNER[desktopSettings.get_string('start-corner')].slice();
+}
+
+function getSortOrder() {
+    return Enums.SortOrder[desktopSettings.get_string(Enums.SortOrder.ORDER)];
+}
+
+function setSortOrder(order) {
+    let x = Object.values(Enums.SortOrder).indexOf(order);
+    desktopSettings.set_enum(Enums.SortOrder.ORDER, x);
 }
 
 function get_icon_shape() {

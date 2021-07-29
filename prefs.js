@@ -34,7 +34,7 @@ function buildPrefsWidget() {
     if (localedir.query_exists(null))
         Gettext.bindtextdomain('desktopicons-neo', localedir.get_path());
 
-    let frame = new Gtk.Label({ label: _("To configure Desktop Icons: Neo, do right-click in the desktop and choose the last item: 'Desktop Icons settings'"),
+    let frame = new Gtk.Label({ label: _("To configure Desktop Icons: Neo, right-click a blank space on the desktop and choose 'Desktop Icon Settings'"),
                                 lines: 5,
                                 justify: Gtk.Justification.CENTER,
                                 wrap: true,

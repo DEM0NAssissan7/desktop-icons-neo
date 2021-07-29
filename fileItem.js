@@ -51,6 +51,9 @@ var FileItem = class {
         this._queryFileInfoCancellable = null;
         this._isSpecial = this._fileExtra != Enums.FileType.NONE;
         this._grid = null;
+        this._lastClickTime = 0;
+        this._lastClickButton = 0;
+        this._clickCount = 0;
         this._iconShape = Prefs.get_icon_shape();
         this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
         this._drawSymbols = Prefs.desktopSettings.get_boolean('draw-symbols');
@@ -349,7 +352,9 @@ var FileItem = class {
                                 let data = Gio.File.new_for_uri(fileList[0]).query_info('id::filesystem', Gio.FileQueryInfoFlags.NONE, null);
                                 let id_fs = data.get_attribute_string('id::filesystem');
                                 if (this._desktopManager.desktopFsId == id_fs) {
-                                    DBusUtils.NautilusFileOperationsProxy.MoveURIsRemote(fileList, this._file.get_uri(),
+                                    DBusUtils.NautilusFileOperations2Proxy.MoveURIsRemote(
+                                        fileList, this._file.get_uri(),
+                                        DBusUtils.NautilusFileOperations2Proxy.platformData(),
                                         (result, error) => {
                                             if (error) {
                                                 throw new Error('Error moving files: ' + error.message);
@@ -357,7 +362,9 @@ var FileItem = class {
                                         }
                                     );
                                 } else {
-                                    DBusUtils.NautilusFileOperationsProxy.CopyURIsRemote(fileList, this._file.get_uri(),
+                                    DBusUtils.NautilusFileOperations2Proxy.CopyURIsRemote(
+                                        fileList, this._file.get_uri(),
+                                        DBusUtils.NautilusFileOperations2Proxy.platformData(),
                                         (result, error) => {
                                             if (error) {
                                                 throw new Error('Error moving files: ' + error.message);
@@ -366,7 +373,9 @@ var FileItem = class {
                                     );
                                 }
                             } else {
-                                DBusUtils.NautilusFileOperationsProxy.TrashFilesRemote(fileList,
+                                DBusUtils.NautilusFileOperations2Proxy.TrashURIsRemote(
+                                    fileList,
+                                    DBusUtils.NautilusFileOperations2Proxy.platformData(),
                                     (result, error) => {
                                         if (error) {
                                             throw new Error('Error moving files: ' + error.message);
@@ -464,6 +473,10 @@ var FileItem = class {
                 }
             }
         );
+    }
+
+    updatedMetadata() {
+        this._refreshMetadataAsync(true);
     }
 
     _updateMetadataFromFileInfo(fileInfo) {
@@ -1039,7 +1052,25 @@ var FileItem = class {
         DesktopIconsUtil.launchTerminal(this.file.get_path(), null);
     }
 
+    _updateClickState(event) {
+        let settings = Gtk.Settings.get_default();
+
+        if ((event.get_button()[1] == this._lastClickButton) &&
+            ((event.get_time() - this._lastClickTime) < settings.gtk_double_click_time))
+            this._clickCount++;
+        else
+            this._clickCount = 1;
+
+        this._lastClickTime = event.get_time();
+        this._lastClickButton = event.get_button()[1];
+    }
+
+    _getClickCount() {
+        return this._clickCount;
+    }
+
     _onPressButton(actor, event) {
+        this._updateClickState(event);
         let button = event.get_button()[1];
         if (button == 3) {
             if (!this._isSelected) {
@@ -1059,7 +1090,7 @@ var FileItem = class {
             if (this._actionTrash)
                 this._actionTrash.set_sensitive(!allowCutCopyTrash);
         } else if (button == 1) {
-            if (event.get_event_type() == Gdk.EventType.BUTTON_PRESS) {
+            if (this._getClickCount() == 1) {
                 let [a, x, y] = event.get_coords();
                 let state = event.get_state()[1];
                 this._primaryButtonPressed = true;
@@ -1073,7 +1104,7 @@ var FileItem = class {
                     this._desktopManager.selected(this, Enums.Selection.ALONE);
                 }
             }
-            if ((event.get_event_type() == Gdk.EventType.DOUBLE_BUTTON_PRESS) && !Prefs.CLICK_POLICY_SINGLE) {
+            if (this._getClickCount() == 2 && !Prefs.CLICK_POLICY_SINGLE) {
                 this.doOpen();
             }
         }
@@ -1118,6 +1149,11 @@ var FileItem = class {
     get isDrive() {
         return this._fileExtra == Enums.FileType.EXTERNAL_DRIVE;
     }
+
+    get isTrash() {
+        return this._fileExtra === Enums.FileType.USER_DIRECTORY_TRASH;
+    }
+
     _onReleaseButton(actor, event) {
         let button = event.get_button()[1];
         if (button == 1) {
@@ -1248,10 +1284,14 @@ var FileItem = class {
     }
 
     get displayName() {
-        if (this.trustedDesktopFile)
+        if (this.trustedDesktopFile) {
             return this._desktopFile.get_name();
-
+        }
         return this._displayName || null;
+    }
+
+    get fileSize() {
+        return this._fileInfo.get_size();
     }
 
 };

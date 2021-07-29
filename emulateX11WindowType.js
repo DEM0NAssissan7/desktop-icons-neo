@@ -47,7 +47,7 @@ class ManageWindow {
             }
         }));
         this._signalIDs.push(window.connect('position-changed', () => {
-            if ((this._x !== null) && (this._y !== null)) {
+            if (this._fixed && (this._x !== null) && (this._y !== null)) {
                 this._window.move_frame(false, this._x, this._y);
             }
         }));
@@ -80,6 +80,7 @@ class ManageWindow {
         this._keepAtTop = false;
         this._showInAllDesktops = false;
         this._hideFromWindowList = false;
+        this._fixed = false;
         let title = this._window.get_title();
         if (title != null) {
             let pos = title.search("@!");
@@ -98,7 +99,7 @@ class ManageWindow {
                     print(`Exception ${e.message}`);
                 }
                 try {
-                    let extra_chars = title.substring(pos2).trim().toUpperCase();
+                    let extra_chars = title.substring(pos+2).trim().toUpperCase();
                     for (let char of extra_chars) {
                         switch (char) {
                         case 'B':
@@ -114,6 +115,9 @@ class ManageWindow {
                             break;
                         case 'H':
                             this._hideFromWindowList = true;
+                            break;
+                        case 'F':
+                            this._fixed = true;
                             break;
                         }
                     }
@@ -138,7 +142,7 @@ class ManageWindow {
             if (this._keepAtBottom) {
                 this._window.lower();
             }
-            if ((this._x !== null) && (this._y !== null)) {
+            if (this._fixed && (this._x !== null) && (this._y !== null)) {
                 this._window.move_frame(false, this._x, this._y);
             }
         }

@@ -69,6 +69,15 @@ var WhatToDoWithExecutable = {
     CANCEL: 3
 };
 
+var SortOrder = {
+    ORDER: 'arrangeorder',
+    NAME: 'name',
+    DESCENDINGNAME: 'descendingname',
+    MODIFIEDTIME: 'modifiedtime',
+    KIND: 'kind',
+    SIZE: 'size'
+};
+
 var DEFAULT_ATTRIBUTES = 'metadata::*,standard::*,access::*,time::modified,unix::mode';
 var TERMINAL_SCHEMA = 'org.gnome.desktop.default-applications.terminal';
 var SCHEMA_NAUTILUS = 'org.gnome.nautilus.preferences';

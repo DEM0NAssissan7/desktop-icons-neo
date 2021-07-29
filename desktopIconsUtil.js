@@ -19,6 +19,7 @@
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
+const Gdk = imports.gi.Gdk;
 const Prefs = imports.preferences;
 const Enums = imports.enums;
 const Gettext = imports.gettext.domain('desktopicons-neo');
@@ -113,6 +114,7 @@ function getExtraFolders() {
 
 function getMounts(volumeMonitor) {
     let show_volumes = Prefs.desktopSettings.get_boolean('show-volumes');
+    let show_network = Prefs.desktopSettings.get_boolean('show-network-volumes');
 
     try {
         var mounts = volumeMonitor.get_mounts();
@@ -126,9 +128,9 @@ function getMounts(volumeMonitor) {
     for (let mount of mounts) {
         try {
             let is_drive = (mount.get_drive() != null) || (mount.get_volume() != null);
-            let uri = mount.get_root().get_uri();
-            if ((is_drive && show_volumes) && (!(uris.includes(uri)))) {
-                result.push([mount.get_root(), Enums.FileType.EXTERNAL_DRIVE, mount]);
+            let uri = mount.get_default_location().get_uri();
+            if (((is_drive && show_volumes) || (!is_drive && show_network)) && (!(uris.includes(uri)))) {
+                result.push([mount.get_default_location(), Enums.FileType.EXTERNAL_DRIVE, mount]);
                 uris.push(uri);
             }
         } catch(e) {
@@ -241,5 +243,30 @@ function writeTextFileToDesktop(text, filename, dropCoordinates) {
         try {
             file.set_attributes_from_info(info, Gio.FileQueryInfoFlags.NONE, null);
         } catch(e) {}
+    }
+}
+
+function windowHidePagerTaskbarModal(window, modal) {
+    let using_X11 = Gdk.Display.get_default().constructor.$gtype.name === 'GdkX11Display';
+    if (using_X11) {
+        window.set_type_hint(Gdk.WindowTypeHint.NORMAL);
+        window.set_skip_taskbar_hint(true);
+        window.set_skip_pager_hint(true);
+    } else {
+        let title = window.get_title();
+        if (modal) {
+            title = title + '@!HTD';
+        } else {
+            title = title + '@!H';
+        }
+        window.set_title(title);
+    }
+    if (modal) {
+        window.connect('focus-out-event', () => {
+            window.set_keep_above(true);
+            window.stick();
+            window.grab_focus();
+        });
+        window.grab_focus();
     }
 }

@@ -19,6 +19,7 @@
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
+const DesktopIconsUtil = imports.desktopIconsUtil;
 const Gettext = imports.gettext.domain('desktopicons-neo');
 
 const _ = Gettext.gettext;
@@ -36,6 +37,7 @@ var AskNamePopup = class {
         this._window.add_button(_("Cancel"), Gtk.ResponseType.CANCEL);
         this._window.set_modal(true);
         this._window.set_title(title);
+        DesktopIconsUtil.windowHidePagerTaskbarModal(this._window, true);
         let contentArea = this._window.get_content_area();
         this._textArea = new Gtk.Entry();
         if (filename) {

@@ -18,7 +18,7 @@
 
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
-var NautilusFileOperationsProxy;
+var NautilusFileOperations2Proxy;
 var FreeDesktopFileManagerProxy;
 var GnomeNautilusPreviewProxy;
 var SwitcherooControlProxyClass;
@@ -27,37 +27,51 @@ var discreteGpuAvailable;
 var GnomeArchiveManagerProxy;
 var GtkVfsMetadataProxy;
 
-const NautilusFileOperationsInterface = `<node>
-<interface name='org.gnome.Nautilus.FileOperations'>
+const NautilusFileOperations2Interface = `<node>
+<interface name='org.gnome.Nautilus.FileOperations2'>
     <method name='CopyURIs'>
-        <arg name='URIs' type='as' direction='in'/>
-        <arg name='Destination' type='s' direction='in'/>
+        <arg type='as' name='sources' direction='in'/>
+        <arg type='s' name='destination' direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='MoveURIs'>
-        <arg name='URIs' type='as' direction='in'/>
-        <arg name='Destination' type='s' direction='in'/>
+        <arg type='as' name='sources' direction='in'/>
+        <arg type='s' name='destination' direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='EmptyTrash'>
+        <arg type="b" name="ask_confirmation" direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
-    <method name='TrashFiles'>
-        <arg name='URIs' type='as' direction='in'/>
+    <method name='TrashURIs'>
+        <arg type='as' name='uris' direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
+    </method>
+    <method name='DeleteURIs'>
+        <arg type='as' name='uris' direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='CreateFolder'>
-        <arg name='URI' type='s' direction='in'/>
+        <arg type='s' name='parent_uri' direction='in'/>
+        <arg type='s' name='new_folder_name' direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
-    <method name='RenameFile'>
-        <arg name='URI' type='s' direction='in'/>
-        <arg name='NewName' type='s' direction='in'/>
+    <method name='RenameURI'>
+        <arg type='s' name='uri' direction='in'/>
+        <arg type='s' name='new_name' direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='Undo'>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='Redo'>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <property name='UndoStatus' type='i' access='read'/>
 </interface>
 </node>`;
 
-const NautilusFileOperationsProxyInterface = Gio.DBusProxy.makeProxyWrapper(NautilusFileOperationsInterface);
+const NautilusFileOperations2ProxyInterface = Gio.DBusProxy.makeProxyWrapper(NautilusFileOperations2Interface);
 
 const FreeDesktopFileManagerInterface = `<node>
 <interface name='org.freedesktop.FileManager1'>
@@ -241,16 +255,57 @@ const GtkVfsMetadataInterface = `<node>
 const GtkVfsMetadataProxyInterface = Gio.DBusProxy.makeProxyWrapper(GtkVfsMetadataInterface);
 
 function init() {
-    NautilusFileOperationsProxy = new NautilusFileOperationsProxyInterface(
+    NautilusFileOperations2Proxy = new NautilusFileOperations2ProxyInterface(
         Gio.DBus.session,
         'org.gnome.Nautilus',
-        '/org/gnome/Nautilus',
+        '/org/gnome/Nautilus/FileOperations2',
         (proxy, error) => {
             if (error) {
                 log('Error connecting to Nautilus');
             }
         }
     );
+
+  NautilusFileOperations2Proxy.platformData = params => {
+    const inShell = typeof global !== 'undefined';
+    const defaultParams = {
+      timestamp: inShell ? global.get_current_time() :
+        imports.gi.Gtk.get_current_event_time(),
+      parentWindow: inShell ? null :
+        imports.gi.Gtk.get_current_event().get_window(),
+      windowPosition: 'center',
+    };
+    const { parentWindow, timestamp, windowPosition } = {
+      ...defaultParams,
+      ...params,
+    };
+
+    let { parentHandle } = params ?? { parentHandle: ''};
+    if (!parentHandle && parentWindow) {
+      try {
+        imports.gi.versions.GdkX11 = '3.0';
+        const { GdkX11 } = imports.gi;
+        const topLevel = parentWindow.get_effective_toplevel();
+
+        if (topLevel.constructor.$gtype === GdkX11.X11Window.$gtype) {
+          const xid = GdkX11.X11Window.prototype.get_xid.call(topLevel);
+          parentHandle = `x11:${xid}`;
+        } /* else if (topLevel instanceof GdkWayland.Toplevel) {
+          FIXME: Need Gtk4 to use GdkWayland
+          const handle = GdkWayland.Toplevel.prototype.export_handle.call(topLevel);
+          parentHandle = `wayland:${handle}`;
+        } */
+      } catch (e) {
+        logError(e, 'Impossible to determine the parent window');
+      }
+    }
+
+    return {
+      'parent-handle': new GLib.Variant('s', parentHandle),
+      'timestamp': new GLib.Variant('u', timestamp),
+      'window-position': new GLib.Variant('s', windowPosition),
+    };
+  }
 
     FreeDesktopFileManagerProxy = new FreeDesktopFileManagerProxyInterface(
         Gio.DBus.session,

@@ -12,6 +12,13 @@
         <value value="2" nick="bottom-left"/>
         <value value="3" nick="bottom-right"/>
     </enum>
+        <enum id="org.gnome.shell.extension.desktopicons-neo.ArrangeOrder">
+        <value value="1" nick="NAME"/>
+        <value value="2" nick="DESCENDINGNAME"/>
+        <value value="3" nick="MODIFIEDTIME"/>
+        <value value="4" nick="KIND"/>
+        <value value="5" nick="SIZE"/>
+    </enum>
     <enum id="org.gnome.shell.extension.desktopicons-neo.IconShape">
         <value value="0" nick="conform"/>
         <value value="1" nick="traditional"/>
@@ -60,6 +67,11 @@
         <summary>Show external drives in the desktop</summary>
         <description>Show the disk drives connected to the computer.</description>
     </key>
+    <key type="b" name="show-network-volumes">
+        <default>false</default>
+        <summary>Show network drives in the desktop</summary>
+        <description>Show mounted network volumes in the desktop.</description>
+    </key>
     <key type="b" name="add-volumes-opposite">
         <default>true</default>
         <summary>Add new drives to the opposite side of the screen</summary>
@@ -69,6 +81,21 @@
         <default>true</default>
         <summary>Shows a rectangle in the destination place during DnD</summary>
         <description>When doing a Drag'n'Drop operation, marks the place in the grid where the icon will be put with a semitransparent rectangle.</description>
+    </key>
+    <key type="b" name="sort-special-folders">
+        <default>false</default>
+        <summary>Sort Special Folders - Home/Trash Drives.</summary>
+        <description>When arranging Icons on desktop, to sort and change the position of the Home, Trash and mounted Network or External Drives</description>
+    </key>
+    <key type="b" name="keep-arranged">
+        <default>false</default>
+        <summary>Keep Icons Arranged</summary>
+        <description>Always keep Icons Arranged by the last arranged order</description>
+    </key>
+    <key name="arrangeorder" enum="org.gnome.shell.extension.desktopicons-neo.ArrangeOrder">
+        <default>'NAME'</default>
+        <summary>Arrange Order</summary>
+        <description>Icons Arranged by this property</description>
     </key>
   </schema>
 </schemalist>

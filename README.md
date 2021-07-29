@@ -16,7 +16,7 @@ Keep in mind that the extension is still an early beta and still has many bugs. 
 
 ## Current version
 
-Version 1.2
+Version 1.4
 
 ## Requirements
 

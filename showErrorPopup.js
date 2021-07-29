@@ -18,6 +18,7 @@
 
 const Gtk = imports.gi.Gtk;
 const Pango = imports.gi.Pango;
+const DesktopIconsUtil = imports.desktopIconsUtil;
 const Gettext = imports.gettext.domain('desktopicons-neo');
 
 const _ = Gettext.gettext;
@@ -32,6 +33,7 @@ var ShowErrorPopup = class {
                                               buttons: Gtk.ButtonsType.NONE,
                                               text: text,
                                               secondary_text: secondaryText});
+        DesktopIconsUtil.windowHidePagerTaskbarModal(this._window, true);
         let deleteButton = this._window.add_button(_("Close"), Gtk.ResponseType.OK);
         if (modal) {
             deleteButton.connect('clicked', () => {
