@@ -12,7 +12,7 @@
  * Performance improvements
  * General polish and bug fixes
 
-Keep in mind that the extension is still an early beta and still has many bugs. Feel free to try to fix them and submit your code here!
+Feel free to to fix/report any bugs you notice!
 
 ## Current version
 
