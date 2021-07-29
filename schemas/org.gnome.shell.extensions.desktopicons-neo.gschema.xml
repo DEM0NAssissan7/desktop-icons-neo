@@ -37,7 +37,7 @@
         <summary>Show personal folder</summary>
         <description>Show the personal folder in the desktop.</description>
     </key>
-	<key type="b" name="show-trash">
+    <key type="b" name="show-trash">
         <default>true</default>
         <summary>Show trash icon</summary>
         <description>Show the trash icon in the desktop.</description>
@@ -51,6 +51,11 @@
         <default>'square'</default>
         <summary>Icon shape</summary>
         <description>Set the shape of the icons</description>
+    </key>
+    <key type="s" name="desktop-directory">
+        <default>'null'</default>
+        <summary>Desktop icons working directory</summary>
+        <description>The directory that contains the files that the extension edits, displays, and interacts with.</description>
     </key>
     <key type="b" name="curved-corners">
         <default>true</default>

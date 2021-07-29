@@ -26,7 +26,10 @@ const Gettext = imports.gettext.domain('desktopicons-neo');
 const _ = Gettext.gettext;
 
 function getDesktopDir() {
-    let desktopPath = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP);
+    let desktopPath = Prefs.desktopSettings.get_string('desktop-directory');
+    if(desktopPath == 'null'){
+    	desktopPath = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP);
+    }
     return Gio.File.new_for_commandline_arg(desktopPath);
 }
 

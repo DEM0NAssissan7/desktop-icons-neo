@@ -24,6 +24,7 @@ const Gio = imports.gi.Gio;
 const GioSSS = Gio.SettingsSchemaSource;
 const DesktopIconsUtil = imports.desktopIconsUtil;
 const Enums = imports.enums;
+const DesktopManager = imports.desktopManager;
 
 const Gettext = imports.gettext;
 
@@ -68,7 +69,7 @@ function get_schema(schema) {
     let schemaSource;
     let schemaFile = Gio.File.new_for_path(GLib.build_filenamev([extensionPath, 'schemas', 'gschemas.compiled']));
     if (schemaFile.query_exists(null)) {
-        schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
+        	schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
     } else {
         schemaSource = GioSSS.get_default();
     }
@@ -107,6 +108,7 @@ function showPreferences() {
                              'bottom-left': _("Bottom-left corner"),
                              'bottom-right': _("Bottom-right corner")
                             }));
+    frame.add(buildFileChooserButton(desktopSettings, 'desktop-directory', _("Desktop directory  >  " + desktopSettings.get_string('desktop-directory')), _("Set desktop directory")));
     frame.add(buildSelector(desktopSettings,
                             'icon-shape',
                             _("Icon shape"),
@@ -160,6 +162,25 @@ function buildSwitcher(settings, key, labelText) {
     settings.bind(key, switcher, 'active', 3);
     hbox.pack_start(label, true, true, 0);
     hbox.add(switcher);
+    return hbox;
+}
+
+function buildFileChooserButton(settings, key, labelText, buttonText) {
+    function activateFileChooser(){hbox.add(filechooser)}
+    let hbox = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL, spacing: 10 });
+    let label = new Gtk.Label({ label: labelText, xalign: 0 });
+    let button = new Gtk.Button({ label: buttonText })
+    let fileChooser = new Gtk.FileChooserNative({ title: "Choose a Directory (You MUST restart the extension to see/apply changes)", action: Gtk.FileChooserAction.SELECT_FOLDER, modal: true });
+    button.connect('clicked', () => {
+        fileChooser.show();
+    });
+    fileChooser.connect('response',  (dlg, response) => {
+    	if (response !== Gtk.ResponseType.ACCEPT)
+    	    return;
+    	settings.set_string(key, dlg.get_file().get_path());
+    	});
+    hbox.pack_start(label, true, true, 0);
+    hbox.add(button);
     return hbox;
 }
 

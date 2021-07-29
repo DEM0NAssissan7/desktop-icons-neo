@@ -68,7 +68,13 @@ var DesktopManager = class {
         this._scriptsDir = DesktopIconsUtil.getScriptsDir();
         this.desktopFsId = this._desktopDir.query_info('id::filesystem', Gio.FileQueryInfoFlags.NONE, null).get_attribute_string('id::filesystem');
         this._updateWritableByOthers();
-        this._monitorDesktopDir = this._desktopDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
+        try{
+              this._monitorDesktopDir = this._desktopDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
+        } catch(e){
+              logError(e, "schemaSource errored out. Fixing desktop-directory..");
+              Prefs.desktopSettings.set_string('desktop-directory', GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP));
+              this._monitorDesktopDir = this._desktopDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
+        }
         this._monitorDesktopDir.set_rate_limit(1000);
         this._monitorDesktopDir.connect('changed', (obj, file, otherFile, eventType) => this._updateDesktopIfChanged(file, otherFile, eventType));
         this._monitorScriptDir = this._scriptsDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
@@ -104,6 +110,12 @@ var DesktopManager = class {
         });
         Prefs.nautilusSettings.connect('changed', (obj, key) => {
             if (key == 'show-image-thumbnails') {
+                this._updateDesktop();
+            }
+        });
+        Prefs.gtkSettings.connect('changed', (obj, key) => {
+            if (key == 'desktop-directory') {
+                this._desktopDir = Prefs.gtkSettings.get_string('desktop-directory');
                 this._updateDesktop();
             }
         });
