@@ -87,6 +87,9 @@ var DesktopGrid = class {
             }
         });
 
+        const scale = this._window.get_scale_factor();
+        this.gridGlobalRectangle = new Gdk.Rectangle({'x':this._x, 'y':this._y, 'width':(this._width*scale), 'height':(this._height*scale)});
+
         this._eventBox = new Gtk.EventBox({ visible: true });
         this._window.add(this._eventBox);
         this._container = new Gtk.Fixed();
@@ -111,9 +114,6 @@ var DesktopGrid = class {
         }
 
         this._selectedList = null;
-                    
-    	
-
         this._container.connect('draw', (widget, cr) => {
             this._doDrawRubberBand(cr);
             cr.$dispose();
@@ -248,7 +248,6 @@ var DesktopGrid = class {
             if ((minX >= (this._x + this._width )) || (minY >= (this._y + this._height)) || (maxX < this._x) || (maxY < this._y)) {
                 return;
             }
-
             let [xInit, yInit] = this._coordinatesGlobalToLocal(minX, minY);
             let [xFin, yFin] = this._coordinatesGlobalToLocal(maxX, maxY);
             this._rubberBandCurveRadius = 4;

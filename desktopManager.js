@@ -29,7 +29,6 @@ const Enums = imports.enums;
 const DBusUtils = imports.dbusUtils;
 const AskNamePopup = imports.askNamePopup;
 const AskRenamePopup = imports.askRenamePopup;
-const AskConfirmPopup = imports.askConfirmPopup;
 const ShowErrorPopup = imports.showErrorPopup;
 const TemplateManager = imports.templateManager;
 
@@ -65,8 +64,6 @@ var DesktopManager = class {
         this._desktopFilesChanged = false;
         this._readingDesktopFiles = true;
         this._scriptFilesChanged = false;
-        this._toDelete = [];
-        this._deletingFilesRecursively = false;
         this._desktopDir = DesktopIconsUtil.getDesktopDir();
         this._scriptsDir = DesktopIconsUtil.getScriptsDir();
         this.desktopFsId = this._desktopDir.query_info('id::filesystem', Gio.FileQueryInfoFlags.NONE, null).get_attribute_string('id::filesystem');

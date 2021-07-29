@@ -49,7 +49,7 @@ function init() {
     /* Ensures that there aren't "rogue" processes.
      * This is a safeguard measure for the case of Gnome Shell being
      * relaunched (for example, under X11, with Alt+F2 and R), to kill
-     * any old DI:N instance. That's why it must be here, in init(),
+     * any old DI:NEO instance. That's why it must be here, in init(),
      * and not in enable() or disable() (disable already guarantees that
      * the current instance is killed).
      */

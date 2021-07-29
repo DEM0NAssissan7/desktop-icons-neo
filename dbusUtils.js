@@ -66,7 +66,7 @@ const NautilusFileOperations2Interface = `<node>
     <method name='Redo'>
         <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
-    <property name='UndoStatus' type='i' access='read'/>
+    <property name="UndoStatus" type="i" access="read"/>
 </interface>
 </node>`;
 
