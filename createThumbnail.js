@@ -1,21 +1,20 @@
 #!/usr/bin/gjs
 
-/* DING: Desktop Icons New Generation for GNOME Shell
- *
- * Copyright (C) 2019 Sergio Costas (rastersoft@gmail.com)
- * Based on code original (C) Carlos Soriano
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, version 3 of the License.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/* LICENSE INFORMATION
+ * 
+ * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
+ * customizations, and optimizations.
+ * 
+ * Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
+ * 
+ * This project is based on Desktop Icons NG (https://gitlab.com/rastersoft/desktop-icons-ng),
+ * a desktop icons extension for GNOME licensed under the GPL v3.
+ * 
+ * This project is free and open source software as described in the GPL v3.
+ * 
+ * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
+ * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
+ * regarding this project's license.
  */
 
 const GnomeDesktop = imports.gi.GnomeDesktop;
