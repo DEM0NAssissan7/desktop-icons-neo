@@ -1,8 +1,8 @@
+* Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
+
 # Desktop Icons: Neo
 
-Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
-
-This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, visit https://www.gnu.org/licenses/gpl-3.0.html.
+### This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, visit https://www.gnu.org/licenses/gpl-3.0.html.
 
 ## What is Desktop Icons: Neo?
 
@@ -18,14 +18,14 @@ This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the deta
 
 Feel free to to fix/report any bugs you notice!
 
-## Current version
+## Current Project version
 
-Version 1.4
+Desktop Icons: Neo - Version 1.4 LTS
 
 ## Requirements
 
-* GNOME Shell >= 3.38
-* Nautilus >= 3.38
+* GNOME Shell >= 3.34
+* Nautilus >= 3.34
 
 ## Setting permissions
 
@@ -38,7 +38,7 @@ chmod +x set-permissions.sh
 ./set-permissions.sh
 ```
 
-## Manual installation
+## Manual installation (easy)
 
 The easiest way to install the extension (for development and local use) is by running:
 ```bash
@@ -50,7 +50,7 @@ It is recommended to delete the destination folder ($HOME/.local/share/gnome-she
 
 ## Build with Meson
 
-The project uses a build system called [Meson](https://mesonbuild.com/). You can install
+The project uses a build system called ['Meson'](https://mesonbuild.com/). You can install
 in most Linux distributions as "meson". You also need "ninja" and xgettext, both of which are automatically installed with the 'meson' package in most package managers.
 
 ```bash
@@ -62,7 +62,7 @@ It's possible to read more information in the Meson docs to tweak the configurat
 
 ## Export extension ZIP file for extensions.gnome.org
 
-To create a ZIP file with the extension, run:
+To create a ZIP file of the project certified for use on extensions.gnome.org, run:
 
 ```bash
 ./export-zip.sh
