@@ -1,5 +1,9 @@
 # Desktop Icons: Neo
 
+Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
+
+This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, visit https://www.gnu.org/licenses/gpl-3.0.html.
+
 ## What is Desktop Icons: Neo?
 
 **Desktop Icons: Neo** is a desktop icons extension for GNOME. It is a fork of the [**Desktop Icons NG**](https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding/) extension.
@@ -65,9 +69,6 @@ To create a ZIP file with the extension, run:
 ```
 
 This will create the file `desktopicons-neo@darkdemon.zip` containing the extension. The zip file follows the rules for publishing at extensions.gnome.org.
-
-## License
-This project is licensed under the GPL v3. To see the terms of this license, visit https://www.gnu.org/licenses/gpl-3.0.html for more information.
 
 ## Source code and contacting the author
 
