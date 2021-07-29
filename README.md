@@ -66,6 +66,9 @@ To create a ZIP file with the extension, run:
 
 This will create the file `desktopicons-neo@darkdemon.zip` containing the extension. The zip file follows the rules for publishing at extensions.gnome.org.
 
+## License
+This project is licensed under the GPL v3. To see the terms of this license, visit https://www.gnu.org/licenses/gpl-3.0.html for more information.
+
 ## Source code and contacting the author
 
 Abdurahman Elmawi
