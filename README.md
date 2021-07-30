@@ -24,8 +24,8 @@ Desktop Icons: Neo - Version 1.4 LTS
 
 ## Requirements
 
-* GNOME Shell >= 3.34
-* Nautilus >= 3.34
+* GNOME Shell >= 3.38
+* Nautilus >= 3.38
 
 ## Setting permissions
 
