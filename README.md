@@ -22,9 +22,7 @@ Feel free to to fix/report any bugs you notice!
 
 Desktop Icons: Neo - Version 1.4 LTS
 
-## Requirements
-
-Please note: These versions do not necessarily guarantee stability. They only guarantee that the desktop icons will provide basic functionality. Drag and drop does not work on any version below 3.38. Also, with versions below 3.38, you may encounter errors. This is because the program uses APIs that are not available in versions below 3.38. The only reason this project supports any version below 3.38 is because Ubuntu 20.04 is popular.
+## System Requirements
 
 * GNOME Shell >= 3.38
 * Nautilus >= 3.38
