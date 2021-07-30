@@ -1,5 +1,5 @@
 project('desktopicons-neo',
-  version: '1.4 LTS',
+  version: '1.4.2 LTS',
   license: 'GPL3'
 )
 
