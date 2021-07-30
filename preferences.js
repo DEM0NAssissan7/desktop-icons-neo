@@ -24,7 +24,6 @@ const Gio = imports.gi.Gio;
 const GioSSS = Gio.SettingsSchemaSource;
 const DesktopIconsUtil = imports.desktopIconsUtil;
 const Enums = imports.enums;
-const DesktopManager = imports.desktopManager;
 
 const Gettext = imports.gettext;
 
@@ -69,7 +68,7 @@ function get_schema(schema) {
     let schemaSource;
     let schemaFile = Gio.File.new_for_path(GLib.build_filenamev([extensionPath, 'schemas', 'gschemas.compiled']));
     if (schemaFile.query_exists(null)) {
-        	schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
+        schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
     } else {
         schemaSource = GioSSS.get_default();
     }
@@ -99,7 +98,6 @@ function showPreferences() {
     frame.add(buildSwitcher(desktopSettings, 'show-home', _("Show the personal folder in the desktop")));
     frame.add(buildSwitcher(desktopSettings, 'show-trash', _("Show the trash icon in the desktop")));
     frame.add(buildSwitcher(desktopSettings, 'show-volumes', _("Show external drives in the desktop")));
-    frame.add(buildSwitcher(desktopSettings, 'show-network-volumes', _("Show network drives in the desktop")));
     frame.add(buildSelector(desktopSettings,
                             'start-corner',
                             _("New icons alignment"),

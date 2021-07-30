@@ -1,5 +1,5 @@
 project('desktopicons-neo',
-  version: '2.0',
+  version: '1.4 LTS',
   license: 'GPL3'
 )
 
@@ -14,6 +14,7 @@ extensions_dir = join_paths(prefix, 'share', 'gnome-shell', 'extensions', 'deskt
 
 install_data([
 #    'createFolderDialog.js',
+    'askConfirmPopup.js',
     'askNamePopup.js',
     'askRenamePopup.js',
     'createThumbnail.js',

@@ -116,7 +116,6 @@ function getExtraFolders() {
 
 function getMounts(volumeMonitor) {
     let show_volumes = Prefs.desktopSettings.get_boolean('show-volumes');
-    let show_network = Prefs.desktopSettings.get_boolean('show-network-volumes');
 
     try {
         var mounts = volumeMonitor.get_mounts();
@@ -130,9 +129,9 @@ function getMounts(volumeMonitor) {
     for (let mount of mounts) {
         try {
             let is_drive = (mount.get_drive() != null) || (mount.get_volume() != null);
-            let uri = mount.get_default_location().get_uri();
-            if (((is_drive && show_volumes) || (!is_drive && show_network)) && (!(uris.includes(uri)))) {
-                result.push([mount.get_default_location(), Enums.FileType.EXTERNAL_DRIVE, mount]);
+            let uri = mount.get_root().get_uri();
+            if ((is_drive && show_volumes) && (!(uris.includes(uri)))) {
+                result.push([mount.get_root(), Enums.FileType.EXTERNAL_DRIVE, mount]);
                 uris.push(uri);
             }
         } catch(e) {
@@ -206,9 +205,9 @@ function isExecutable(mimetype, file_name) {
                     message_type: Gtk.MessageType.QUESTION,
                     buttons: Gtk.ButtonsType.NONE
                 });
-                dialog.add_button(_("Execute in a terminal"),
+                dialog.add_button(_("Run in terminal"),
                                   Enums.WhatToDoWithExecutable.EXECUTE_IN_TERMINAL);
-                dialog.add_button(_("Show"),
+                dialog.add_button(_("Display Text"),
                                   Enums.WhatToDoWithExecutable.DISPLAY);
                 dialog.add_button(_("Cancel"),
                                   Gtk.ResponseType.CANCEL);
