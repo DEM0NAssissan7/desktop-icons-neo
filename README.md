@@ -20,7 +20,7 @@ Feel free to to fix/report any bugs you notice!
 
 ## Current Project version
 
-Desktop Icons: Neo - Version 1.4.1 LTS
+Desktop Icons: Neo - Version 1.4.2 LTS
 
 You are currently on the legacy branch. This is the version of the extension that uses older APIs that will work with older versions of GNOME. You would want to use this version if you use a distrobution like Ubuntu 20.04 that uses GNOME Shell 3.36. The main branch will not work as intended with that version of GNOME, so you can use this branch instead.
 
