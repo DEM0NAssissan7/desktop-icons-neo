@@ -20,7 +20,7 @@ Feel free to to fix/report any bugs you notice!
 
 ## Current Project version
 
-Desktop Icons: Neo - Version 1.4 LTS
+Desktop Icons: Neo - Version 2.0 BETA 3
 
 ## System Requirements
 
