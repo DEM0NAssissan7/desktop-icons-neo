@@ -206,9 +206,9 @@ function isExecutable(mimetype, file_name) {
                     message_type: Gtk.MessageType.QUESTION,
                     buttons: Gtk.ButtonsType.NONE
                 });
-                dialog.add_button(_("Execute in a terminal"),
+                dialog.add_button(_("Run in terminal"),
                                   Enums.WhatToDoWithExecutable.EXECUTE_IN_TERMINAL);
-                dialog.add_button(_("Show"),
+                dialog.add_button(_("Display Text"),
                                   Enums.WhatToDoWithExecutable.DISPLAY);
                 dialog.add_button(_("Cancel"),
                                   Gtk.ResponseType.CANCEL);

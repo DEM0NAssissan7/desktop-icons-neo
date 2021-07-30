@@ -278,8 +278,13 @@ function init() {
       ...defaultParams,
       ...params,
     };
+    
+    //Get rid of ?? that would error out old GNOME versions
+    let { parentHandle } = { parentHandle: '' };
+    if(params !== null && params !== undefined){
+        parentHandle = params;
+    }
 
-    let { parentHandle } = params ?? { parentHandle: ''};
     if (!parentHandle && parentWindow) {
       try {
         imports.gi.versions.GdkX11 = '3.0';

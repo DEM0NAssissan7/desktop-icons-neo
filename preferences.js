@@ -24,7 +24,6 @@ const Gio = imports.gi.Gio;
 const GioSSS = Gio.SettingsSchemaSource;
 const DesktopIconsUtil = imports.desktopIconsUtil;
 const Enums = imports.enums;
-const DesktopManager = imports.desktopManager;
 
 const Gettext = imports.gettext;
 
@@ -69,7 +68,7 @@ function get_schema(schema) {
     let schemaSource;
     let schemaFile = Gio.File.new_for_path(GLib.build_filenamev([extensionPath, 'schemas', 'gschemas.compiled']));
     if (schemaFile.query_exists(null)) {
-        	schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
+        schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
     } else {
         schemaSource = GioSSS.get_default();
     }
