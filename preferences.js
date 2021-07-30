@@ -98,6 +98,7 @@ function showPreferences() {
     frame.add(buildSwitcher(desktopSettings, 'show-home', _("Show the personal folder in the desktop")));
     frame.add(buildSwitcher(desktopSettings, 'show-trash', _("Show the trash icon in the desktop")));
     frame.add(buildSwitcher(desktopSettings, 'show-volumes', _("Show external drives in the desktop")));
+    frame.add(buildSwitcher(desktopSettings, 'show-network-volumes', _("Show network drives in the desktop")));
     frame.add(buildSelector(desktopSettings,
                             'start-corner',
                             _("New icons alignment"),

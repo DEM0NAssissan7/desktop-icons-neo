@@ -37,6 +37,8 @@ const NautilusFileOperationsInterface = `<node>
         <arg name='Destination' type='s' direction='in'/>
     </method>
     <method name='EmptyTrash'>
+        <arg type="b" name="ask_confirmation" direction='in'/>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='TrashFiles'>
         <arg name='URIs' type='as' direction='in'/>
@@ -49,8 +51,10 @@ const NautilusFileOperationsInterface = `<node>
         <arg name='NewName' type='s' direction='in'/>
     </method>
     <method name='Undo'>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <method name='Redo'>
+        <arg type='a{sv}' name='platform_data' direction='in'/>
     </method>
     <property name="UndoStatus" type="i" access="read"/>
 </interface>
