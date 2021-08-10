@@ -119,8 +119,8 @@ msgid "Desktop Icons settings"
 msgstr "桌面设置"
 
 #: preferences.js:161
-msgid "Desktop directory"
-msgstr "桌面路径"
+msgid "Desktop directory  >  "
+msgstr "桌面路径 >"
 
 #: preferences.js:166
 msgid "Set desktop directory"
