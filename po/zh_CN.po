@@ -447,7 +447,7 @@ msgstr "始终"
 
 #: prefs.js:37
 msgid "To configure Desktop Icons: Neo, right-click a blank space on the desktop and choose 'Desktop Icon Settings'"
-msgstr "设置 Desktop Icons Neo，在桌面点击右键并选择最后一个项：Desktop Icon 设置"
+msgstr "设置 Desktop Icons Neo，在桌面点击右键并选择最后一个项：桌面设置"
 
 #: showErrorPopup.js:37
 msgid "Close"
