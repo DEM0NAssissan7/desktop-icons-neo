@@ -87,7 +87,7 @@ function showPreferences() {
     this.window = new Gtk.Window({ resizable: false,
                                   window_position: Gtk.WindowPosition.CENTER });
     this.window.connect('destroy', () => {this.window = null});
-    this.window.set_title(_("Desktop Icon Settings"));
+    this.window.set_title(_("Desktop Icons settings"));
     DesktopIconsUtil.windowHidePagerTaskbarModal(this.window, true);
     let frame = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL });
     this.window.add(frame);
@@ -107,7 +107,7 @@ function showPreferences() {
                              'bottom-left': _("Bottom-left corner"),
                              'bottom-right': _("Bottom-right corner")
                             }));
-    frame.add(buildFileChooserButton(desktopSettings, 'desktop-directory', _("Desktop directory  >  " + desktopSettings.get_string('desktop-directory')), _("Set desktop directory")));
+    frame.add(buildFileChooserButton(desktopSettings, 'desktop-directory', _("Desktop directory  >  ") + desktopSettings.get_string('desktop-directory'), _("Set desktop directory")));
     frame.add(buildSelector(desktopSettings,
                             'icon-shape',
                             _("Icon shape"),
