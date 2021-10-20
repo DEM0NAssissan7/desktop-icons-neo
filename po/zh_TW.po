@@ -1,78 +1,75 @@
+@@ -1,86 +1,77 @@
 # Chinese (Taiwan) translation for desktop-icons.
 # Copyright (C) 2018 desktop-icons's COPYRIGHT HOLDER
 # This file is distributed under the same license as the desktop-icons package.
-# Yi-Jyun Pan <pan93412@gmail.com>, 2018.
+# Yi-Jyun Pan <pan93412@gmail.com>, 2018 曾嘉禾 <olivertzengolivertzeng@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: desktop-icons master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
-"PO-Revision-Date: 2018-10-24 21:31+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
-"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: zh_TW.po\n"
+"Language: zh-TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: askConfirmPopup.js:36
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: askNamePopup.js:35
 msgid "OK"
-msgstr ""
+msgstr "確認"
 
 #: askRenamePopup.js:40
 msgid "Folder name"
-msgstr ""
+msgstr "新資料夾名稱"
 
 #: askRenamePopup.js:40
 msgid "File name"
-msgstr ""
+msgstr "新檔案名稱"
 
 #: askRenamePopup.js:47
 msgid "Rename"
-msgstr ""
+msgstr "重新命名"
 
 #: desktopIconsUtil.js:79
 msgid "Command not found"
-msgstr ""
+msgstr "找不到指令"
 
 #: desktopIconsUtil.js:195
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
+msgstr "你想要執行 “{0}”，或是顯示內容？"
 
 #: desktopIconsUtil.js:196
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "“{0}”是可執行的純文字檔"
 
 #: desktopIconsUtil.js:200
 #, fuzzy
 msgid "Execute in a terminal"
-msgstr "開啟終端器"
+msgstr "開啟終端機"
 
 #: desktopIconsUtil.js:202
 msgid "Show"
-msgstr ""
+msgstr "顯示"
 
 #: desktopIconsUtil.js:206
 msgid "Execute"
-msgstr ""
+msgstr "執行"
 
 #: desktopManager.js:131
 msgid "Nautilus File Manager not found"
-msgstr ""
+msgstr "找不到檔案管理員"
 
 #: desktopManager.js:132
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
-msgstr ""
+msgstr "檔案管理原只是用Desktop Icons NG"
 
 #: desktopManager.js:543
 msgid "New Folder"
@@ -80,7 +77,7 @@ msgstr "新增資料夾"
 
 #: desktopManager.js:547
 msgid "New Document"
-msgstr ""
+msgstr "新增檔案"
 
 #: desktopManager.js:552
 msgid "Paste"
@@ -96,17 +93,17 @@ msgstr "重做"
 
 #: desktopManager.js:566
 msgid "Select all"
-msgstr ""
+msgstr "全選"
 
 #: desktopManager.js:572
 #, fuzzy
 msgid "Show Desktop in Files"
-msgstr "在《檔案》中開啟桌面"
+msgstr "在檔案管理員中開啟桌面"
 
 #: desktopManager.js:576 fileItem.js:891
 #, fuzzy
 msgid "Open in Terminal"
-msgstr "開啟終端器"
+msgstr "開啟終端機"
 
 #: desktopManager.js:582
 msgid "Change Background…"
@@ -118,23 +115,23 @@ msgstr "顯示設定"
 
 #: desktopManager.js:598
 msgid "Desktop Icons settings"
-msgstr ""
+msgstr "設定"
 
 #: desktopManager.js:609
 msgid "Scripts"
-msgstr ""
+msgstr "腳本"
 
 #: desktopManager.js:1127 desktopManager.js:1175
 msgid "Error while deleting files"
-msgstr ""
+msgstr "在刪除檔案時發生錯誤"
 
 #: desktopManager.js:1201
 msgid "Are you sure you want to permanently delete these items?"
-msgstr ""
+msgstr "您確定要永久刪除這些檔案嗎？"
 
 #: desktopManager.js:1202
 msgid "If you delete an item, it will be permanently lost."
-msgstr ""
+msgstr "如果你刪除任何檔案，他們會永久消失。"
 
 #: desktopManager.js:1310
 #, fuzzy
@@ -143,20 +140,20 @@ msgstr "新增資料夾"
 
 #: desktopManager.js:1385
 msgid "Can not email a Directory"
-msgstr ""
+msgstr "無法email一個資料夾"
 
 #: desktopManager.js:1386
 msgid "Selection includes a Directory, compress the directory to a file first."
-msgstr ""
+msgstr "您的選擇包含資料夾，請先壓縮資料夾。"
 
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
-msgstr ""
+msgstr "家目錄"
 
 #: fileItem.js:794
 msgid "Open All..."
-msgstr ""
+msgstr "打開全部…"
 
 #: fileItem.js:794
 msgid "Open"
@@ -164,15 +161,15 @@ msgstr "開啟"
 
 #: fileItem.js:801
 msgid "Open All With Other Application..."
-msgstr ""
+msgstr "使用其他應用程式打開全部…"
 
 #: fileItem.js:801
 msgid "Open With Other Application"
-msgstr ""
+msgstr "使用其他應用程式開啟"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "使用獨立顯卡啟動"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -184,7 +181,7 @@ msgstr "複製"
 
 #: fileItem.js:820
 msgid "Rename…"
-msgstr ""
+msgstr "重新命名…"
 
 #: fileItem.js:824
 msgid "Move to Trash"
@@ -192,15 +189,15 @@ msgstr "移動到垃圾桶"
 
 #: fileItem.js:828
 msgid "Delete permanently"
-msgstr ""
+msgstr "永久刪除"
 
 #: fileItem.js:834
 msgid "Don't Allow Launching"
-msgstr ""
+msgstr "禁止檔案啟動"
 
 #: fileItem.js:834
 msgid "Allow Launching"
-msgstr ""
+msgstr "同意檔案啟動"
 
 #: fileItem.js:841
 #, fuzzy
@@ -209,45 +206,43 @@ msgstr "清空回收桶"
 
 #: fileItem.js:848
 msgid "Eject"
-msgstr ""
+msgstr "掛載"
 
 #: fileItem.js:855
 msgid "Unmount"
-msgstr ""
+msgstr "退出"
 
 #: fileItem.js:870
 msgid "Send to..."
-msgstr ""
+msgstr "傳送到…"
 
 #: fileItem.js:874
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "壓縮{0}"
 
 #: fileItem.js:877
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "新資料夾包含{0}"
 
 #: fileItem.js:883
 #, fuzzy
 msgid "Common Properties"
-msgstr "屬性"
+msgstr "一般"
 
 #: fileItem.js:883
 msgid "Properties"
-msgstr "屬性"
+msgstr "內容"
 
 #: fileItem.js:887
 #, fuzzy
 msgid "Show All in Files"
-msgstr "在《檔案》中顯示"
+msgstr "在檔案管理員中顯示"
 
 #: fileItem.js:887
 msgid "Show in Files"
-msgstr "在《檔案》中顯示"
+msgstr "在檔案管理員中顯示"
 
 #: preferences.js:88
 msgid "Settings"
@@ -255,133 +250,131 @@ msgstr "設定"
 
 #: preferences.js:94
 msgid "Size for the desktop icons"
-msgstr "桌面圖示的大小"
+msgstr "圖示大小"
 
 #: preferences.js:94
 msgid "Tiny"
-msgstr ""
+msgstr "迷你"
 
 #: preferences.js:94
 msgid "Small"
-msgstr "小圖示"
+msgstr "小"
 
 #: preferences.js:94
 msgid "Standard"
-msgstr "標準大小圖示"
+msgstr "中(預設)"
 
 #: preferences.js:94
 msgid "Large"
-msgstr "大圖示"
+msgstr "大"
 
 #: preferences.js:95
 msgid "Show the personal folder in the desktop"
-msgstr "在桌面顯示個人資料夾"
+msgstr "在桌面上顯示個人資料夾"
 
 #: preferences.js:96
 msgid "Show the trash icon in the desktop"
-msgstr "在桌面顯示垃圾桶圖示"
+msgstr "在桌面上顯示垃圾桶圖示"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 #, fuzzy
 msgid "Show external drives in the desktop"
-msgstr "在桌面顯示個人資料夾"
+msgstr "在桌面上顯示個人資料夾"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 #, fuzzy
 msgid "Show network drives in the desktop"
-msgstr "在桌面顯示個人資料夾。"
+msgstr "在桌面上顯示個人資料夾。"
 
 #: preferences.js:101
 #, fuzzy
 msgid "New icons alignment"
-msgstr "圖示大小"
+msgstr "自動排列"
 
 #: preferences.js:102
 msgid "Top-left corner"
-msgstr ""
+msgstr "左上角"
 
 #: preferences.js:103
 msgid "Top-right corner"
-msgstr ""
+msgstr "右上角"
 
 #: preferences.js:104
 msgid "Bottom-left corner"
-msgstr ""
+msgstr "左下角"
 
 #: preferences.js:105
 msgid "Bottom-right corner"
-msgstr ""
+msgstr "右下角"
 
 #: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
 msgid "Add new drives to the opposite side of the screen"
-msgstr ""
+msgstr "在螢幕藥方顯示新硬碟"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "在托放模式時標記目的地"
 
 #: preferences.js:112
 msgid "Settings shared with Nautilus"
-msgstr ""
+msgstr "設定"
 
 #: preferences.js:118
 msgid "Click type for open files"
-msgstr ""
+msgstr "對開放式檔案選擇檔案類型"
 
 #: preferences.js:118
 msgid "Single click"
-msgstr ""
+msgstr "點一下"
 
 #: preferences.js:118
 msgid "Double click"
-msgstr ""
+msgstr "點兩下"
 
 #: preferences.js:119
 #, fuzzy
 msgid "Show hidden files"
-msgstr "在《檔案》中顯示"
+msgstr "在檔案管理員中顯示"
 
 #: preferences.js:120
 msgid "Show a context menu item to delete permanently"
-msgstr ""
+msgstr "顯示待永久刪除的清單"
 
 #: preferences.js:123
 msgid "Action to do when launching a program from the desktop"
-msgstr ""
+msgstr "在桌面上開啟檔案要"
 
 #: preferences.js:124
 msgid "Display the content of the file"
-msgstr ""
+msgstr "顯示檔案內容"
 
 #: preferences.js:125
 msgid "Launch the file"
-msgstr ""
+msgstr "啟動檔案"
 
 #: preferences.js:126
 msgid "Ask what to do"
-msgstr ""
+msgstr "先詢問再行動"
 
 #: preferences.js:130
 msgid "Show image thumbnails"
-msgstr ""
+msgstr "顯示縮圖"
 
 #: preferences.js:131
 msgid "Never"
-msgstr ""
+msgstr "總不"
 
 #: preferences.js:132
 msgid "Local files only"
-msgstr ""
+msgstr "只限於本地檔案"
 
 #: preferences.js:133
 msgid "Always"
-msgstr ""
+msgstr "總是"
 
 #: prefs.js:37
-msgid ""
-"To configure Desktop Icons NG, do right-click in the desktop and choose the "
-"last item: 'Desktop Icons settings'"
-msgstr ""
+msgid "To configure Desktop Icons NG, do right-click in the desktop and choose the last item: 'Desktop Icons settings'"
+msgstr "如果要調整Desktop Icons NG設定，在桌面上按右鍵並選擇最後一個選項：'設定'"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
 msgid "Icon size"
@@ -414,11 +407,11 @@ msgstr "圖示大小"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
 msgid "Set the corner from where the icons will start to be placed."
-msgstr ""
+msgstr "新圖示顯示的地方。"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
 msgid "Show the disk drives connected to the computer."
-msgstr ""
+msgstr "顯示連接到電腦上的硬碟。"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
 #, fuzzy
@@ -426,32 +419,13 @@ msgid "Show mounted network volumes in the desktop."
 msgstr "在桌面顯示個人資料夾。"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
-msgid ""
-"When adding drives and volumes to the desktop, add them to the opposite side "
-"of the screen."
-msgstr ""
+msgid "When adding drives and volumes to the desktop, add them to the opposite side of the screen."
+msgstr "在新增硬碟時，將圖示顯示在螢幕上的另一邊。"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
 msgid "Shows a rectangle in the destination place during DnD"
-msgstr ""
+msgstr "在托放模式實在目的地上顯示一個長方形"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
-msgid ""
-"When doing a Drag'n'Drop operation, marks the place in the grid where the "
-"icon will be put with a semitransparent rectangle."
-msgstr ""
-
-#, fuzzy
-#~ msgid "Show external disk drives in the desktop"
-#~ msgstr "在桌面顯示個人資料夾"
-
-#, fuzzy
-#~ msgid "Show the external drives"
-#~ msgstr "在桌面顯示個人資料夾"
-
-#, fuzzy
-#~ msgid "Show network volumes"
-#~ msgstr "在《檔案》中顯示"
-
-#~ msgid "Huge"
-#~ msgstr "巨大圖示"
+msgid "When doing a Drag'n'Drop operation, marks the place in the grid where the icon will be put with a semitransparent rectangle."
+msgstr "在托放模式時，在格中用半透明的長方形標記檔案將放置的目的地。"
