@@ -3,7 +3,8 @@
     "name": "Desktop Icons: Neo",
     "shell-version": [
       "3.38",
-      "40"
+      "40",
+      "41"
     ],
     "uuid": "desktopicons-neo@darkdemon",
     "url": "https://github.com/DEM0NAssissan7/desktop-icons-neo",
