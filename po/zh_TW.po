@@ -1,4 +1,4 @@
-@@ -1,86 +1,77 @@
+
 # Chinese (Taiwan) translation for desktop-icons.
 # Copyright (C) 2018 desktop-icons's COPYRIGHT HOLDER
 # This file is distributed under the same license as the desktop-icons package.
@@ -53,7 +53,7 @@ msgstr "“{0}”是可執行的純文字檔"
 #: desktopIconsUtil.js:200
 #, fuzzy
 msgid "Execute in a terminal"
-msgstr "開啟終端機"
+msgstr "在終端機內執行"
 
 #: desktopIconsUtil.js:202
 msgid "Show"
@@ -149,7 +149,7 @@ msgstr "您的選擇包含資料夾，請先壓縮資料夾。"
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
-msgstr "家目錄"
+msgstr "根目錄"
 
 #: fileItem.js:794
 msgid "Open All..."
@@ -219,12 +219,12 @@ msgstr "傳送到…"
 #: fileItem.js:874
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
-msgstr[0] "壓縮{0}"
+msgstr[0] "壓縮檔案"
 
 #: fileItem.js:877
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
-msgstr[0] "新資料夾包含{0}"
+msgstr[0] "建立包含此檔案的新資料夾"
 
 #: fileItem.js:883
 #, fuzzy
@@ -354,7 +354,7 @@ msgstr "啟動檔案"
 
 #: preferences.js:126
 msgid "Ask what to do"
-msgstr "先詢問再行動"
+msgstr "下次詢問"
 
 #: preferences.js:130
 msgid "Show image thumbnails"
@@ -362,7 +362,7 @@ msgstr "顯示縮圖"
 
 #: preferences.js:131
 msgid "Never"
-msgstr "總不"
+msgstr "永不"
 
 #: preferences.js:132
 msgid "Local files only"
@@ -370,7 +370,7 @@ msgstr "只限於本地檔案"
 
 #: preferences.js:133
 msgid "Always"
-msgstr "總是"
+msgstr "永遠"
 
 #: prefs.js:37
 msgid "To configure Desktop Icons NG, do right-click in the desktop and choose the last item: 'Desktop Icons settings'"
