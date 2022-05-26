@@ -1,5 +1,10 @@
 Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
 
+# Goals for 2.0 (REMOVE BEFORE RELEASE)
+* Port current Neo *newapi* tree into the latest DING version (as of May 26th 2022)
+* Use/create a .diff file to make patching DING into Neo much easier
+* Piggyback off of the hard working people who develop DING (but fully credit the project)
+
 # Desktop Icons: Neo
 
 ### This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, visit https://www.gnu.org/licenses/gpl-3.0.html.
