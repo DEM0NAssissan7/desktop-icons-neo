@@ -60,6 +60,10 @@ ninja -C .build install
 
 It's possible to read more information in the Meson docs to tweak the configuration if needed.
 
+## Install from the AUR
+
+Arch-Linux users can install the extension with the [gnome-shell-extension-desktop-icons-neo AUR package](https://aur.archlinux.org/packages/gnome-shell-extension-desktop-icons-neo).
+
 ## Export extension ZIP file for extensions.gnome.org
 
 To create a ZIP file of the project certified for use on extensions.gnome.org, run:
