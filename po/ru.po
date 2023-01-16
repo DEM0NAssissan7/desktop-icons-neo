@@ -1,473 +1,578 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Eaglers <eaglersdeveloper@gmail.com>, 2018.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
-"PO-Revision-Date: 2018-11-22 22:02+0300\n"
-"Last-Translator: Stas Solovey <whats_up@tut.by>\n"
-"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"POT-Creation-Date: 2023-01-16 21:10+1000\n"
+"PO-Revision-Date: 2023-01-16 22:32+1000\n"
+"Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
+"Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2\n"
-
-#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "Отмена"
-
-#: askConfirmPopup.js:36
-msgid "Delete"
-msgstr "Удалить"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: askNamePopup.js:35
 msgid "OK"
-msgstr "ОК"
+msgstr "OK"
 
-#: askRenamePopup.js:40
+#: askNamePopup.js:36 desktopIconsUtil.js:214 desktopManager.js:1688
+msgid "Cancel"
+msgstr "Отмена"
+
+#: askRenamePopup.js:39
 msgid "Folder name"
-msgstr "Имя папки"
+msgstr "Название папки"
 
-#: askRenamePopup.js:40
+#: askRenamePopup.js:39
 msgid "File name"
-msgstr "Имя файла"
+msgstr "Название файла"
 
-#: askRenamePopup.js:47
+#: askRenamePopup.js:46
 msgid "Rename"
 msgstr "Переименовать"
 
-#: desktopIconsUtil.js:79
+#: desktopIconsUtil.js:83
 msgid "Command not found"
 msgstr "Команда не найдена"
 
-#: desktopIconsUtil.js:195
+#: desktopIconsUtil.js:205
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr "Вы хотите выполнить “{0}” или отобразить содержимое?"
-
-#: desktopIconsUtil.js:196
-msgid "“{0}” is an executable text file."
-msgstr "“{0}” является исполняемым текстовым файлом."
-
-#: desktopIconsUtil.js:200
-msgid "Execute in a terminal"
-msgstr "Выполнить в терминале"
-
-#: desktopIconsUtil.js:202
-msgid "Show"
-msgstr "Показать"
+msgstr "Вы хотите выполнить «{0}» или отобразить содержимое?"
 
 #: desktopIconsUtil.js:206
+msgid "“{0}” is an executable text file."
+msgstr "«{0}» является исполняемым текстовым файлом."
+
+#: desktopIconsUtil.js:210
+msgid "Run in terminal"
+msgstr "Запустить в терминале"
+
+#: desktopIconsUtil.js:212
+msgid "Display Text"
+msgstr "Отображать текст"
+
+#: desktopIconsUtil.js:216
 msgid "Execute"
 msgstr "Выполнить"
 
-#: desktopManager.js:131
+#: desktopManager.js:155
 msgid "Nautilus File Manager not found"
 msgstr "Файловый менеджер Nautilus не найден"
 
-#: desktopManager.js:132
-msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
+#: desktopManager.js:156
+msgid "The Nautilus File Manager is mandatory to work with Desktop Icons: Neo."
 msgstr ""
-"Файловый менеджер Nautilus является обязательным для работы с иконками "
-"рабочего стола NG."
+"Файловый менеджер Nautilus является обязательным для работы с Desktop Icons: "
+"Neo."
 
-#: desktopManager.js:543
+#: desktopManager.js:610
 msgid "New Folder"
 msgstr "Создать папку"
 
-#: desktopManager.js:547
+#: desktopManager.js:614
 msgid "New Document"
 msgstr "Создать документ"
 
-#: desktopManager.js:552
+#: desktopManager.js:619
 msgid "Paste"
 msgstr "Вставить"
 
-#: desktopManager.js:556
+#: desktopManager.js:623
 msgid "Undo"
 msgstr "Отменить"
 
-#: desktopManager.js:560
+#: desktopManager.js:627
 msgid "Redo"
-msgstr "Повторить"
+msgstr "Вернуть"
 
-#: desktopManager.js:566
+#: desktopManager.js:633
 msgid "Select all"
-msgstr "Выделить все"
+msgstr "Выделить всё"
 
-#: desktopManager.js:572
+#: desktopManager.js:641
 msgid "Show Desktop in Files"
-msgstr "Открыть рабочий стол в файловом менеджере"
+msgstr "Показать рабочий стол в файловом менеджере"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:645 fileItem.js:1042
 msgid "Open in Terminal"
-msgstr "Открыть терминал"
+msgstr "Открыть в терминале"
 
-#: desktopManager.js:582
+#: desktopManager.js:651
 msgid "Change Background…"
-msgstr "Изменить фон"
+msgstr "Изменить фон…"
 
-#: desktopManager.js:591
+#: desktopManager.js:660
 msgid "Display Settings"
-msgstr "Настроить дисплей"
+msgstr "Настройка экранов"
 
-#: desktopManager.js:598
-msgid "Desktop Icons settings"
-msgstr ""
+#: desktopManager.js:667
+msgid "Desktop Icons Settings"
+msgstr "Параметры Desktop Icons"
 
-#: desktopManager.js:609
+#: desktopManager.js:678
 msgid "Scripts"
-msgstr ""
+msgstr "Сценарии"
 
-#: desktopManager.js:1127 desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr "Ошибка при удалении файлов"
-
-#: desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr "Вы уверены, что хотите удалить эти файлы навсегда?"
-
-#: desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
-msgstr "Если вы удалите файл, он будет навсегда потерян."
-
-#: desktopManager.js:1310
+#: desktopManager.js:1330
 msgid "New folder"
 msgstr "Создать папку"
 
-#: desktopManager.js:1385
+#: desktopManager.js:1405
 msgid "Can not email a Directory"
-msgstr ""
+msgstr "Невозможно отправить каталог по электронной почте"
 
-#: desktopManager.js:1386
+#: desktopManager.js:1406
 msgid "Selection includes a Directory, compress the directory to a file first."
-msgstr ""
+msgstr "Выбран каталог, сначала сожмите его в файл."
+
+#: desktopManager.js:1427
+msgid "Arrange Icons"
+msgstr "Упорядочить значки"
+
+#: desktopManager.js:1431
+msgid "Arrange By..."
+msgstr "Упорядочить по..."
+
+#: desktopManager.js:1440
+msgid "Keep Arranged..."
+msgstr "Сохранить порядок..."
+
+#: desktopManager.js:1445
+msgid "Sort Home/Drives/Trash..."
+msgstr "Сортировать Домашняя папка/Диски/Корзина..."
+
+#: desktopManager.js:1451
+msgid "Sort by Name"
+msgstr "Сортировать по названию"
+
+#: desktopManager.js:1453
+msgid "Sort by Name Descending"
+msgstr "Сортировать по названию в порядке убывания"
+
+#: desktopManager.js:1456
+msgid "Sort by Modified Time"
+msgstr "Сортировать по времени изменения"
+
+#: desktopManager.js:1459
+msgid "Sort by Type"
+msgstr "Сортировать по типу"
+
+#: desktopManager.js:1462
+msgid "Sort by Size"
+msgstr "Сортировать по размеру"
+
+#: desktopManager.js:1686
+msgid "Select Extract Destination"
+msgstr "Выбрать папку назначения для извлечения"
+
+#: desktopManager.js:1689
+msgid "Select"
+msgstr "Выбрать"
 
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: fileItem.js:151
+#: fileItem.js:235
 msgid "Home"
 msgstr "Домашняя папка"
 
-#: fileItem.js:794
+#: fileItem.js:938
 msgid "Open All..."
-msgstr ""
+msgstr "Открыть всё..."
 
-#: fileItem.js:794
+#: fileItem.js:938
 msgid "Open"
 msgstr "Открыть"
 
-#: fileItem.js:801
-#, fuzzy
+#: fileItem.js:945
 msgid "Open All With Other Application..."
-msgstr "Открыть в другом приложении"
+msgstr "Открыть всё в другом приложении..."
 
-#: fileItem.js:801
+#: fileItem.js:945
 msgid "Open With Other Application"
 msgstr "Открыть в другом приложении"
 
-#: fileItem.js:805
+#: fileItem.js:949
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Запустить, используя дискретную видеокарту"
 
-#: fileItem.js:813
+#: fileItem.js:957
 msgid "Cut"
 msgstr "Вырезать"
 
-#: fileItem.js:816
+#: fileItem.js:960
 msgid "Copy"
-msgstr "Вставить"
+msgstr "Копировать"
 
-#: fileItem.js:820
+#: fileItem.js:964
 msgid "Rename…"
-msgstr "Переименовать"
+msgstr "Переименовать…"
 
-#: fileItem.js:824
+#: fileItem.js:968
 msgid "Move to Trash"
 msgstr "Переместить в корзину"
 
-#: fileItem.js:828
+#: fileItem.js:972
 msgid "Delete permanently"
-msgstr "Удалить навсегда"
+msgstr "Удалить безвозвратно"
 
-#: fileItem.js:834
-#, fuzzy
+#: fileItem.js:978
 msgid "Don't Allow Launching"
 msgstr "Не разрешать запуск"
 
-#: fileItem.js:834
+#: fileItem.js:978
 msgid "Allow Launching"
-msgstr "Разрешать запуск"
+msgstr "Разрешить запуск"
 
-#: fileItem.js:841
+#: fileItem.js:985
 msgid "Empty Trash"
 msgstr "Очистить корзину"
 
-#: fileItem.js:848
+#: fileItem.js:992
 msgid "Eject"
-msgstr ""
+msgstr "Извлечь"
 
-#: fileItem.js:855
+#: fileItem.js:999
 msgid "Unmount"
-msgstr ""
+msgstr "Отмонтировать"
 
-#: fileItem.js:870
+#: fileItem.js:1014
+msgid "Extract Here"
+msgstr "Извлечь в текущую папку"
+
+#: fileItem.js:1017
+msgid "Extract To..."
+msgstr "Извлечь в..."
+
+#: fileItem.js:1022
 msgid "Send to..."
-msgstr ""
+msgstr "Отправить в..."
 
-#: fileItem.js:874
+#: fileItem.js:1026
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Сжать {0} файл"
+msgstr[1] "Сжать {0} файла"
+msgstr[2] "Сжать {0} файлов"
 
-#: fileItem.js:877
+#: fileItem.js:1029
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Новая папка с {0} элементом"
+msgstr[1] "Новая папка с {0} элементами"
+msgstr[2] "Новая папка с {0} элементами"
 
-#: fileItem.js:883
-#, fuzzy
+#: fileItem.js:1034
 msgid "Common Properties"
-msgstr "Свойства"
+msgstr "Общие свойства"
 
-#: fileItem.js:883
+#: fileItem.js:1034
 msgid "Properties"
 msgstr "Свойства"
 
-#: fileItem.js:887
-#, fuzzy
+#: fileItem.js:1038
 msgid "Show All in Files"
-msgstr "Показать в файловом менеджере"
+msgstr "Показать всё в файловом менеджере"
 
-#: fileItem.js:887
+#: fileItem.js:1038
 msgid "Show in Files"
 msgstr "Показать в файловом менеджере"
 
-#: preferences.js:88
-msgid "Settings"
-msgstr "Параметры"
+#: preferences.js:90
+msgid "Desktop Icons settings"
+msgstr "Параметры Desktop Icons"
 
-#: preferences.js:94
+#: preferences.js:97
 msgid "Size for the desktop icons"
-msgstr "Размер значков"
+msgstr "Размер значков на рабочем столе"
 
-#: preferences.js:94
+#: preferences.js:97
 msgid "Tiny"
 msgstr "Крошечный"
 
-#: preferences.js:94
+#: preferences.js:97
 msgid "Small"
 msgstr "Маленький"
 
-#: preferences.js:94
+#: preferences.js:97
 msgid "Standard"
 msgstr "Стандартный"
 
-#: preferences.js:94
+#: preferences.js:97
 msgid "Large"
 msgstr "Большой"
 
-#: preferences.js:95
+#: preferences.js:98
 msgid "Show the personal folder in the desktop"
 msgstr "Показывать домашнюю папку на рабочем столе"
 
-#: preferences.js:96
+#: preferences.js:99
 msgid "Show the trash icon in the desktop"
 msgstr "Показывать корзину на рабочем столе"
 
-#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
+#: preferences.js:100
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:72
 msgid "Show external drives in the desktop"
-msgstr "Показывать домашнюю папку на рабочем столе"
-
-#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
-msgid "Show network drives in the desktop"
-msgstr "Показывать значок домашней папки на рабочем столе."
+msgstr "Показывать внешние диски на рабочем столе"
 
 #: preferences.js:101
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:77
+msgid "Show network drives in the desktop"
+msgstr "Показывать сетевые диски на рабочем столе"
+
+#: preferences.js:104
 msgid "New icons alignment"
 msgstr "Выравнивание для новых значков"
 
-#: preferences.js:102
+#: preferences.js:105
 msgid "Top-left corner"
 msgstr "Верхний левый угол"
 
-#: preferences.js:103
+#: preferences.js:106
 msgid "Top-right corner"
-msgstr "В правом верхнем углу"
+msgstr "Верхний правый угол"
 
-#: preferences.js:104
+#: preferences.js:107
 msgid "Bottom-left corner"
 msgstr "Нижний левый угол"
 
-#: preferences.js:105
-msgid "Bottom-right corner"
-msgstr "Правый нижний угол"
-
-#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
-msgid "Add new drives to the opposite side of the screen"
-msgstr ""
-
 #: preferences.js:108
-msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgid "Bottom-right corner"
+msgstr "Нижний правый угол"
 
-#: preferences.js:112
+#: preferences.js:110
+msgid "Desktop directory  >  "
+msgstr "Каталог рабочего стола  >  "
+
+#: preferences.js:110
+msgid "Set desktop directory"
+msgstr "Установить каталог рабочего стола"
+
+#: preferences.js:113
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:52
+msgid "Icon shape"
+msgstr "Форма значков"
+
+#: preferences.js:114
+msgid "Conform"
+msgstr "Адаптивная"
+
+#: preferences.js:115
+msgid "Traditional"
+msgstr "Традиционная"
+
+#: preferences.js:116
+msgid "Square"
+msgstr "Квадратная"
+
+#: preferences.js:117
+msgid "Capsule"
+msgstr "Капсула"
+
+#: preferences.js:118
+msgid "Rectangular"
+msgstr "Прямоугольная"
+
+#: preferences.js:120
+msgid "Curve corners (theming)"
+msgstr "Сглаженные углы (тематизация)"
+
+#: preferences.js:121
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:67
+msgid "Draw icon symbols"
+msgstr "Рисовать символы значков"
+
+#: preferences.js:122
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:82
+msgid "Add new drives to the opposite side of the screen"
+msgstr "Добавлять новые диски на противоположную сторону экрана"
+
+#: preferences.js:123
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr "Подсвечивать место назначения во время перетаскивания"
+
+#: preferences.js:127
 msgid "Settings shared with Nautilus"
 msgstr "Общие настройки с Nautilus"
 
-#: preferences.js:118
+#: preferences.js:133
 msgid "Click type for open files"
-msgstr "Действие открытия"
+msgstr "Тип нажатия для открытия файлов"
 
-#: preferences.js:118
+#: preferences.js:133
 msgid "Single click"
-msgstr "Открывать одинарным нажатием"
+msgstr "Одинарный щелчок"
 
-#: preferences.js:118
+#: preferences.js:133
 msgid "Double click"
-msgstr "Открывать двойным нажатием"
+msgstr "Двойной щелчок"
 
-#: preferences.js:119
+#: preferences.js:134
 msgid "Show hidden files"
-msgstr "Добавить пункт «Показать в файловом менеджере»"
+msgstr "Показывать скрытые файлы"
 
-#: preferences.js:120
+#: preferences.js:135
 msgid "Show a context menu item to delete permanently"
-msgstr "Добавить пункт «Удалит навсегда в контекстном меню»"
+msgstr "Добавить пункт в контекстное меню «Удалить безвозвратно»"
 
-#: preferences.js:123
+#: preferences.js:140
 msgid "Action to do when launching a program from the desktop"
-msgstr "Исполняемые текстовые файлы"
+msgstr "Действие при запуске программы с рабочего стола"
 
-#: preferences.js:124
+#: preferences.js:141
 msgid "Display the content of the file"
-msgstr "Показать"
+msgstr "Показать содержимое файла"
 
-#: preferences.js:125
+#: preferences.js:142
 msgid "Launch the file"
-msgstr "Запустить"
+msgstr "Запустить файл"
 
-#: preferences.js:126
+#: preferences.js:143
 msgid "Ask what to do"
-msgstr "Спросить что делать"
+msgstr "Спрашивать что делать"
 
-#: preferences.js:130
+#: preferences.js:149
 msgid "Show image thumbnails"
-msgstr "Показать эскизы изображений"
+msgstr "Показывать миниатюры изображений"
 
-#: preferences.js:131
+#: preferences.js:150
 msgid "Never"
 msgstr "Никогда"
 
-#: preferences.js:132
+#: preferences.js:151
 msgid "Local files only"
 msgstr "Только для локальных файлов"
 
-#: preferences.js:133
+#: preferences.js:152
 msgid "Always"
 msgstr "Всегда"
 
-#: prefs.js:37
-#, fuzzy
+#: prefs.js:35
 msgid ""
-"To configure Desktop Icons NG, do right-click in the desktop and choose the "
-"last item: 'Desktop Icons settings'"
+"To configure Desktop Icons: Neo, right-click a blank space on the desktop "
+"and choose 'Desktop Icon Settings'"
 msgstr ""
-"Чтобы настроить значки рабочего стола NG, щелкните правой кнопкой мыши на "
-"рабочем столе и выберите последний пункт: Настройки"
+"Чтобы настроить «Desktop Icons: Neo», щёлкните правой кнопкой мыши пустое "
+"место на рабочем столе и выберите «Параметры Desktop Icons»."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:32
 msgid "Icon size"
 msgstr "Размер значков"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:33
 msgid "Set the size for the desktop icons."
 msgstr "Установить размер значков на рабочем столе."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:37
 msgid "Show personal folder"
 msgstr "Показывать домашнюю папку"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:38
 msgid "Show the personal folder in the desktop."
 msgstr "Показывать значок домашней папки на рабочем столе."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:42
 msgid "Show trash icon"
 msgstr "Показывать значок корзины"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:43
 msgid "Show the trash icon in the desktop."
 msgstr "Показывать значок корзины на рабочем столе."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:47
 msgid "New icons start corner"
-msgstr "Размер значков"
+msgstr "Новые значки начинают размещаться с угла"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:48
 msgid "Set the corner from where the icons will start to be placed."
 msgstr "Установите угол, откуда значки начнут размещаться."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
-msgid "Show the disk drives connected to the computer."
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:53
+msgid "Set the shape of the icons"
+msgstr "Установить форму значков"
+
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:57
+msgid "Desktop icons working directory"
+msgstr "Рабочий каталог Desktop icons"
+
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:58
+msgid ""
+"The directory that contains the files that the extension edits, displays, "
+"and interacts with."
 msgstr ""
+"Каталог, содержащий файлы, которые расширение редактирует, отображает, и с "
+"которыми оно взаимодействует."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:62
+msgid "Curve corners"
+msgstr "Сглаженные углы"
+
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:63
+msgid "Curve the corners of the icons and rubber band."
+msgstr "Сглаживать углы значков и надписей."
+
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:68
+msgid "Draw the checkmarks and sym link symbols."
+msgstr "Рисовать символы галочек и символичных ссылок."
+
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:73
+msgid "Show the disk drives connected to the computer."
+msgstr "Показывать диски, подключённые к компьютеру."
+
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:78
 msgid "Show mounted network volumes in the desktop."
-msgstr "Показывать значок домашней папки на рабочем столе."
+msgstr "Показывать подключённые сетевые тома на рабочем столе."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:83
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
 msgstr ""
+"Когда добавляются диски и тома на рабочий стол, располагать их на "
+"противоположной стороне экрана."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:87
 msgid "Shows a rectangle in the destination place during DnD"
-msgstr ""
+msgstr "Показывать прямоугольник в месте назначения во время перемещения"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:88
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
+"При выполнении операции Drag'n'Drop отмечается место в сетке полупрозрачным "
+"прямоугольником, куда будет помещён значок."
 
-#~ msgid ""
-#~ "There was an error while trying to permanently delete the folder {:}."
-#~ msgstr "Произошла ошибка при попытке окончательно удалить папку {:}."
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:92
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr "Сортировать специальный папки - Домашняя папка/Корзина/Диски."
 
-#~ msgid "There was an error while trying to permanently delete the file {:}."
-#~ msgstr "Произошла ошибка при попытке окончательно удалить файл {:}."
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:93
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+"При размещении значков на рабочем столе, для сортировки и изменения "
+"положения Домашней папки, Корзины и подключенных сетевых или внешних дисков"
 
-#, fuzzy
-#~ msgid "Show external disk drives in the desktop"
-#~ msgstr "Показывать домашнюю папку на рабочем столе"
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:97
+msgid "Keep Icons Arranged"
+msgstr "Сохранить порядок значков"
 
-#, fuzzy
-#~ msgid "Show the external drives"
-#~ msgstr "Показывать домашнюю папку на рабочем столе"
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:98
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr "Всегда сохранять порядок значков используя последнее упорядочивание"
 
-#, fuzzy
-#~ msgid "Show network volumes"
-#~ msgstr "Показать в «Файлах»"
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:102
+msgid "Arrange Order"
+msgstr "Упорядочивание значков"
 
-#~ msgid "Enter file name…"
-#~ msgstr "Ввести имя файла…"
+#: schemas/org.gnome.shell.extensions.desktopicons-neo.gschema.xml:103
+msgid "Icons Arranged by this property"
+msgstr "Упорядочивание значков по этому свойству"
 
-#~ msgid "Huge"
-#~ msgstr "Огромный"
-
-#~ msgid "Ok"
-#~ msgstr "ОК"
+#: showErrorPopup.js:36
+msgid "Close"
+msgstr "Закрыть"
