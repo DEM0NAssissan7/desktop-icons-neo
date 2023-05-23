@@ -18,6 +18,7 @@
 const GLib = imports.gi.GLib;
 const Gio = imports.gi.Gio;
 const Meta = imports.gi.Meta;
+const Shell = imports.gi.Shell;
 const St = imports.gi.St;
 
 const Main = imports.ui.main;
@@ -337,7 +338,17 @@ var LaunchSubprocess = class {
         this._flags = flags | Gio.SubprocessFlags.STDOUT_PIPE | Gio.SubprocessFlags.STDERR_MERGE;
         this._launcher = new Gio.SubprocessLauncher({flags: this._flags});
         if (Meta.is_wayland_compositor()) {
-            this._waylandClient = Meta.WaylandClient.new(this._launcher);
+
+
+            try {
+                this._waylandClient = Meta.WaylandClient.new(this._launcher);
+            } catch (e) {
+                let context = Shell.Global.get().context;
+                this._waylandClient = Meta.WaylandClient.new(context,
+                                                             this._launcher);
+            }
+
+
             if (Config.PACKAGE_VERSION == '3.38.0') {
                 // workaround for bug in 3.38.0
                 this._launcher.ref();
