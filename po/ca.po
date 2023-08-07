@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"POT-Creation-Date: 2021-07-18 14:10+0200\n"
 "PO-Revision-Date: 2019-07-22 10:24+0200\n"
 "Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
 "Language-Team: Catalan <info@softcatala.org>\n"
@@ -16,17 +16,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "Cancel·la"
-
-#: askConfirmPopup.js:36
-msgid "Delete"
-msgstr "Suprimeix"
-
-#: askNamePopup.js:35
+#: askNamePopup.js:36
 msgid "OK"
 msgstr "D'acord"
+
+#: askNamePopup.js:37 desktopIconsUtil.js:211 desktopManager.js:1668
+msgid "Cancel"
+msgstr "Cancel·la"
 
 #: askRenamePopup.js:40
 msgid "Folder name"
@@ -40,99 +36,87 @@ msgstr "Nom del fitxer"
 msgid "Rename"
 msgstr "Canvia el nom"
 
-#: desktopIconsUtil.js:79
+#: desktopIconsUtil.js:80
 msgid "Command not found"
 msgstr "No s'ha trobat l'ordre"
 
-#: desktopIconsUtil.js:195
+#: desktopIconsUtil.js:202
 msgid "Do you want to run “{0}”, or display its contents?"
 msgstr "Voleu executar «{0}» o mostrar el seu contingut?"
 
-#: desktopIconsUtil.js:196
+#: desktopIconsUtil.js:203
 msgid "“{0}” is an executable text file."
 msgstr "«{0}» és un fitxer de text executable."
 
-#: desktopIconsUtil.js:200
+#: desktopIconsUtil.js:207
 msgid "Execute in a terminal"
 msgstr "Obre al Terminal"
 
-#: desktopIconsUtil.js:202
+#: desktopIconsUtil.js:209
 msgid "Show"
 msgstr "Mostra"
 
-#: desktopIconsUtil.js:206
+#: desktopIconsUtil.js:213
 msgid "Execute"
 msgstr "Executa"
 
-#: desktopManager.js:131
+#: desktopManager.js:137
 msgid "Nautilus File Manager not found"
 msgstr "No s'ha trobat el gestor de fitxers del Nautilus"
 
-#: desktopManager.js:132
+#: desktopManager.js:138
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
 msgstr ""
 "El gestor de fitxers Nautilus és obligatori per a treballar amb les icones "
 "de l'escriptori NG."
 
-#: desktopManager.js:543
+#: desktopManager.js:592
 msgid "New Folder"
 msgstr "Carpeta nova"
 
-#: desktopManager.js:547
+#: desktopManager.js:596
 msgid "New Document"
 msgstr "Document nou"
 
-#: desktopManager.js:552
+#: desktopManager.js:601
 msgid "Paste"
 msgstr "Enganxa"
 
-#: desktopManager.js:556
+#: desktopManager.js:605
 msgid "Undo"
 msgstr "Desfés"
 
-#: desktopManager.js:560
+#: desktopManager.js:609
 msgid "Redo"
 msgstr "Refés"
 
-#: desktopManager.js:566
+#: desktopManager.js:615
 msgid "Select all"
 msgstr "Selecciona-ho tot"
 
-#: desktopManager.js:572
+#: desktopManager.js:623
 msgid "Show Desktop in Files"
 msgstr "Mostra l'escriptori al Fitxers"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:627 fileItem.js:1002
 msgid "Open in Terminal"
 msgstr "Obre al Terminal"
 
-#: desktopManager.js:582
+#: desktopManager.js:633
 msgid "Change Background…"
 msgstr "Canvia el fons de l'escriptori…"
 
-#: desktopManager.js:591
+#: desktopManager.js:642
 msgid "Display Settings"
 msgstr "Paràmetres de la pantalla"
 
-#: desktopManager.js:598
+#: desktopManager.js:649
 msgid "Desktop Icons settings"
 msgstr "Paràmetres de les icones de l'escriptori"
 
-#: desktopManager.js:609
+#: desktopManager.js:660
 msgid "Scripts"
 msgstr "Scripts"
-
-#: desktopManager.js:1127 desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr "S'ha produït un error en suprimir els fitxers"
-
-#: desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr "Esteu segur que voleu suprimir permanentment aquests elements?"
-
-#: desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
-msgstr "Si suprimiu un element, es perdrà permanentment."
 
 #: desktopManager.js:1310
 msgid "New folder"
@@ -147,224 +131,277 @@ msgid "Selection includes a Directory, compress the directory to a file first."
 msgstr ""
 "La selecció inclou un directori, comprimeix-hi el directori en un fitxer."
 
+#: desktopManager.js:1407
+msgid "Arrange Icons"
+msgstr ""
+
+#: desktopManager.js:1411
+msgid "Arrange By..."
+msgstr ""
+
+#: desktopManager.js:1420
+msgid "Keep Arranged..."
+msgstr ""
+
+#: desktopManager.js:1425
+msgid "Sort Home/Drives/Trash..."
+msgstr ""
+
+#: desktopManager.js:1431
+msgid "Sort by Name"
+msgstr ""
+
+#: desktopManager.js:1433
+msgid "Sort by Name Descending"
+msgstr ""
+
+#: desktopManager.js:1436
+msgid "Sort by Modified Time"
+msgstr ""
+
+#: desktopManager.js:1439
+msgid "Sort by Type"
+msgstr ""
+
+#: desktopManager.js:1442
+msgid "Sort by Size"
+msgstr ""
+
+#: desktopManager.js:1666
+msgid "Select Extract Destination"
+msgstr ""
+
+#: desktopManager.js:1669
+#, fuzzy
+msgid "Select"
+msgstr "Selecciona-ho tot"
+
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: fileItem.js:151
+#: fileItem.js:196
 msgid "Home"
 msgstr "Inici"
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open All..."
 msgstr "Obre-ho tot..."
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open"
 msgstr "Obre"
 
-#: fileItem.js:801
+#: fileItem.js:905
 msgid "Open All With Other Application..."
 msgstr "Obre amb una altra aplicació..."
 
-#: fileItem.js:801
+#: fileItem.js:905
 msgid "Open With Other Application"
 msgstr "Obre amb una altra aplicació..."
 
-#: fileItem.js:805
+#: fileItem.js:909
 msgid "Launch using Dedicated Graphics Card"
 msgstr "Llança usant targeta gràfica dedicada"
 
-#: fileItem.js:813
+#: fileItem.js:917
 msgid "Cut"
 msgstr "Retalla"
 
-#: fileItem.js:816
+#: fileItem.js:920
 msgid "Copy"
 msgstr "Copia"
 
-#: fileItem.js:820
+#: fileItem.js:924
 msgid "Rename…"
 msgstr "Canvia el nom…"
 
-#: fileItem.js:824
+#: fileItem.js:928
 msgid "Move to Trash"
 msgstr "Mou a la paperera"
 
-#: fileItem.js:828
+#: fileItem.js:932
 msgid "Delete permanently"
 msgstr "Suprimeix permanentment"
 
-#: fileItem.js:834
+#: fileItem.js:938
 msgid "Don't Allow Launching"
 msgstr "No permetis que s'iniciï"
 
-#: fileItem.js:834
+#: fileItem.js:938
 msgid "Allow Launching"
 msgstr "Permet que s'iniciï"
 
-#: fileItem.js:841
+#: fileItem.js:945
 msgid "Empty Trash"
 msgstr "Buida la paperera"
 
-#: fileItem.js:848
+#: fileItem.js:952
 msgid "Eject"
 msgstr "Expulsa"
 
-#: fileItem.js:855
+#: fileItem.js:959
 msgid "Unmount"
 msgstr "Desmunta"
 
-#: fileItem.js:870
+#: fileItem.js:974
+msgid "Extract Here"
+msgstr "Extreu aquí"
+
+#: fileItem.js:977
+msgid "Extract To..."
+msgstr "Extreu a..."
+
+#: fileItem.js:982
 msgid "Send to..."
 msgstr "Envia a..."
 
-#: fileItem.js:874
+#: fileItem.js:986
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
 msgstr[0] "Comprimeix {0} fitxer"
 msgstr[1] "Comprimeix {0} fitxers"
 
-#: fileItem.js:877
+#: fileItem.js:989
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
 msgstr[0] "Carpeta nova amb {0} element"
 msgstr[1] "Carpeta nova amb {0} elements"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Common Properties"
 msgstr "Propietats comunes"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Properties"
 msgstr "Propietats"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show All in Files"
 msgstr "Mostra al Fitxers"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show in Files"
 msgstr "Mostra al Fitxers"
 
-#: preferences.js:88
+#: preferences.js:91
 msgid "Settings"
 msgstr "Paràmetres"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Size for the desktop icons"
 msgstr "Mida de les icones d'escriptori"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Tiny"
 msgstr "Diminuta"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Small"
 msgstr "Petita"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Standard"
 msgstr "Estàndard"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Large"
 msgstr "Gran"
 
-#: preferences.js:95
+#: preferences.js:99
 msgid "Show the personal folder in the desktop"
 msgstr "Mostra la carpeta personal a l'escriptori"
 
-#: preferences.js:96
+#: preferences.js:100
 msgid "Show the trash icon in the desktop"
 msgstr "Mostra la icona de la paperera a l'escriptori"
 
-#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:45
 msgid "Show external drives in the desktop"
 msgstr "Mostra les unitats externes a l'escriptori"
 
-#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:50
 msgid "Show network drives in the desktop"
 msgstr "Mostra les unitats de xarxa a l'escriptori"
 
-#: preferences.js:101
+#: preferences.js:105
 msgid "New icons alignment"
 msgstr "Alineació de les icones noves"
 
-#: preferences.js:102
+#: preferences.js:106
 msgid "Top-left corner"
 msgstr "Cantonada superior esquerra"
 
-#: preferences.js:103
+#: preferences.js:107
 msgid "Top-right corner"
 msgstr "Cantonada superior dreta"
 
-#: preferences.js:104
+#: preferences.js:108
 msgid "Bottom-left corner"
 msgstr "Cantonada inferior esquerra"
 
-#: preferences.js:105
+#: preferences.js:109
 msgid "Bottom-right corner"
 msgstr "Cantonada inferior dreta"
 
-#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:55
 msgid "Add new drives to the opposite side of the screen"
 msgstr "Afegeix noves unitats al costat oposat de la pantalla"
 
-#: preferences.js:108
+#: preferences.js:112
 msgid "Highlight the drop place during Drag'n'Drop"
 msgstr "Ressalta el lloc desplegable durant l'arrossegat"
 
-#: preferences.js:112
+#: preferences.js:116
 msgid "Settings shared with Nautilus"
 msgstr "Paràmetres compartits amb el Nautilus"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Click type for open files"
 msgstr "Feu clic al tipus per a obrir fitxers"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Single click"
 msgstr "Un sol clic"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Double click"
 msgstr "Doble clic"
 
-#: preferences.js:119
+#: preferences.js:123
 msgid "Show hidden files"
 msgstr "Mostra els fitxers ocults"
 
-#: preferences.js:120
+#: preferences.js:124
 msgid "Show a context menu item to delete permanently"
 msgstr "Mostra un element de menú contextual per a suprimir-lo permanentment"
 
-#: preferences.js:123
+#: preferences.js:129
 msgid "Action to do when launching a program from the desktop"
 msgstr "Acció a fer quan s'iniciï un programa des de l'escriptori"
 
-#: preferences.js:124
+#: preferences.js:130
 msgid "Display the content of the file"
 msgstr "Mostra el contingut del fitxer"
 
-#: preferences.js:125
+#: preferences.js:131
 msgid "Launch the file"
 msgstr "Executa el fitxer"
 
-#: preferences.js:126
+#: preferences.js:132
 msgid "Ask what to do"
 msgstr "Preguntar què fer"
 
-#: preferences.js:130
+#: preferences.js:138
 msgid "Show image thumbnails"
 msgstr "Mostra les miniatures de les imatges"
 
-#: preferences.js:131
+#: preferences.js:139
 msgid "Never"
 msgstr "Mai"
 
-#: preferences.js:132
+#: preferences.js:140
 msgid "Local files only"
 msgstr "Només fitxers locals"
 
-#: preferences.js:133
+#: preferences.js:141
 msgid "Always"
 msgstr "Sempre"
 
@@ -376,47 +413,51 @@ msgstr ""
 "Per a configurar les icones de l'escriptori NG, feu clic dret a l'escriptori "
 "i trieu l'últim element: «Paràmetres de les icones de l'escriptori»"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+#: showErrorPopup.js:37
+msgid "Close"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:25
 msgid "Icon size"
 msgstr "Mida d'icona"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:26
 msgid "Set the size for the desktop icons."
 msgstr "Estableix la mida per les icones de l'escriptori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:30
 msgid "Show personal folder"
 msgstr "Mostra la carpeta personal"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:31
 msgid "Show the personal folder in the desktop."
 msgstr "Mostra la carpeta personal a l'escriptori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:35
 msgid "Show trash icon"
 msgstr "Mostra la icona de la paperera"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:36
 msgid "Show the trash icon in the desktop."
 msgstr "Mostra la icona de la paperera a l'escriptori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:40
 msgid "New icons start corner"
 msgstr "Angle d'inici de les icones noves"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:41
 msgid "Set the corner from where the icons will start to be placed."
 msgstr "Estableix la cantonada des d'on s'iniciaran les icones."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:46
 msgid "Show the disk drives connected to the computer."
 msgstr "Mostra les unitats de disc connectades a l'ordinador."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:51
 msgid "Show mounted network volumes in the desktop."
 msgstr "Mostra els volums de xarxa muntats a l'escriptori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:56
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
@@ -424,14 +465,52 @@ msgstr ""
 "Quan s'afegeixin unitats i volums a l'escriptori, afegiu-los a la part "
 "oposada de la pantalla."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:60
 msgid "Shows a rectangle in the destination place during DnD"
 msgstr "Mostra un rectangle al lloc de destinació durant el DnD"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:61
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
 "En fer una operació d'arrossegar i deixar anar, marca el lloc a la graella "
 "on la icona es posarà amb un rectangle semitransparent."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:65
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:66
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:70
+msgid "Keep Icons Arranged"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:71
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:75
+msgid "Arrange Order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:76
+msgid "Icons Arranged by this property"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Suprimeix"
+
+#~ msgid "Error while deleting files"
+#~ msgstr "S'ha produït un error en suprimir els fitxers"
+
+#~ msgid "Are you sure you want to permanently delete these items?"
+#~ msgstr "Esteu segur que voleu suprimir permanentment aquests elements?"
+
+#~ msgid "If you delete an item, it will be permanently lost."
+#~ msgstr "Si suprimiu un element, es perdrà permanentment."

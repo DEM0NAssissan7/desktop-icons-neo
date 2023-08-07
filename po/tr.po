@@ -6,12 +6,13 @@
 # Serdar Sağlam <teknomobil@yandex.com>, 2019
 # Emin Tufan Çetin <etcetin@gmail.com>, 2019.
 # Mahmut Elmas <mahmutelmas06@gmail.com>, 2020.
+# Cihan Alkan <cihanalk@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"POT-Creation-Date: 2021-07-18 14:10+0200\n"
 "PO-Revision-Date: 2019-03-13 13:43+0300\n"
 "Last-Translator: Mahmut Elmas <mahmutelmas06@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -22,17 +23,13 @@ msgstr ""
 "X-Generator: Gtranslator 3.30.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "İptal"
-
-#: askConfirmPopup.js:36
-msgid "Delete"
-msgstr "Sil"
-
-#: askNamePopup.js:35
+#: askNamePopup.js:36
 msgid "OK"
 msgstr "Tamam"
+
+#: askNamePopup.js:37 desktopIconsUtil.js:211 desktopManager.js:1668
+msgid "Cancel"
+msgstr "İptal"
 
 #: askRenamePopup.js:40
 #, fuzzy
@@ -49,98 +46,86 @@ msgstr "Yeniden Adlandır…"
 msgid "Rename"
 msgstr "Yeniden Adlandır…"
 
-#: desktopIconsUtil.js:79
+#: desktopIconsUtil.js:80
 msgid "Command not found"
 msgstr "Komut Bulunamadı"
 
-#: desktopIconsUtil.js:195
+#: desktopIconsUtil.js:202
 msgid "Do you want to run “{0}”, or display its contents?"
 msgstr "“{0}” dosyasını çalıştırmak mı, içeriğini görmek mi istiyorsunuz ?"
 
-#: desktopIconsUtil.js:196
+#: desktopIconsUtil.js:203
 msgid "“{0}” is an executable text file."
 msgstr "“{0}” dosyası çalıştırılabilir bir metin dosyasıdır."
 
-#: desktopIconsUtil.js:200
+#: desktopIconsUtil.js:207
 #, fuzzy
 msgid "Execute in a terminal"
 msgstr "Uçbirimde Aç"
 
-#: desktopIconsUtil.js:202
+#: desktopIconsUtil.js:209
 msgid "Show"
 msgstr "Göster"
 
-#: desktopIconsUtil.js:206
+#: desktopIconsUtil.js:213
 msgid "Execute"
 msgstr "Çalıştır"
 
-#: desktopManager.js:131
+#: desktopManager.js:137
 msgid "Nautilus File Manager not found"
 msgstr "Nautilus dosya yöneticisi bulunamadı"
 
-#: desktopManager.js:132
+#: desktopManager.js:138
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
 msgstr "Nautilus dosya yöneticisi olmadan bu eklenti bir işe yaramaz"
 
-#: desktopManager.js:543
+#: desktopManager.js:592
 msgid "New Folder"
 msgstr "Yeni Klasör"
 
-#: desktopManager.js:547
+#: desktopManager.js:596
 msgid "New Document"
 msgstr "Yeni Belge"
 
-#: desktopManager.js:552
+#: desktopManager.js:601
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: desktopManager.js:556
+#: desktopManager.js:605
 msgid "Undo"
 msgstr "Geri Al"
 
-#: desktopManager.js:560
+#: desktopManager.js:609
 msgid "Redo"
 msgstr "Yinele"
 
-#: desktopManager.js:566
+#: desktopManager.js:615
 msgid "Select all"
 msgstr "Tümünü Seç"
 
-#: desktopManager.js:572
+#: desktopManager.js:623
 msgid "Show Desktop in Files"
 msgstr "Masaüstünü Dosyalarʼda Göster"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:627 fileItem.js:1002
 msgid "Open in Terminal"
 msgstr "Uçbirimde Aç"
 
-#: desktopManager.js:582
+#: desktopManager.js:633
 msgid "Change Background…"
 msgstr "Arka Planı Değiştir…"
 
-#: desktopManager.js:591
+#: desktopManager.js:642
 msgid "Display Settings"
 msgstr "Görüntü Ayarları"
 
-#: desktopManager.js:598
+#: desktopManager.js:649
 msgid "Desktop Icons settings"
-msgstr ""
+msgstr "Masaüstü Simge Ayarları"
 
-#: desktopManager.js:609
+#: desktopManager.js:660
 msgid "Scripts"
-msgstr ""
-
-#: desktopManager.js:1127 desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr "Dosyalar silinirken bir hata oluştu"
-
-#: desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr "Dosyaları geri dönüşümsüz olarak silmek istediğinizden emin misiniz?"
-
-#: desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
-msgstr "Bir dosya silerseniz, geri dönüşümü yoktur."
+msgstr "Komutlar"
 
 #: desktopManager.js:1310
 #, fuzzy
@@ -149,236 +134,289 @@ msgstr "Yeni Klasör"
 
 #: desktopManager.js:1385
 msgid "Can not email a Directory"
-msgstr ""
+msgstr "Bir dizine e-posta gönderemiyorum"
 
 #: desktopManager.js:1386
 msgid "Selection includes a Directory, compress the directory to a file first."
+msgstr "Seçim bir dizin içerir, önce dizini bir dosyaya sıkıştırın."
+
+#: desktopManager.js:1407
+msgid "Arrange Icons"
 msgstr ""
+
+#: desktopManager.js:1411
+msgid "Arrange By..."
+msgstr ""
+
+#: desktopManager.js:1420
+msgid "Keep Arranged..."
+msgstr ""
+
+#: desktopManager.js:1425
+msgid "Sort Home/Drives/Trash..."
+msgstr ""
+
+#: desktopManager.js:1431
+msgid "Sort by Name"
+msgstr ""
+
+#: desktopManager.js:1433
+msgid "Sort by Name Descending"
+msgstr ""
+
+#: desktopManager.js:1436
+msgid "Sort by Modified Time"
+msgstr ""
+
+#: desktopManager.js:1439
+msgid "Sort by Type"
+msgstr ""
+
+#: desktopManager.js:1442
+msgid "Sort by Size"
+msgstr ""
+
+#: desktopManager.js:1666
+msgid "Select Extract Destination"
+msgstr ""
+
+#: desktopManager.js:1669
+#, fuzzy
+msgid "Select"
+msgstr "Tümünü Seç"
 
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: fileItem.js:151
+#: fileItem.js:196
 msgid "Home"
-msgstr ""
+msgstr "Ev"
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open All..."
-msgstr ""
+msgstr "Tümünü Aç..."
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open"
 msgstr "Aç"
 
-#: fileItem.js:801
+#: fileItem.js:905
 #, fuzzy
 msgid "Open All With Other Application..."
 msgstr "Başka Uygulamayla Aç"
 
-#: fileItem.js:801
+#: fileItem.js:905
 msgid "Open With Other Application"
 msgstr "Başka Uygulamayla Aç"
 
-#: fileItem.js:805
+#: fileItem.js:909
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Özel grafik kartı kullanarak başlatın"
 
-#: fileItem.js:813
+#: fileItem.js:917
 msgid "Cut"
 msgstr "Kes"
 
-#: fileItem.js:816
+#: fileItem.js:920
 msgid "Copy"
 msgstr "Kopyala"
 
-#: fileItem.js:820
+#: fileItem.js:924
 msgid "Rename…"
 msgstr "Yeniden Adlandır…"
 
-#: fileItem.js:824
+#: fileItem.js:928
 msgid "Move to Trash"
 msgstr "Çöpe Taşı"
 
-#: fileItem.js:828
+#: fileItem.js:932
 msgid "Delete permanently"
 msgstr "Tamamen Sil"
 
-#: fileItem.js:834
+#: fileItem.js:938
 #, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Başlatmaya İzin Verme"
 
-#: fileItem.js:834
+#: fileItem.js:938
 msgid "Allow Launching"
 msgstr "Başlatmaya İzin Ver"
 
-#: fileItem.js:841
+#: fileItem.js:945
 msgid "Empty Trash"
 msgstr "Çöpü Boşalt"
 
-#: fileItem.js:848
+#: fileItem.js:952
 msgid "Eject"
-msgstr ""
+msgstr "Çıkar"
 
-#: fileItem.js:855
+#: fileItem.js:959
 msgid "Unmount"
-msgstr ""
+msgstr "Bağlı Değil"
 
-#: fileItem.js:870
+#: fileItem.js:974
+msgid "Extract Here"
+msgstr "Buraya Çıkar"
+
+#: fileItem.js:977
+msgid "Extract To..."
+msgstr "Şuraya Çıkar…"
+
+#: fileItem.js:982
 msgid "Send to..."
-msgstr ""
+msgstr "Gönder..."
 
-#: fileItem.js:874
+#: fileItem.js:986
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
-msgstr[0] ""
+msgstr[0] "{0} dosyasını sıkıştır"
 
-#: fileItem.js:877
+#: fileItem.js:989
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
-msgstr[0] ""
+msgstr[0] "{0} öğesi ile yeni klasör"
 
-#: fileItem.js:883
+#: fileItem.js:994
 #, fuzzy
 msgid "Common Properties"
 msgstr "Özellikler"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Properties"
 msgstr "Özellikler"
 
-#: fileItem.js:887
+#: fileItem.js:998
 #, fuzzy
 msgid "Show All in Files"
 msgstr "Dosyalarʼda Göster"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show in Files"
 msgstr "Dosyalarʼda Göster"
 
-#: preferences.js:88
+#: preferences.js:91
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Size for the desktop icons"
 msgstr "Masaüstü simgeleri boyutu"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Tiny"
 msgstr "Minik"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Small"
 msgstr "Küçük"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Standard"
 msgstr "Standart"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Large"
 msgstr "Büyük"
 
-#: preferences.js:95
+#: preferences.js:99
 msgid "Show the personal folder in the desktop"
 msgstr "Kişisel klasörü masaüstünde göster"
 
-#: preferences.js:96
+#: preferences.js:100
 msgid "Show the trash icon in the desktop"
 msgstr "Çöp kutusunu masaüstünde göster"
 
-#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:45
 #, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Kişisel klasörü masaüstünde göster"
 
-#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:50
 #, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Kişisel klasörü masaüstünde göster."
 
-#: preferences.js:101
+#: preferences.js:105
 #, fuzzy
 msgid "New icons alignment"
 msgstr "Simge boyutu"
 
-#: preferences.js:102
+#: preferences.js:106
 msgid "Top-left corner"
 msgstr "Sol üst köşe"
 
-#: preferences.js:103
+#: preferences.js:107
 msgid "Top-right corner"
 msgstr "Sağ üst Köşe"
 
-#: preferences.js:104
+#: preferences.js:108
 msgid "Bottom-left corner"
 msgstr "Sol alt köşe"
 
-#: preferences.js:105
+#: preferences.js:109
 msgid "Bottom-right corner"
 msgstr "Sağ alt köşe"
 
-#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:55
 msgid "Add new drives to the opposite side of the screen"
-msgstr ""
-
-#: preferences.js:108
-msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Ekranın karşı tarafına yeni sürücüler ekleyin"
 
 #: preferences.js:112
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr "Sürükle ve Bırak sırasında bırakma yerini vurgulayın"
+
+#: preferences.js:116
 msgid "Settings shared with Nautilus"
 msgstr "Ayarlar Nautilus ile paylaşıldı"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Click type for open files"
 msgstr "Dosyaları açma türü"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Single click"
 msgstr "Tek tıklama"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Double click"
 msgstr "Çift tıklama"
 
-#: preferences.js:119
+#: preferences.js:123
 #, fuzzy
 msgid "Show hidden files"
 msgstr "Dosyalarʼda Göster"
 
-#: preferences.js:120
+#: preferences.js:124
 msgid "Show a context menu item to delete permanently"
 msgstr "Tamamen silmek için sağ tıkta seçenek göster"
 
-#: preferences.js:123
+#: preferences.js:129
 msgid "Action to do when launching a program from the desktop"
 msgstr "Masaüstünden program çalıştırırken ne yapılsın"
 
-#: preferences.js:124
+#: preferences.js:130
 msgid "Display the content of the file"
 msgstr "İçeriği göster"
 
-#: preferences.js:125
+#: preferences.js:131
 msgid "Launch the file"
 msgstr "Çalıştır"
 
-#: preferences.js:126
+#: preferences.js:132
 msgid "Ask what to do"
 msgstr "Ne yapılacağını sor"
 
-#: preferences.js:130
+#: preferences.js:138
 msgid "Show image thumbnails"
 msgstr "Resim önizlemelerini göster"
 
-#: preferences.js:131
+#: preferences.js:139
 msgid "Never"
 msgstr "Asla"
 
-#: preferences.js:132
+#: preferences.js:140
 msgid "Local files only"
 msgstr "Yalnızca yerel dosyalar"
 
-#: preferences.js:133
+#: preferences.js:141
 msgid "Always"
 msgstr "Her zaman"
 
@@ -389,67 +427,114 @@ msgid ""
 "last item: 'Desktop Icons settings'"
 msgstr "Masaüstünde Sağ tık/ Ayarları seçerek bu eklentiyi yapılandır"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+#: showErrorPopup.js:37
+msgid "Close"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:25
 msgid "Icon size"
 msgstr "Simge boyutu"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:26
 msgid "Set the size for the desktop icons."
 msgstr "Masaüstü simgelerinin boyutunu ayarla."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:30
 msgid "Show personal folder"
 msgstr "Kişisel klasörü göster"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:31
 msgid "Show the personal folder in the desktop."
 msgstr "Kişisel klasörü masaüstünde göster."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:35
 msgid "Show trash icon"
 msgstr "Çöp kutusunu göster"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:36
 msgid "Show the trash icon in the desktop."
 msgstr "Çöp kutusu simgesini masaüstünde göster."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:40
 #, fuzzy
 msgid "New icons start corner"
 msgstr "Simge boyutu"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:41
 msgid "Set the corner from where the icons will start to be placed."
 msgstr "Simgelerin nereden itibaren hizalanacağını seçin"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:46
 msgid "Show the disk drives connected to the computer."
-msgstr ""
+msgstr "Bilgisayara bağlı disk sürücülerini gösterir."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:51
 #, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Kişisel klasörü masaüstünde göster."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:56
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
 msgstr ""
+"Masaüstüne sürücüler ve birimler eklerken, bunları ekranın karşı tarafına "
+"ekleyin."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:60
 msgid "Shows a rectangle in the destination place during DnD"
-msgstr ""
+msgstr "DND sırasında hedef yerde bir dikdörtgen gösterir"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:61
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
+"Bir Sürükle Bırak işlemi yaparken, simgenin yarı saydam bir dikdörtgenle "
+"yerleştirileceği ızgaradaki yeri işaretler."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:65
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:66
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:70
+msgid "Keep Icons Arranged"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:71
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:75
+msgid "Arrange Order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:76
+msgid "Icons Arranged by this property"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Sil"
+
+#~ msgid "Error while deleting files"
+#~ msgstr "Dosyalar silinirken bir hata oluştu"
+
+#~ msgid "Are you sure you want to permanently delete these items?"
+#~ msgstr ""
+#~ "Dosyaları geri dönüşümsüz olarak silmek istediğinizden emin misiniz?"
+
+#~ msgid "If you delete an item, it will be permanently lost."
+#~ msgstr "Bir dosya silerseniz, geri dönüşümü yoktur."
 
 #~ msgid ""
 #~ "There was an error while trying to permanently delete the folder {:}."
-#~ msgstr "{:} Klasörğ tamamen silinirken hata oluştu"
+#~ msgstr "{:} Klasörü tamamen silinirken hata oluştu"
 
 #~ msgid "There was an error while trying to permanently delete the file {:}."
 #~ msgstr "{:} Dosyası tamamen silinirken hata oluştu"

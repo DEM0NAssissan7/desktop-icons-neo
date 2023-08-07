@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop-icons master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"POT-Creation-Date: 2021-07-18 14:10+0200\n"
 "PO-Revision-Date: 2021-04-08 06:15+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki+l10n@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
@@ -20,359 +20,393 @@ msgstr ""
 "X-Launchpad-Export-Date: 2021-04-08 06:16+0000\n"
 "X-Generator: Launchpad (build 57f1f603f707b9cfa764cae8dd0f3999026b4763)\n"
 
-#: ../askConfirmPopup.js:35 ../askNamePopup.js:36 ../desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "Peru"
-
-#: ../askConfirmPopup.js:36
-msgid "Delete"
-msgstr "Poista"
-
-#: ../askNamePopup.js:35
+#: askNamePopup.js:36
 msgid "OK"
 msgstr "OK"
 
-#: ../askRenamePopup.js:40
+#: askNamePopup.js:37 desktopIconsUtil.js:211 desktopManager.js:1668
+msgid "Cancel"
+msgstr "Peru"
+
+#: askRenamePopup.js:40
 msgid "Folder name"
 msgstr "Kansion nimi"
 
-#: ../askRenamePopup.js:40
+#: askRenamePopup.js:40
 msgid "File name"
 msgstr "Tiedoston nimi"
 
-#: ../askRenamePopup.js:47
+#: askRenamePopup.js:47
 msgid "Rename"
 msgstr "Nimeä uudelleen"
 
-#: ../desktopIconsUtil.js:79
+#: desktopIconsUtil.js:80
 msgid "Command not found"
 msgstr "Komentoa ei löydy"
 
-#: ../desktopIconsUtil.js:195
+#: desktopIconsUtil.js:202
 msgid "Do you want to run “{0}”, or display its contents?"
 msgstr "Haluatko suorittaa tiedoston “{0}” vai näyttää sen sisällön?"
 
-#: ../desktopIconsUtil.js:196
+#: desktopIconsUtil.js:203
 msgid "“{0}” is an executable text file."
 msgstr "“{0}” on suoritettava oleva tekstitiedosto."
 
-#: ../desktopIconsUtil.js:200
+#: desktopIconsUtil.js:207
 msgid "Execute in a terminal"
 msgstr "Suorita päätteessä"
 
-#: ../desktopIconsUtil.js:202
+#: desktopIconsUtil.js:209
 msgid "Show"
 msgstr "Näytä"
 
-#: ../desktopIconsUtil.js:206
+#: desktopIconsUtil.js:213
 msgid "Execute"
 msgstr "Suorita"
 
-#: ../desktopManager.js:131
+#: desktopManager.js:137
 msgid "Nautilus File Manager not found"
 msgstr "Nautilus-tiedostonhallintaa ei löydy"
 
-#: ../desktopManager.js:132
+#: desktopManager.js:138
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
 msgstr "Nautilus-tiedostonhallinta vaaditaan tämän laajennuksen käyttämiseen."
 
-#: ../desktopManager.js:543
+#: desktopManager.js:592
 msgid "New Folder"
 msgstr "Uusi kansio"
 
-#: ../desktopManager.js:547
+#: desktopManager.js:596
 msgid "New Document"
 msgstr "Uusi asiakirja"
 
-#: ../desktopManager.js:552
+#: desktopManager.js:601
 msgid "Paste"
 msgstr "Liitä"
 
-#: ../desktopManager.js:556
+#: desktopManager.js:605
 msgid "Undo"
 msgstr "Kumoa"
 
-#: ../desktopManager.js:560
+#: desktopManager.js:609
 msgid "Redo"
 msgstr "Tee uudelleen"
 
-#: ../desktopManager.js:566
+#: desktopManager.js:615
 msgid "Select all"
 msgstr "Valitse kaikki"
 
-#: ../desktopManager.js:572
+#: desktopManager.js:623
 msgid "Show Desktop in Files"
 msgstr "Näytä työpöytä tiedostonhallinnassa"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:627 fileItem.js:1002
 msgid "Open in Terminal"
 msgstr "Avaa päätteessä"
 
-#: ../desktopManager.js:582
+#: desktopManager.js:633
 msgid "Change Background…"
 msgstr "Vaihda taustakuvaa…"
 
-#: ../desktopManager.js:591
+#: desktopManager.js:642
 msgid "Display Settings"
 msgstr "Näytön asetukset"
 
-#: desktopManager.js:598
+#: desktopManager.js:649
 msgid "Desktop Icons settings"
 msgstr "Työpöytäkuvakkeiden asetukset"
 
-#: ../desktopManager.js:609
+#: desktopManager.js:660
 msgid "Scripts"
 msgstr "Komentosarjat"
 
-#: ../desktopManager.js:1127 ../desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr "Virhe poistettaessa tiedostoja"
-
-#: ../desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr "Haluatko varmasti poistaa nämä kohteet pysyvästi?"
-
-#: ../desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
-msgstr "Jos poistat kohteen, se häviää pysyvästi."
-
-#: ../desktopManager.js:1310
+#: desktopManager.js:1310
 msgid "New folder"
 msgstr "Uusi kansio"
 
-#: ../desktopManager.js:1385
+#: desktopManager.js:1385
 msgid "Can not email a Directory"
 msgstr "Kansiota ei voi lähettää sähköpostitse"
 
-#: ../desktopManager.js:1386
+#: desktopManager.js:1386
 msgid "Selection includes a Directory, compress the directory to a file first."
 msgstr "Valinta sisältää kansion, pakkaa kansio tiedostoksi ensin."
 
+#: desktopManager.js:1407
+msgid "Arrange Icons"
+msgstr ""
+
+#: desktopManager.js:1411
+msgid "Arrange By..."
+msgstr ""
+
+#: desktopManager.js:1420
+msgid "Keep Arranged..."
+msgstr ""
+
+#: desktopManager.js:1425
+msgid "Sort Home/Drives/Trash..."
+msgstr ""
+
+#: desktopManager.js:1431
+msgid "Sort by Name"
+msgstr ""
+
+#: desktopManager.js:1433
+msgid "Sort by Name Descending"
+msgstr ""
+
+#: desktopManager.js:1436
+msgid "Sort by Modified Time"
+msgstr ""
+
+#: desktopManager.js:1439
+msgid "Sort by Type"
+msgstr ""
+
+#: desktopManager.js:1442
+msgid "Sort by Size"
+msgstr ""
+
+#: desktopManager.js:1666
+msgid "Select Extract Destination"
+msgstr ""
+
+#: desktopManager.js:1669
+#, fuzzy
+msgid "Select"
+msgstr "Valitse kaikki"
+
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: ../fileItem.js:151
+#: fileItem.js:196
 msgid "Home"
 msgstr "Koti"
 
-#: ../fileItem.js:794
+#: fileItem.js:898
 msgid "Open All..."
 msgstr "Avaa kaikki..."
 
-#: ../fileItem.js:794
+#: fileItem.js:898
 msgid "Open"
 msgstr "Avaa"
 
-#: ../fileItem.js:801
+#: fileItem.js:905
 msgid "Open All With Other Application..."
 msgstr "Avaa kaikki toisella sovelluksella..."
 
-#: ../fileItem.js:801
+#: fileItem.js:905
 msgid "Open With Other Application"
 msgstr "Avaa toisella sovelluksella"
 
-#: ../fileItem.js:805
+#: fileItem.js:909
 msgid "Launch using Dedicated Graphics Card"
 msgstr "Käynnistä erillisnäytönohjainta käyttäen"
 
-#: ../fileItem.js:813
+#: fileItem.js:917
 msgid "Cut"
 msgstr "Leikkaa"
 
-#: ../fileItem.js:816
+#: fileItem.js:920
 msgid "Copy"
 msgstr "Kopioi"
 
-#: ../fileItem.js:820
+#: fileItem.js:924
 msgid "Rename…"
 msgstr "Nimeä uudelleen…"
 
-#: ../fileItem.js:824
+#: fileItem.js:928
 msgid "Move to Trash"
 msgstr "Siirrä roskakoriin"
 
-#: ../fileItem.js:828
+#: fileItem.js:932
 msgid "Delete permanently"
 msgstr "Poista pysyvästi"
 
-#: ../fileItem.js:834
+#: fileItem.js:938
 msgid "Don't Allow Launching"
 msgstr "Älä salli käynnistämistä"
 
-#: ../fileItem.js:834
+#: fileItem.js:938
 msgid "Allow Launching"
 msgstr "Salli käynnistäminen"
 
-#: ../fileItem.js:841
+#: fileItem.js:945
 msgid "Empty Trash"
 msgstr "Tyhjennä roskakori"
 
-#: ../fileItem.js:848
+#: fileItem.js:952
 msgid "Eject"
 msgstr "Irrota"
 
-#: ../fileItem.js:855
+#: fileItem.js:959
 msgid "Unmount"
 msgstr "Irrota osio"
 
-#: fileItem.js:870
+#: fileItem.js:974
+msgid "Extract Here"
+msgstr "Pura tänne"
+
+#: fileItem.js:977
+msgid "Extract To..."
+msgstr "Pura…"
+
+#: fileItem.js:982
 msgid "Send to..."
 msgstr "Lähetä…"
 
-#: fileItem.js:874
+#: fileItem.js:986
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
 msgstr[0] "Pakkaa {0} tiedosto"
 msgstr[1] "Pakkaa {0} tiedostoa"
 
-#: fileItem.js:877
+#: fileItem.js:989
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
 msgstr[0] "Uusi kansio jossa {0} kohde"
 msgstr[1] "Uusi kansio jossa {0} kohdetta"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Common Properties"
 msgstr "Yhteiset ominaisuudet"
 
-#: fileItem.js:887
+#: fileItem.js:994
 msgid "Properties"
 msgstr "Ominaisuudet"
 
-#: ../fileItem.js:887
+#: fileItem.js:998
 msgid "Show All in Files"
 msgstr "Näytä kaikki Tiedostot-sovelluksessa"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show in Files"
 msgstr "Näytä tiedostonhallinnassa"
 
-#: preferences.js:88
+#: preferences.js:91
 msgid "Settings"
 msgstr "Asetukset"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Size for the desktop icons"
 msgstr "Työpöytäkuvakkeiden koko"
 
-#: ../preferences.js:94
+#: preferences.js:98
 msgid "Tiny"
 msgstr "Erittäin pieni"
 
-#: ../preferences.js:94
+#: preferences.js:98
 msgid "Small"
 msgstr "Pieni"
 
-#: ../preferences.js:94
+#: preferences.js:98
 msgid "Standard"
 msgstr "Tavallinen"
 
-#: ../preferences.js:94
+#: preferences.js:98
 msgid "Large"
 msgstr "Suuri"
 
-#: ../preferences.js:95
+#: preferences.js:99
 msgid "Show the personal folder in the desktop"
 msgstr "Näytä kotikansio työpöydällä"
 
-#: ../preferences.js:96
+#: preferences.js:100
 msgid "Show the trash icon in the desktop"
 msgstr "Näytä roskakorin kuvake työpöydällä"
 
-#: ../preferences.js:97
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:9
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:45
 msgid "Show external drives in the desktop"
 msgstr "Näytä erilliset tallennusvälineet työpöydällä"
 
-#: ../preferences.js:98
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:11
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:50
 msgid "Show network drives in the desktop"
 msgstr "Näytä verkkoasemat työpöydällä"
 
-#: ../preferences.js:101
+#: preferences.js:105
 msgid "New icons alignment"
 msgstr "Uusi kuvakkeiden tasaus"
 
-#: ../preferences.js:102
+#: preferences.js:106
 msgid "Top-left corner"
 msgstr "Vasen yläkulma"
 
-#: ../preferences.js:103
+#: preferences.js:107
 msgid "Top-right corner"
 msgstr "Oikea yläkulma"
 
-#: ../preferences.js:104
+#: preferences.js:108
 msgid "Bottom-left corner"
 msgstr "Vasen alakulma"
 
-#: ../preferences.js:105
+#: preferences.js:109
 msgid "Bottom-right corner"
 msgstr "Oikea alakulma"
 
-#: ../preferences.js:107
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:13
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:55
 msgid "Add new drives to the opposite side of the screen"
 msgstr "Lisää uudet tallennusvälineet näytön toiselle puolelle"
 
-#: ../preferences.js:108
+#: preferences.js:112
 msgid "Highlight the drop place during Drag'n'Drop"
 msgstr "Korosta pudotuspaikka vedettäessä ja pudotettaessa"
 
-#: ../preferences.js:112
+#: preferences.js:116
 msgid "Settings shared with Nautilus"
 msgstr "Jaa asetukset Nautilus-tiedostonhallinnan kanssa"
 
-#: ../preferences.js:118
+#: preferences.js:122
 msgid "Click type for open files"
 msgstr "Napsautustapa tiedostojen avaamiselle"
 
-#: ../preferences.js:118
+#: preferences.js:122
 msgid "Single click"
 msgstr "Yksi napsautus"
 
-#: ../preferences.js:118
+#: preferences.js:122
 msgid "Double click"
 msgstr "Kaksoisnapsautus"
 
-#: ../preferences.js:119
+#: preferences.js:123
 msgid "Show hidden files"
 msgstr "Näytä piilotiedostot"
 
-#: ../preferences.js:120
+#: preferences.js:124
 msgid "Show a context menu item to delete permanently"
 msgstr "Näytä valikkokohde pysyvästi poistamiselle"
 
-#: ../preferences.js:123
+#: preferences.js:129
 msgid "Action to do when launching a program from the desktop"
 msgstr "Toiminta käynnistettäessä ohjelmaa työpöydältä"
 
-#: ../preferences.js:124
+#: preferences.js:130
 msgid "Display the content of the file"
 msgstr "Näytä tiedoston sisältö"
 
-#: ../preferences.js:125
+#: preferences.js:131
 msgid "Launch the file"
 msgstr "Käynnistä tiedosto"
 
-#: ../preferences.js:126
+#: preferences.js:132
 msgid "Ask what to do"
 msgstr "Kysy mitä tehdään"
 
-#: ../preferences.js:130
+#: preferences.js:138
 msgid "Show image thumbnails"
 msgstr "Näytä pienoiskuvat"
 
-#: ../preferences.js:131
+#: preferences.js:139
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ../preferences.js:132
+#: preferences.js:140
 msgid "Local files only"
 msgstr "Vain paikalliset tiedostot"
 
-#: ../preferences.js:133
+#: preferences.js:141
 msgid "Always"
 msgstr "Aina"
 
-#: ../prefs.js:37
+#: prefs.js:37
 msgid ""
 "To configure Desktop Icons NG, do right-click in the desktop and choose the "
 "last item: 'Desktop Icons settings'"
@@ -381,61 +415,103 @@ msgstr ""
 "oikealla painikkeella ja valitse viimeinen kohde ”Työpöytäkuvakkeiden "
 "asetukset”"
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:1
+#: showErrorPopup.js:37
+msgid "Close"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:25
 msgid "Icon size"
 msgstr "Kuvakekoko"
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:2
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:26
 msgid "Set the size for the desktop icons."
 msgstr "Aseta työpöytäkuvakkeiden koko."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:3
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:30
 msgid "Show personal folder"
 msgstr "Näytä kotikansio"
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:4
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:31
 msgid "Show the personal folder in the desktop."
 msgstr "Näytä kotikansio työpöydällä."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:5
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:35
 msgid "Show trash icon"
 msgstr "Näytä roskakorin kuvake"
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:6
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:36
 msgid "Show the trash icon in the desktop."
 msgstr "Näytä roskakorin kuvake työpöydällä."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:7
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:40
 msgid "New icons start corner"
 msgstr "Uusien kuvakkeiden aloituskulma"
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:8
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:41
 msgid "Set the corner from where the icons will start to be placed."
 msgstr "Aseta kulma jonne kuvakkeet sijoitetaan."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:10
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:46
 msgid "Show the disk drives connected to the computer."
 msgstr "Näytä tietokoneeseen liitetyt tallennusvälineet."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:12
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:51
 msgid "Show mounted network volumes in the desktop."
 msgstr "Näytä liitetyt verkkoasemat työpöydällä."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:14
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:56
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
 msgstr ""
 "Näytä lisätyt tallennusvälineet ja asemat työpöydän vastakkaisella puolella."
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:15
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:60
 msgid "Shows a rectangle in the destination place during DnD"
 msgstr "Näyttää suorakulmio kohteen kohdalla vetämisen ja pudottamisen aikana"
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:16
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:61
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
 "Merkitsee kuvakkeen tulevan paikan ruudukossa osittain läpinäkyvällä "
 "suorakulmiolla vetämisen ja pudottamisen aikana."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:65
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:66
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:70
+msgid "Keep Icons Arranged"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:71
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:75
+msgid "Arrange Order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:76
+msgid "Icons Arranged by this property"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Poista"
+
+#~ msgid "Error while deleting files"
+#~ msgstr "Virhe poistettaessa tiedostoja"
+
+#~ msgid "Are you sure you want to permanently delete these items?"
+#~ msgstr "Haluatko varmasti poistaa nämä kohteet pysyvästi?"
+
+#~ msgid "If you delete an item, it will be permanently lost."
+#~ msgstr "Jos poistat kohteen, se häviää pysyvästi."

@@ -1,18 +1,19 @@
-/* LICENSE INFORMATION
- * 
- * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
- * customizations, and optimizations.
- * 
- * Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
- * 
- * This project is based on Desktop Icons NG (https://gitlab.com/rastersoft/desktop-icons-ng),
- * a desktop icons extension for GNOME licensed under the GPL v3.
- * 
- * This project is free and open source software as described in the GPL v3.
- * 
- * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
- * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
- * regarding this project's license.
+/* DING: Desktop Icons New Generation for GNOME Shell
+ *
+ * Copyright (C) 2019 Sergio Costas (rastersoft@gmail.com)
+ * Based on code original (C) Carlos Soriano
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 const GLib = imports.gi.GLib;
@@ -32,7 +33,7 @@ const AskRenamePopup = imports.askRenamePopup;
 const ShowErrorPopup = imports.showErrorPopup;
 const TemplateManager = imports.templateManager;
 
-const Gettext = imports.gettext.domain('desktopicons-neo');
+const Gettext = imports.gettext.domain('ding');
 
 const _ = Gettext.gettext;
 
@@ -68,20 +69,13 @@ var DesktopManager = class {
         this._scriptsDir = DesktopIconsUtil.getScriptsDir();
         this.desktopFsId = this._desktopDir.query_info('id::filesystem', Gio.FileQueryInfoFlags.NONE, null).get_attribute_string('id::filesystem');
         this._updateWritableByOthers();
-        try{
-              this._monitorDesktopDir = this._desktopDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
-        } catch(e){
-              logError(e, "schemaSource errored out. Fixing desktop-directory..");
-              Prefs.desktopSettings.set_string('desktop-directory', GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP));
-              this._monitorDesktopDir = this._desktopDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
-        }
+        this._monitorDesktopDir = this._desktopDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
         this._monitorDesktopDir.set_rate_limit(1000);
         this._monitorDesktopDir.connect('changed', (obj, file, otherFile, eventType) => this._updateDesktopIfChanged(file, otherFile, eventType));
         this._monitorScriptDir = this._scriptsDir.monitor_directory(Gio.FileMonitorFlags.WATCH_MOVES, null);
         this._monitorScriptDir.set_rate_limit(1000);
         this._monitorScriptDir.connect('changed', (obj, file, otherFile, eventType) => this._updateScriptFileList());
         this._showHidden = Prefs.gtkSettings.get_boolean('show-hidden');
-        this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
         this.showDropPlace = Prefs.desktopSettings.get_boolean('show-drop-place');
         this._settingsId = Prefs.desktopSettings.connect('changed', (obj, key) => {
             if (key == 'icon-size') {
@@ -102,20 +96,8 @@ var DesktopManager = class {
                 this._updateDesktop();
             }
         });
-        Prefs.desktopSettings.connect('changed', (obj, key) => {
-            if (key == 'curved-corners') {
-                this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
-                this._updateDesktop();
-            }
-        });
         Prefs.nautilusSettings.connect('changed', (obj, key) => {
             if (key == 'show-image-thumbnails') {
-                this._updateDesktop();
-            }
-        });
-        Prefs.gtkSettings.connect('changed', (obj, key) => {
-            if (key == 'desktop-directory') {
-                this._desktopDir = Prefs.gtkSettings.get_string('desktop-directory');
                 this._updateDesktop();
             }
         });
@@ -153,7 +135,7 @@ var DesktopManager = class {
             DesktopIconsUtil.trySpawn(null, ["nautilus", "--version"]);
         } catch(e) {
             this._errorWindow = new ShowErrorPopup.ShowErrorPopup(_("Nautilus File Manager not found"),
-                                                                  _("The Nautilus File Manager is mandatory to work with Desktop Icons: Neo."),
+                                                                  _("The Nautilus File Manager is mandatory to work with Desktop Icons NG."),
                                                                   null,
                                                                   true);
         }
@@ -192,7 +174,7 @@ var DesktopManager = class {
             if (this._asDesktop) {
                 var desktopName = `@!${desktop.x},${desktop.y};BDHF`;
             } else {
-                var desktopName = `Desktop Icons: Neo ${desktopIndex}`;
+                var desktopName = `DING ${desktopIndex}`;
             }
             this._desktops.push(new DesktopGrid.DesktopGrid(this, desktopName, desktop, this._asDesktop, this._premultiplied));
         }
@@ -419,7 +401,7 @@ var DesktopManager = class {
         let atom;
         switch(info) {
             case 0:
-                atom = Gdk.atom_intern('x-special/desktopicons-neo-icon-list', false);
+                atom = Gdk.atom_intern('x-special/ding-icon-list', false);
                 break;
             case 1:
                 atom = Gdk.atom_intern('x-special/gnome-icon-list', false);
@@ -664,7 +646,7 @@ var DesktopManager = class {
         });
         this._menu.add(this._displaySettingsMenuItem);
 
-        this._settingsMenuItem = new Gtk.MenuItem({label: _("Desktop Icons Settings")});
+        this._settingsMenuItem = new Gtk.MenuItem({label: _("Desktop Icons settings")});
         this._settingsMenuItem.connect("activate", () => Prefs.showPreferences());
         this._menu.add(this._settingsMenuItem);
         this._menu.show_all();
@@ -772,8 +754,6 @@ var DesktopManager = class {
 
     onMotion(x, y) {
         if (this.rubberBand) {
-            this.mouseX = x;
-            this.mouseY = y;
             this.x1 = Math.min(x, this.rubberBandInitX);
             this.x2 = Math.max(x, this.rubberBandInitX);
             this.y1 = Math.min(y, this.rubberBandInitY);
@@ -783,8 +763,8 @@ var DesktopManager = class {
                 grid.queue_draw();
             }
             for(let item of this._fileList) {
-                let labelintersect = item._labelRectangle.intersect(this.selectionRectangle)[0];
-                let iconintersect = item._iconRectangle.intersect(this.selectionRectangle)[0];
+                let labelintersect = item.labelRectangle.intersect(this.selectionRectangle)[0];
+                let iconintersect = item.iconRectangle.intersect(this.selectionRectangle)[0];
                 if (labelintersect || iconintersect) {
                     item.setSelected();
                     item.touchedByRubberband = true;

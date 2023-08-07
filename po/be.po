@@ -1,0 +1,458 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ding package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ding\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-18 22:06+0200\n"
+"PO-Revision-Date: 2021-06-20 22:02+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: be\n"
+
+#: askConfirmPopup.js:36 askNamePopup.js:37 desktopIconsUtil.js:211
+#: desktopManager.js:1481
+msgid "Cancel"
+msgstr "Скасаваць"
+
+#: askConfirmPopup.js:37
+msgid "Delete"
+msgstr "Выдаліць"
+
+#: askNamePopup.js:36
+msgid "OK"
+msgstr ""
+
+#: askRenamePopup.js:40
+msgid "Folder name"
+msgstr "Імя папкі"
+
+#: askRenamePopup.js:40
+msgid "File name"
+msgstr "Імя файла"
+
+#: askRenamePopup.js:47
+msgid "Rename"
+msgstr "Перайменаваць"
+
+#: desktopIconsUtil.js:80
+msgid "Command not found"
+msgstr "Каманда не знойдзена"
+
+#: desktopIconsUtil.js:202
+msgid "Do you want to run “{0}”, or display its contents?"
+msgstr "Вы хаціце выканаць “{0}”, ці паказаць яго змесціва?"
+
+#: desktopIconsUtil.js:203
+msgid "“{0}” is an executable text file."
+msgstr "“{0}” гэта выканальны тэкставы файл."
+
+#: desktopIconsUtil.js:207
+msgid "Execute in a terminal"
+msgstr "Выканаць у тэрмінале"
+
+#: desktopIconsUtil.js:209
+msgid "Show"
+msgstr "Паказаць"
+
+#: desktopIconsUtil.js:213
+msgid "Execute"
+msgstr "Выканаць"
+
+#: desktopManager.js:135
+msgid "Nautilus File Manager not found"
+msgstr "Файлавы менеджар Nautilus не знойдзены"
+
+#: desktopManager.js:136
+msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
+msgstr ""
+"Файлавы менеджар Nautilus з'яўляецца неабходным для працы Desktop Icons NG."
+
+#: desktopManager.js:563
+msgid "New Folder"
+msgstr "Новая папка"
+
+#: desktopManager.js:567
+msgid "New Document"
+msgstr "Новы дакумент"
+
+#: desktopManager.js:572
+msgid "Paste"
+msgstr "Уставіць"
+
+#: desktopManager.js:576
+msgid "Undo"
+msgstr "Адрабіць"
+
+#: desktopManager.js:580
+msgid "Redo"
+msgstr "Паўтарыць"
+
+#: desktopManager.js:586
+msgid "Select all"
+msgstr "Вылучыць усё"
+
+#: desktopManager.js:592
+msgid "Show Desktop in Files"
+msgstr "Паказаць Стол у файлавым менеджары"
+
+#: desktopManager.js:596 fileItem.js:913
+msgid "Open in Terminal"
+msgstr "Адкрыць у Тэрмінале"
+
+#: desktopManager.js:602
+msgid "Change Background…"
+msgstr "Змяніць фон..."
+
+#: desktopManager.js:611
+msgid "Display Settings"
+msgstr "Настройкі дісплэя"
+
+#: desktopManager.js:618
+msgid "Desktop Icons settings"
+msgstr "Настройкі значкоў Стала"
+
+#: desktopManager.js:629
+msgid "Scripts"
+msgstr "Скрыпты"
+
+#: desktopManager.js:1148 desktopManager.js:1196
+msgid "Error while deleting files"
+msgstr "Памылка падчас выдалення файлаў"
+
+#: desktopManager.js:1222
+msgid "Are you sure you want to permanently delete these items?"
+msgstr "Ці вы насамрэч хочаце незваротна выдаліць гэтыя элементы?"
+
+#: desktopManager.js:1223
+msgid "If you delete an item, it will be permanently lost."
+msgstr "Выдаленне элемента незваротна."
+
+#: desktopManager.js:1339
+msgid "New folder"
+msgstr "Новая папка"
+
+#: desktopManager.js:1414
+msgid "Can not email a Directory"
+msgstr "Немагчыма даслаць папку"
+
+#: desktopManager.js:1415
+msgid "Selection includes a Directory, compress the directory to a file first."
+msgstr "Сярод вылучанага ёсць папка, спачатку сцісніце папку ў файл."
+
+#: desktopManager.js:1479
+msgid "Select Extract Destination"
+msgstr "Абраць куды выняць змесціва"
+
+#: desktopManager.js:1482
+msgid "Select"
+msgstr "Вылучыць"
+
+#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
+#: fileItem.js:153
+msgid "Home"
+msgstr "Хатоўка"
+
+#: fileItem.js:809
+msgid "Open All..."
+msgstr "Адкрыць усё..."
+
+#: fileItem.js:809
+msgid "Open"
+msgstr "Адкрыць"
+
+#: fileItem.js:816
+msgid "Open All With Other Application..."
+msgstr "Адурыць усё ў іншай праграме..."
+
+#: fileItem.js:816
+msgid "Open With Other Application"
+msgstr "Адурыць у іншай праграме"
+
+#: fileItem.js:820
+msgid "Launch using Dedicated Graphics Card"
+msgstr "Запусціць з дапамогай дыскрэтнай відэакарты"
+
+#: fileItem.js:828
+msgid "Cut"
+msgstr "Выразаць"
+
+#: fileItem.js:831
+msgid "Copy"
+msgstr "Капіяваць"
+
+#: fileItem.js:835
+msgid "Rename…"
+msgstr "Перайменаваць..."
+
+#: fileItem.js:839
+msgid "Move to Trash"
+msgstr "Выкінуць у сметніцу"
+
+#: fileItem.js:843
+msgid "Delete permanently"
+msgstr "Выдаліць назаўжды"
+
+#: fileItem.js:849
+msgid "Don't Allow Launching"
+msgstr "Не дазваляць выкананне"
+
+#: fileItem.js:849
+msgid "Allow Launching"
+msgstr "Дазволіць выкананне"
+
+#: fileItem.js:856
+msgid "Empty Trash"
+msgstr "Сметніца пустая"
+
+#: fileItem.js:863
+#, fuzzy
+msgid "Eject"
+msgstr "Выняць"
+
+#: fileItem.js:870
+msgid "Unmount"
+msgstr "Адмантаваць"
+
+#: fileItem.js:885
+msgid "Extract Here"
+msgstr "Выняць сюды"
+
+#: fileItem.js:888
+msgid "Extract To..."
+msgstr "Выняць у..."
+
+#: fileItem.js:893
+msgid "Send to..."
+msgstr "Дасладь да..."
+
+#: fileItem.js:897
+msgid "Compress {0} file"
+msgid_plural "Compress {0} files"
+msgstr[0] "Сціснуць {0} файл"
+msgstr[1] "Сціснуць {0} файлы"
+msgstr[2] "Сціснуць {0} файлаў"
+
+#: fileItem.js:900
+msgid "New Folder with {0} item"
+msgid_plural "New Folder with {0} items"
+msgstr[0] "Новая папка з {0} элементам"
+msgstr[1] "Новая папка з {0} элементамі"
+msgstr[2] "Новая папка з {0} элементамі"
+
+#: fileItem.js:905
+msgid "Common Properties"
+msgstr "Агульныя ўласцівасці"
+
+#: fileItem.js:905
+msgid "Properties"
+msgstr "Уласцівасці"
+
+#: fileItem.js:909
+msgid "Show All in Files"
+msgstr "Паказаць усё ў файлавым менеджары"
+
+#: fileItem.js:909
+msgid "Show in Files"
+msgstr "Паказаць у файлавым менеджары"
+
+#: preferences.js:91
+msgid "Settings"
+msgstr "Настройкі"
+
+#: preferences.js:98
+msgid "Size for the desktop icons"
+msgstr "Памер значкоў працоўнага стала"
+
+#: preferences.js:98
+msgid "Tiny"
+msgstr "Маленькі"
+
+#: preferences.js:98
+msgid "Small"
+msgstr "Малы"
+
+#: preferences.js:98
+msgid "Standard"
+msgstr "Стандартны"
+
+#: preferences.js:98
+msgid "Large"
+msgstr "Вялікі"
+
+#: preferences.js:99
+msgid "Show the personal folder in the desktop"
+msgstr "Паказваць асабістую папку на працоўным стале"
+
+#: preferences.js:100
+msgid "Show the trash icon in the desktop"
+msgstr "Паказваць значок сметніцы на працоўным стале"
+
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+msgid "Show external drives in the desktop"
+msgstr "Паказваць зменныя носьбіты на працоўным стале"
+
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+msgid "Show network drives in the desktop"
+msgstr "Паказваць сеткавыя носьбіты на працоўным стале"
+
+#: preferences.js:105
+msgid "New icons alignment"
+msgstr "Новае выраўноўванне значкоў"
+
+#: preferences.js:106
+msgid "Top-left corner"
+msgstr "Верхні левы вугал"
+
+#: preferences.js:107
+msgid "Top-right corner"
+msgstr "Верхні правы вугал"
+
+#: preferences.js:108
+msgid "Bottom-left corner"
+msgstr "Ніжні левы вугал"
+
+#: preferences.js:109
+msgid "Bottom-right corner"
+msgstr "Ніжні правы вугал"
+
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+msgid "Add new drives to the opposite side of the screen"
+msgstr "Дадаць новыя носьбіты на супрацьлеглы бок экрану"
+
+#: preferences.js:112
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr "Падсвечваць месца перамяшчэння файла падчас Drag'n'Drop"
+
+#: preferences.js:116
+msgid "Settings shared with Nautilus"
+msgstr "Настройкі звязаныя з Nautilus"
+
+#: preferences.js:122
+msgid "Click type for open files"
+msgstr "Від кліку для адкрыцця файлаў"
+
+#: preferences.js:122
+msgid "Single click"
+msgstr "Адзіночны клік"
+
+#: preferences.js:122
+msgid "Double click"
+msgstr "Двайны клік"
+
+#: preferences.js:123
+msgid "Show hidden files"
+msgstr "Паказваць схаваныя файлы"
+
+#: preferences.js:124
+msgid "Show a context menu item to delete permanently"
+msgstr "Паказваць пункт \"выдаліць назаўжды\" у кантэкстным меню"
+
+#: preferences.js:129
+msgid "Action to do when launching a program from the desktop"
+msgstr "Дзеянне пры запуску праграмы з працоўнага стала"
+
+#: preferences.js:130
+msgid "Display the content of the file"
+msgstr "Паказаць змесціва файла"
+
+#: preferences.js:131
+msgid "Launch the file"
+msgstr "Запусціць файл"
+
+#: preferences.js:132
+msgid "Ask what to do"
+msgstr "Спытаць што зрабіць"
+
+#: preferences.js:138
+msgid "Show image thumbnails"
+msgstr "Паказваць мініяцюры"
+
+#: preferences.js:139
+msgid "Never"
+msgstr "Ніколі"
+
+#: preferences.js:140
+msgid "Local files only"
+msgstr "Толькі для лакальных файлаў"
+
+#: preferences.js:141
+msgid "Always"
+msgstr "Заўжды"
+
+#: prefs.js:37
+msgid ""
+"To configure Desktop Icons NG, do right-click in the desktop and choose the "
+"last item: 'Desktop Icons settings'"
+msgstr ""
+"Каб наладзіць Desktop Icons NG, клікніце правай кнопкай мышы па працоўным "
+"стале і абярыце апошні пункт: \"Настройкі значкоў стала\""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+msgid "Icon size"
+msgstr "Памер значка"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+msgid "Set the size for the desktop icons."
+msgstr "Наладзіць памер значкоў працоўнага стала."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+msgid "Show personal folder"
+msgstr "Паказваць асабістую папку"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+msgid "Show the personal folder in the desktop."
+msgstr "Паказваць асабістую папку на працоўным стале."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+msgid "Show trash icon"
+msgstr "Паказваць значок сметніцы"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+msgid "Show the trash icon in the desktop."
+msgstr "Паказваць значок сметніцы на працоўным стале."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+msgid "New icons start corner"
+msgstr "Вугал экрана для новых значкоў"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+msgid "Set the corner from where the icons will start to be placed."
+msgstr "Наладзіць вугал з якога будзе пачынацца размяшчэнне значкоў."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+msgid "Show the disk drives connected to the computer."
+msgstr "Паказваць зменныя носьбіты, падлучаныя да камп'ютара."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+msgid "Show mounted network volumes in the desktop."
+msgstr "Паказваць прымантаваныя сеткавыя тамы на працоўным стале."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+msgid ""
+"When adding drives and volumes to the desktop, add them to the opposite side "
+"of the screen."
+msgstr ""
+"Пры дадаванні носьбітаў і тамоў на стол, размяшчаць іх на супрацьлеглым баку "
+"экрана."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+msgid "Shows a rectangle in the destination place during DnD"
+msgstr "Паказваць прамавугольнік у месцы перамяшчэння падчас DnD"
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+msgid ""
+"When doing a Drag'n'Drop operation, marks the place in the grid where the "
+"icon will be put with a semitransparent rectangle."
+msgstr ""
+"Падчас аперацыі Drag'n'Drop пазначае месца ў сетцы, у якое будзе перамешчаны "
+"элемент, паўпразрыстым прамавугольнікам."

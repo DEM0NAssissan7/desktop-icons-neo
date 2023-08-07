@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="desktopicons-neo">
-    <enum id="org.gnome.shell.extension.desktopicons-neo.ZoomLevel">
+<schemalist gettext-domain="ding">
+    <enum id="org.gnome.shell.extension.ding.ZoomLevel">
         <value value="3" nick="tiny"/>
         <value value="0" nick="small"/>
         <value value="1" nick="standard"/>
         <value value="2" nick="large"/>
     </enum>
-    <enum id="org.gnome.shell.extension.desktopicons-neo.StartCorner">
+    <enum id="org.gnome.shell.extension.ding.StartCorner">
         <value value="0" nick="top-left"/>
         <value value="1" nick="top-right"/>
         <value value="2" nick="bottom-left"/>
         <value value="3" nick="bottom-right"/>
     </enum>
-        <enum id="org.gnome.shell.extension.desktopicons-neo.ArrangeOrder">
+        <enum id="org.gnome.shell.extension.ding.ArrangeOrder">
         <value value="1" nick="NAME"/>
         <value value="2" nick="DESCENDINGNAME"/>
         <value value="3" nick="MODIFIEDTIME"/>
         <value value="4" nick="KIND"/>
         <value value="5" nick="SIZE"/>
     </enum>
-    <enum id="org.gnome.shell.extension.desktopicons-neo.IconShape">
-        <value value="0" nick="conform"/>
-        <value value="1" nick="traditional"/>
-        <value value="2" nick="square"/>
-        <value value="3" nick="capsule"/>
-        <value value="4" nick="rectangular"/>
-    </enum>
-    <schema path="/org/gnome/shell/extensions/desktopicons-neo/" id="org.gnome.shell.extensions.desktopicons-neo">
-    <key name="icon-size" enum="org.gnome.shell.extension.desktopicons-neo.ZoomLevel">
+    <schema path="/org/gnome/shell/extensions/ding/" id="org.gnome.shell.extensions.ding">
+    <key name="icon-size" enum="org.gnome.shell.extension.ding.ZoomLevel">
         <default>'standard'</default>
         <summary>Icon size</summary>
         <description>Set the size for the desktop icons.</description>
@@ -42,30 +35,10 @@
         <summary>Show trash icon</summary>
         <description>Show the trash icon in the desktop.</description>
     </key>
-    <key name="start-corner" enum="org.gnome.shell.extension.desktopicons-neo.StartCorner">
+    <key name="start-corner" enum="org.gnome.shell.extension.ding.StartCorner">
         <default>'top-left'</default>
         <summary>New icons start corner</summary>
         <description>Set the corner from where the icons will start to be placed.</description>
-    </key>
-    <key name="icon-shape" enum="org.gnome.shell.extension.desktopicons-neo.IconShape">
-        <default>'square'</default>
-        <summary>Icon shape</summary>
-        <description>Set the shape of the icons</description>
-    </key>
-    <key type="s" name="desktop-directory">
-        <default>'null'</default>
-        <summary>Desktop icons working directory</summary>
-        <description>The directory that contains the files that the extension edits, displays, and interacts with.</description>
-    </key>
-    <key type="b" name="curved-corners">
-        <default>true</default>
-        <summary>Curve corners</summary>
-        <description>Curve the corners of the icons and rubber band.</description>
-    </key>
-    <key type="b" name="draw-symbols">
-        <default>false</default>
-        <summary>Draw icon symbols</summary>
-        <description>Draw the checkmarks and sym link symbols.</description>
     </key>
     <key type="b" name="show-volumes">
         <default>true</default>
@@ -97,7 +70,7 @@
         <summary>Keep Icons Arranged</summary>
         <description>Always keep Icons Arranged by the last arranged order</description>
     </key>
-    <key name="arrangeorder" enum="org.gnome.shell.extension.desktopicons-neo.ArrangeOrder">
+    <key name="arrangeorder" enum="org.gnome.shell.extension.ding.ArrangeOrder">
         <default>'NAME'</default>
         <summary>Arrange Order</summary>
         <description>Icons Arranged by this property</description>

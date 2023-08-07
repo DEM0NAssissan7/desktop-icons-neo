@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop-icons master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"POT-Creation-Date: 2021-07-18 14:10+0200\n"
 "PO-Revision-Date: 2019-07-11 13:57+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
@@ -17,17 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.3\n"
 
-#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "Batal"
-
-#: askConfirmPopup.js:36
-msgid "Delete"
-msgstr ""
-
-#: askNamePopup.js:35
+#: askNamePopup.js:36
 msgid "OK"
 msgstr "OK"
+
+#: askNamePopup.js:37 desktopIconsUtil.js:211 desktopManager.js:1668
+msgid "Cancel"
+msgstr "Batal"
 
 #: askRenamePopup.js:40
 #, fuzzy
@@ -44,97 +40,85 @@ msgstr "Ganti Nama…"
 msgid "Rename"
 msgstr "Ganti Nama…"
 
-#: desktopIconsUtil.js:79
+#: desktopIconsUtil.js:80
 msgid "Command not found"
 msgstr "Perintah tidak ditemukan"
 
-#: desktopIconsUtil.js:195
+#: desktopIconsUtil.js:202
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
+msgstr "Anda ingin menjalankan “{0}” atau hanya melihat isinya?"
 
-#: desktopIconsUtil.js:196
+#: desktopIconsUtil.js:203
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "“{0}” adalah berkas teks yang dapat dieksekusi."
 
-#: desktopIconsUtil.js:200
+#: desktopIconsUtil.js:207
 #, fuzzy
 msgid "Execute in a terminal"
 msgstr "Buka dalam Terminal"
 
-#: desktopIconsUtil.js:202
+#: desktopIconsUtil.js:209
 msgid "Show"
 msgstr ""
 
-#: desktopIconsUtil.js:206
+#: desktopIconsUtil.js:213
 msgid "Execute"
 msgstr ""
 
-#: desktopManager.js:131
+#: desktopManager.js:137
 msgid "Nautilus File Manager not found"
 msgstr ""
 
-#: desktopManager.js:132
+#: desktopManager.js:138
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
 msgstr ""
 
-#: desktopManager.js:543
+#: desktopManager.js:592
 msgid "New Folder"
 msgstr "Folder Baru"
 
-#: desktopManager.js:547
+#: desktopManager.js:596
 msgid "New Document"
-msgstr ""
+msgstr "Dokumen Baru"
 
-#: desktopManager.js:552
+#: desktopManager.js:601
 msgid "Paste"
 msgstr "Tempel"
 
-#: desktopManager.js:556
+#: desktopManager.js:605
 msgid "Undo"
 msgstr "Tak Jadi"
 
-#: desktopManager.js:560
+#: desktopManager.js:609
 msgid "Redo"
 msgstr "Jadi Lagi"
 
-#: desktopManager.js:566
+#: desktopManager.js:615
 msgid "Select all"
-msgstr ""
+msgstr "Pilih semua"
 
-#: desktopManager.js:572
+#: desktopManager.js:623
 msgid "Show Desktop in Files"
 msgstr "Tampilkan Destop pada Berkas"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:627 fileItem.js:1002
 msgid "Open in Terminal"
 msgstr "Buka dalam Terminal"
 
-#: desktopManager.js:582
+#: desktopManager.js:633
 msgid "Change Background…"
 msgstr "Ubah Latar Belakang…"
 
-#: desktopManager.js:591
+#: desktopManager.js:642
 msgid "Display Settings"
 msgstr "Pengaturan Tampilan"
 
-#: desktopManager.js:598
+#: desktopManager.js:649
 msgid "Desktop Icons settings"
 msgstr ""
 
-#: desktopManager.js:609
+#: desktopManager.js:660
 msgid "Scripts"
-msgstr ""
-
-#: desktopManager.js:1127 desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr ""
-
-#: desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr ""
-
-#: desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
 msgstr ""
 
 #: desktopManager.js:1310
@@ -150,232 +134,284 @@ msgstr ""
 msgid "Selection includes a Directory, compress the directory to a file first."
 msgstr ""
 
-#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: fileItem.js:151
-msgid "Home"
+#: desktopManager.js:1407
+msgid "Arrange Icons"
 msgstr ""
 
-#: fileItem.js:794
+#: desktopManager.js:1411
+msgid "Arrange By..."
+msgstr ""
+
+#: desktopManager.js:1420
+msgid "Keep Arranged..."
+msgstr ""
+
+#: desktopManager.js:1425
+msgid "Sort Home/Drives/Trash..."
+msgstr ""
+
+#: desktopManager.js:1431
+msgid "Sort by Name"
+msgstr ""
+
+#: desktopManager.js:1433
+msgid "Sort by Name Descending"
+msgstr ""
+
+#: desktopManager.js:1436
+msgid "Sort by Modified Time"
+msgstr ""
+
+#: desktopManager.js:1439
+msgid "Sort by Type"
+msgstr ""
+
+#: desktopManager.js:1442
+msgid "Sort by Size"
+msgstr ""
+
+#: desktopManager.js:1666
+msgid "Select Extract Destination"
+msgstr ""
+
+#: desktopManager.js:1669
+msgid "Select"
+msgstr "Pilih"
+
+#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
+#: fileItem.js:196
+msgid "Home"
+msgstr "Rumah"
+
+#: fileItem.js:898
 msgid "Open All..."
 msgstr ""
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open"
 msgstr "Buka"
 
-#: fileItem.js:801
+#: fileItem.js:905
 #, fuzzy
 msgid "Open All With Other Application..."
 msgstr "Buka Dengan Aplikasi Lain"
 
-#: fileItem.js:801
+#: fileItem.js:905
 msgid "Open With Other Application"
 msgstr "Buka Dengan Aplikasi Lain"
 
-#: fileItem.js:805
+#: fileItem.js:909
 msgid "Launch using Dedicated Graphics Card"
 msgstr ""
 
-#: fileItem.js:813
+#: fileItem.js:917
 msgid "Cut"
 msgstr "Potong"
 
-#: fileItem.js:816
+#: fileItem.js:920
 msgid "Copy"
 msgstr "Salin"
 
-#: fileItem.js:820
+#: fileItem.js:924
 msgid "Rename…"
 msgstr "Ganti Nama…"
 
-#: fileItem.js:824
+#: fileItem.js:928
 msgid "Move to Trash"
 msgstr "Pindahkan ke Tong Sampah"
 
-#: fileItem.js:828
+#: fileItem.js:932
 msgid "Delete permanently"
-msgstr ""
+msgstr "Hapus permanen"
 
-#: fileItem.js:834
+#: fileItem.js:938
 #, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Jangan Izinkan Peluncuran"
 
-#: fileItem.js:834
+#: fileItem.js:938
 msgid "Allow Launching"
 msgstr "Izinkan Peluncuran"
 
-#: fileItem.js:841
+#: fileItem.js:945
 msgid "Empty Trash"
 msgstr "Kosongkan Tong Sampah"
 
-#: fileItem.js:848
+#: fileItem.js:952
 msgid "Eject"
-msgstr ""
+msgstr "Keluarkan Media"
 
-#: fileItem.js:855
+#: fileItem.js:959
 msgid "Unmount"
-msgstr ""
+msgstr "Lepas Kaitan"
 
-#: fileItem.js:870
+#: fileItem.js:974
+msgid "Extract Here"
+msgstr "Ekstrak Di Sini"
+
+#: fileItem.js:977
+msgid "Extract To..."
+msgstr "Ekstrak ke…"
+
+#: fileItem.js:982
 msgid "Send to..."
-msgstr ""
+msgstr "Kirim ke…"
 
-#: fileItem.js:874
+#: fileItem.js:986
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: fileItem.js:877
+#: fileItem.js:989
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: fileItem.js:883
+#: fileItem.js:994
 #, fuzzy
 msgid "Common Properties"
 msgstr "Properti"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Properties"
 msgstr "Properti"
 
-#: fileItem.js:887
+#: fileItem.js:998
 #, fuzzy
 msgid "Show All in Files"
 msgstr "Tampilkan pada Berkas"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show in Files"
 msgstr "Tampilkan pada Berkas"
 
-#: preferences.js:88
+#: preferences.js:91
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Size for the desktop icons"
 msgstr "Ukuran untuk ikon destop"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Tiny"
 msgstr ""
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Small"
 msgstr "Kecil"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Standard"
 msgstr "Standar"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Large"
 msgstr "Besar"
 
-#: preferences.js:95
+#: preferences.js:99
 msgid "Show the personal folder in the desktop"
 msgstr "Tampilkan folder pribadi di destop"
 
-#: preferences.js:96
+#: preferences.js:100
 msgid "Show the trash icon in the desktop"
 msgstr "Tampilkan ikon tong sampah di destop"
 
-#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:45
 #, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Tampilkan folder pribadi di destop"
 
-#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:50
 #, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Tampilkan folder pribadi di destop."
 
-#: preferences.js:101
+#: preferences.js:105
 #, fuzzy
 msgid "New icons alignment"
 msgstr "Ukuran ikon"
 
-#: preferences.js:102
+#: preferences.js:106
 msgid "Top-left corner"
 msgstr ""
 
-#: preferences.js:103
+#: preferences.js:107
 msgid "Top-right corner"
 msgstr ""
 
-#: preferences.js:104
+#: preferences.js:108
 msgid "Bottom-left corner"
 msgstr ""
 
-#: preferences.js:105
+#: preferences.js:109
 msgid "Bottom-right corner"
 msgstr ""
 
-#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:55
 msgid "Add new drives to the opposite side of the screen"
 msgstr ""
 
-#: preferences.js:108
+#: preferences.js:112
 msgid "Highlight the drop place during Drag'n'Drop"
 msgstr ""
 
-#: preferences.js:112
+#: preferences.js:116
 msgid "Settings shared with Nautilus"
 msgstr ""
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Click type for open files"
 msgstr ""
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Single click"
 msgstr ""
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Double click"
 msgstr ""
 
-#: preferences.js:119
+#: preferences.js:123
 #, fuzzy
 msgid "Show hidden files"
 msgstr "Tampilkan pada Berkas"
 
-#: preferences.js:120
+#: preferences.js:124
 msgid "Show a context menu item to delete permanently"
 msgstr ""
 
-#: preferences.js:123
+#: preferences.js:129
 msgid "Action to do when launching a program from the desktop"
 msgstr ""
 
-#: preferences.js:124
+#: preferences.js:130
 msgid "Display the content of the file"
 msgstr ""
 
-#: preferences.js:125
+#: preferences.js:131
 msgid "Launch the file"
 msgstr ""
 
-#: preferences.js:126
+#: preferences.js:132
 msgid "Ask what to do"
 msgstr ""
 
-#: preferences.js:130
+#: preferences.js:138
 msgid "Show image thumbnails"
 msgstr ""
 
-#: preferences.js:131
+#: preferences.js:139
 msgid "Never"
 msgstr ""
 
-#: preferences.js:132
+#: preferences.js:140
 msgid "Local files only"
 msgstr ""
 
-#: preferences.js:133
+#: preferences.js:141
 msgid "Always"
 msgstr ""
 
@@ -385,63 +421,99 @@ msgid ""
 "last item: 'Desktop Icons settings'"
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+#: showErrorPopup.js:37
+msgid "Close"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:25
 msgid "Icon size"
 msgstr "Ukuran ikon"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:26
 msgid "Set the size for the desktop icons."
 msgstr "Set ukuran untuk ikon destop."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:30
 msgid "Show personal folder"
 msgstr "Tampilkan folder pribadi"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:31
 msgid "Show the personal folder in the desktop."
 msgstr "Tampilkan folder pribadi di destop."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:35
 msgid "Show trash icon"
 msgstr "Tampilkan ikon tong sampah"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:36
 msgid "Show the trash icon in the desktop."
 msgstr "Tampilkan ikon tong sampah di destop."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:40
 #, fuzzy
 msgid "New icons start corner"
 msgstr "Ukuran ikon"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:41
 msgid "Set the corner from where the icons will start to be placed."
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:46
 msgid "Show the disk drives connected to the computer."
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:51
 #, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Tampilkan folder pribadi di destop."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:56
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:60
 msgid "Shows a rectangle in the destination place during DnD"
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:61
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:65
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:66
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:70
+msgid "Keep Icons Arranged"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:71
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:75
+msgid "Arrange Order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:76
+msgid "Icons Arranged by this property"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Hapus"
+
+#~ msgid "If you delete an item, it will be permanently lost."
+#~ msgstr "Jika dihapus, maka akan dihapus permanen."
 
 #, fuzzy
 #~ msgid "Show external disk drives in the desktop"

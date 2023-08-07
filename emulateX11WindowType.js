@@ -1,18 +1,18 @@
-/* LICENSE INFORMATION
- * 
- * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
- * customizations, and optimizations.
- * 
- * Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
- * 
- * This project is based on Desktop Icons NG (https://gitlab.com/rastersoft/desktop-icons-ng),
- * a desktop icons extension for GNOME licensed under the GPL v3.
- * 
- * This project is free and open source software as described in the GPL v3.
- * 
- * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
- * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
- * regarding this project's license.
+/* Emulate X11WindowType
+ *
+ * Copyright (C) 2020 Sergio Costas (rastersoft@gmail.com)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 const GLib = imports.gi.GLib;
@@ -186,8 +186,8 @@ var EmulateX11WindowType = class {
     set_wayland_client(client) {
         this._wayland_client = client;
         for(let window of this._windowList) {
-            if (window.customJS_desktopiconsneo) {
-                window.customJS_desktopiconsneo.set_wayland_client(this._wayland_client);
+            if (window.customJS_ding) {
+                window.customJS_ding.set_wayland_client(this._wayland_client);
             }
         }
     }
@@ -281,18 +281,18 @@ var EmulateX11WindowType = class {
         if (window.get_meta_window) { // it is a MetaWindowActor
             window = window.get_meta_window();
         }
-        window.customJS_desktopiconsneo = new ManageWindow(window, this._wayland_client);
+        window.customJS_ding = new ManageWindow(window, this._wayland_client);
         this._windowList.push(window);
-        window.customJS_desktopiconsneo.unmanagedID = window.connect("unmanaged", (window) => {
+        window.customJS_ding.unmanagedID = window.connect("unmanaged", (window) => {
             this._clearWindow(window);
             this._windowList = this._windowList.filter(item => item !== window);
         });
     }
 
     _clearWindow(window) {
-        window.disconnect(window.customJS_desktopiconsneo.unmanagedID);
-        window.customJS_desktopiconsneo.disconnect();
-        window.customJS_desktopiconsneo = null;
+        window.disconnect(window.customJS_ding.unmanagedID);
+        window.customJS_ding.disconnect();
+        window.customJS_ding = null;
     }
 
     _refreshWindows(checkWorkspace) {
@@ -300,13 +300,13 @@ var EmulateX11WindowType = class {
             this._activate_window_ID = GLib.idle_add(GLib.PRIORITY_LOW, () => {
                 if (this._enableRefresh) {
                     for (let window of this._windowList) {
-                        window.customJS_desktopiconsneo.refreshState(checkWorkspace);
+                        window.customJS_ding.refreshState(checkWorkspace);
                     }
                     if (checkWorkspace) {
                         // activate the top-most window
                         let windows = global.display.get_tab_list(Meta.TabList.NORMAL_ALL, global.workspace_manager.get_active_workspace());
                         for (let window of windows) {
-                            if ((!window.customJS_desktopiconsneo || !window.customJS_desktopiconsneo._keepAtBottom) && !window.minimized) {
+                            if ((!window.customJS_ding || !window.customJS_ding._keepAtBottom) && !window.minimized) {
                                 Main.activateWindow(window);
                                 break;
                             }
@@ -364,7 +364,7 @@ function removeDesktopWindowFromList(windowList) {
         if (window.get_meta_window) { // it is a MetaWindowActor
             window = window.get_meta_window();
         }
-        if (!window.customJS_desktopiconsneo || !window.customJS_desktopiconsneo.hideFromWindowList) {
+        if (!window.customJS_ding || !window.customJS_ding.hideFromWindowList) {
             returnVal.push(element);
         }
     }

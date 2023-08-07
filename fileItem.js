@@ -1,18 +1,20 @@
-/* LICENSE INFORMATION
- * 
- * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
- * customizations, and optimizations.
- * 
- * Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
- * 
- * This project is based on Desktop Icons NG (https://gitlab.com/rastersoft/desktop-icons-ng),
- * a desktop icons extension for GNOME licensed under the GPL v3.
- * 
- * This project is free and open source software as described in the GPL v3.
- * 
- * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
- * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
- * regarding this project's license.
+/* DING: Desktop Icons New Generation for GNOME Shell
+ *
+ * Copyright (C) 2019 Sergio Costas (rastersoft@gmail.com)
+ * Based on code original (C) Carlos Soriano
+ * SwitcherooControl code based on code original from Marsch84
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 const GObject = imports.gi.GObject;
@@ -33,7 +35,7 @@ const DBusUtils = imports.dbusUtils;
 const ByteArray = imports.byteArray;
 const Mainloop = imports.mainloop;
 const Signals = imports.signals;
-const Gettext = imports.gettext.domain('desktopicons-neo');
+const Gettext = imports.gettext.domain('ding');
 
 const _ = Gettext.gettext;
 
@@ -52,35 +54,25 @@ var FileItem = class {
         this._lastClickTime = 0;
         this._lastClickButton = 0;
         this._clickCount = 0;
-        this._iconShape = Prefs.get_icon_shape();
-        this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
-        this._drawSymbols = Prefs.desktopSettings.get_boolean('draw-symbols');
 
         this._file = file;
 
         this._savedCoordinates = this._readCoordinatesFromAttribute(fileInfo, 'metadata::nautilus-icon-position');
         this._dropCoordinates = this._readCoordinatesFromAttribute(fileInfo, 'metadata::nautilus-drop-position');
 
-        this._container = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL});
-        this._container.connect('destroy', () => this._onDestroy());
-        this._eventBox = new Gtk.EventBox({visible: true});
-        if(this._iconShape === 'conform' || this._iconShape === 'capsule' || this._iconShape === 'traditional'){
-        	this._shieldEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
-        }else if(this._iconShape === 'square'){
-            this._shieldEventBox = new Gtk.EventBox({visible: true});
-        }else{
-            this._shieldEventBox = new Gtk.EventBox({visible: true, valign: Gtk.Align.CENTER});
-        }
+        this.container = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL, halign: Gtk.Align.CENTER});
+        this.container.connect('destroy', () => this._onDestroy());
+        this._eventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
+        this._sheildEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
         this._labelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
-        this._shieldLabelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
-
+        this._sheildLabelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
 
         this._icon = new Gtk.Image();
         this._iconContainer = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL});
         this._iconContainer.pack_start(this._icon, true, true, 0);
         this._iconContainer.set_baseline_position(Gtk.BaselinePosition.CENTER);
         this._eventBox.add(this._iconContainer);
-        this._shieldEventBox.add(this._eventBox);
+        this._sheildEventBox.add(this._eventBox);
 
         this._label = new Gtk.Label();
         this._labelContainer = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL, halign: Gtk.Align.CENTER});
@@ -93,60 +85,28 @@ var FileItem = class {
         this._label.set_justify(Gtk.Justification.CENTER);
         this._label.set_lines(2);
         this._setFileName(fileInfo.get_display_name());
-        
-        //This looks like it repacks the shield and the label container. I think this can also be manipulated.
-        if(this._iconShape === 'conform'){
-        	this._labelContainer.pack_start(this._label, false, false, 0);
-    		this._labelEventBox.add(this._labelContainer);
-    		this._shieldLabelEventBox.add(this._labelEventBox);
-        
-        }else if(this._iconShape === 'traditional'){
-            this._labelContainer.pack_start(this._label, false, false, 0);
-            this._labelEventBox.add(this._labelContainer);
-            this._shieldLabelEventBox.add(this._labelEventBox);
-        }else{
-            this._iconContainer.pack_start(this._label, false, false, 0);
-        }
+        this._labelContainer.pack_start(this._label, false, true, 0);
+        this._labelEventBox.add(this._labelContainer);
+        this._sheildLabelEventBox.add(this._labelEventBox);
 
-        if(this._iconShape === 'conform'){
-            this._container.pack_start(this._shieldEventBox, false, false, 0);
-  	        this._container.pack_start(this._shieldLabelEventBox, false, false, 2);
-     	}else if(this._iconShape === 'square'){
-            this._container.pack_start(this._shieldEventBox, true, true, 0);
-        }else if(this._iconShape === 'traditional'){
-            this._container.pack_start(this._shieldEventBox, false, false, 0);
-            this._container.pack_start(this._shieldLabelEventBox, false, false, 2);
-        }else{
-            this._container.pack_start(this._shieldEventBox, true, false, 0);
-        }
+        this.container.pack_start(this._sheildEventBox, false, false, 0);
+        this.container.pack_start(this._sheildLabelEventBox, false, false, 2);
 
-        if(this._iconShape === 'traditional'){
-            this._styleContext = this._labelContainer.get_style_context();
-        }else{
-            this._styleContext = this._iconContainer.get_style_context();
-        }
+        this._styleContext = this._iconContainer.get_style_context();
         this._labelStyleContext = this._labelContainer.get_style_context();
- 
-        if(this._curvedCorners){
-            this._styleContext.add_class('file-item');
-            this._labelStyleContext.add_class('file-item');
-        }else{
-            this._styleContext.add_class('file-item-straight');
-            this._labelStyleContext.add_class('file-item-straight');
-        }
+        this._styleContext.add_class('file-item');
+        this._labelStyleContext.add_class('file-item');
 
-        this._containerRectangle = new Gdk.Rectangle();
-        this._iconRectangle = new Gdk.Rectangle();
-        this._labelRectangle = new Gdk.Rectangle();
+        this.iconRectangle = new Gdk.Rectangle();
+        this.labelRectangle = new Gdk.Rectangle();
 
         /* We need to allow the "button-press" event to pass through the callbacks, to allow the DnD to work
          * But we must avoid them to reach the main window.
          * The solution is to allow them to pass in a EventBox, used both for detecting the events and the DnD, and block them
          * in a second EventBox, located outside.
          */
-        this._shieldEventBox.connect('button-press-event', (actor, event) => {return true;});
-        this._shieldLabelEventBox.connect('button-press-event', (actor, event) => {return true;});
-
+        this._sheildEventBox.connect('button-press-event', (actor, event) => {return true;});
+        this._sheildLabelEventBox.connect('button-press-event', (actor, event) => {return true;});
         this._eventBox.connect('button-press-event', (actor, event) => this._onPressButton(actor, event));
         this._eventBox.connect('enter-notify-event', (actor, event) => this._onEnter(actor, event));
         this._eventBox.connect('leave-notify-event', (actor, event) => this._onLeave(actor, event));
@@ -200,7 +160,7 @@ var FileItem = class {
                 }
             });
         }
-        this._container.show_all();
+        this.container.show_all();
         this._updateName();
         if (this._dropCoordinates) {
             this.setSelected();
@@ -212,10 +172,10 @@ var FileItem = class {
         this.iconheight = this._iconContainer.get_allocated_height();
         let x = this._x1 + ((this.width - this.iconwidth)/2)*this._zoom;
         let y = this._y1 + 2;
-        this._iconRectangle.x = x;
-        this._iconRectangle.y = y;
-        this._iconRectangle.width = this.iconwidth*this._zoom;
-        this._iconRectangle.height = this.iconheight*this._zoom;
+        this.iconRectangle.x = x;
+        this.iconRectangle.y = y;
+        this.iconRectangle.width = this.iconwidth*this._zoom;
+        this.iconRectangle.height = this.iconheight*this._zoom;
     }
 
     _calculateLabelRectangle() {
@@ -223,10 +183,10 @@ var FileItem = class {
         this.labelheight = this._labelContainer.get_allocated_height();
         let x = this._x1 + ((this.width - this.labelwidth)/2)*this._zoom;
         let y = this._y1 + 4 + (this.iconheight)*this._zoom;
-        this._labelRectangle.x = x;
-        this._labelRectangle.y = y;
-        this._labelRectangle.width = this.labelwidth*this._zoom;
-        this._labelRectangle.height = this.labelheight*this._zoom;
+        this.labelRectangle.x = x;
+        this.labelRectangle.y = y;
+        this.labelRectangle.width = this.labelwidth*this._zoom;
+        this.labelRectangle.height = this.labelheight*this._zoom;
     }
 
     _setFileName(text) {
@@ -268,7 +228,7 @@ var FileItem = class {
     _setDragSource(widget) {
         widget.drag_source_set(Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.MOVE | Gdk.DragAction.COPY);
         let targets = new Gtk.TargetList(null);
-        targets.add(Gdk.atom_intern('x-special/desktopicons-neo-icon-list', false), Gtk.TargetFlags.SAME_APP, 0);
+        targets.add(Gdk.atom_intern('x-special/ding-icon-list', false), Gtk.TargetFlags.SAME_APP, 0);
         if ((this._fileExtra != Enums.FileType.USER_DIRECTORY_TRASH) &&
             (this._fileExtra != Enums.FileType.USER_DIRECTORY_HOME) &&
             (this._fileExtra != Enums.FileType.EXTERNAL_DRIVE)) {
@@ -277,9 +237,9 @@ var FileItem = class {
         }
         widget.drag_source_set_target_list(targets);
         widget.connect('drag-begin', (widget, context) => {
-            let surf = new Cairo.ImageSurface(Cairo.SurfaceType.IMAGE, this._container.get_allocated_width(), this._container.get_allocated_height());
+            let surf = new Cairo.ImageSurface(Cairo.SurfaceType.IMAGE, this.container.get_allocated_width(), this.container.get_allocated_height());
             let cr = new Cairo.Context(surf);
-            this._container.draw(cr);
+            this.container.draw(cr);
             let itemnumber = this._desktopManager.getNumberOfSelectedItems();
             if (itemnumber > 1) {
                 Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: this._desktopManager.selectColor.red,
@@ -287,6 +247,7 @@ var FileItem = class {
                                                             blue: this._desktopManager.selectColor.blue,
                                                             alpha: 0.6})
                 );
+                itemnumber -= 1;
                 switch (itemnumber.toString().length) {
                     case 1: cr.rectangle(1, 1, 30, 20); break;
                     case 2: cr.rectangle(1, 1, 40, 20); break;
@@ -403,13 +364,11 @@ var FileItem = class {
         this._x2 = x + (width * zoom) - 1;
         this._y2 = y + (height * zoom) - 1;
         this._grid = grid;
-        this._container.set_size_request(width, height);
+        this.container.set_size_request(width, height);
         this._label.margin_start = margin;
         this._label.margin_end = margin;
         this._label.margin_bottom = margin;
         this._iconContainer.margin_top = margin;
-        [this._containerRectangle.x, this._containerRectangle.y] = [this._x1, this._y1];
-        [this._containerRectangle.width, this._containerRectangle.height] = [this._x2-this._x1, this._y2-this._y1];
         this._calculateIconRectangle();
         this._calculateLabelRectangle();
     }
@@ -530,6 +489,7 @@ var FileItem = class {
     }
 
     _updateIcon() {
+        this._icon.set_padding(0,0);
         try {
             let customIcon = this._fileInfo.get_attribute_as_string('metadata::custom-icon');
             if (customIcon && (customIcon != '')) {
@@ -632,8 +592,8 @@ var FileItem = class {
         let thumbnailPixbuf = GdkPixbuf.Pixbuf.new_from_stream(thumbnailStream, null);
 
         if (thumbnailPixbuf != null) {
-            let width = Prefs.get_desired_width();
-            let height = Prefs.get_icon_size();
+            let width = Prefs.get_desired_width() - 8;
+            let height = Prefs.get_icon_size() - 8;
             let aspectRatio = thumbnailPixbuf.width / thumbnailPixbuf.height;
             if ((width / height) > aspectRatio)
                 width = height * aspectRatio;
@@ -646,6 +606,7 @@ var FileItem = class {
             pixbuf = this._addEmblemsToPixbufIfNeeded(pixbuf);
             let surface = Gdk.cairo_surface_create_from_pixbuf(pixbuf, scale, null);
             this._icon.set_from_surface(surface);
+            this._icon.set_padding(4,4)
             return true;
         }
         return false;
@@ -680,29 +641,27 @@ var FileItem = class {
     }
 
     _addEmblemsToPixbufIfNeeded(pixbuf) {
-        if(this._drawSymbols){
-            const scale = this._icon.get_scale_factor();
-            this._copiedPixbuf = false;
-            let emblem = null;
-            let finalSize = Math.floor(Prefs.get_icon_size() / 3) * scale;
-            if (this._isSymlink) {
-                if (this._isBrokenSymlink)
-                    emblem = Gio.ThemedIcon.new('emblem-unreadable');
-                else
-                    emblem = Gio.ThemedIcon.new('emblem-symbolic-link');
-                pixbuf = this._copyAndResizeIfNeeded(pixbuf);
-                let theme = Gtk.IconTheme.get_default();
-                let emblemIcon = theme.lookup_by_gicon_for_scale(emblem, finalSize / scale, scale, Gtk.IconLookupFlags.FORCE_SIZE).load_icon();
-                emblemIcon.composite(pixbuf, pixbuf.width - finalSize, pixbuf.height - finalSize, finalSize, finalSize, pixbuf.width - finalSize, pixbuf.height - finalSize, 1, 1, GdkPixbuf.InterpType.BILINEAR, 255);
-            }
+        const scale = this._icon.get_scale_factor();
+        this._copiedPixbuf = false;
+        let emblem = null;
+        let finalSize = Math.floor(Prefs.get_icon_size() / 3) * scale;
+        if (this._isSymlink) {
+            if (this._isBrokenSymlink)
+                emblem = Gio.ThemedIcon.new('emblem-unreadable');
+            else
+                emblem = Gio.ThemedIcon.new('emblem-symbolic-link');
+            pixbuf = this._copyAndResizeIfNeeded(pixbuf);
+            let theme = Gtk.IconTheme.get_default();
+            let emblemIcon = theme.lookup_by_gicon_for_scale(emblem, finalSize / scale, scale, Gtk.IconLookupFlags.FORCE_SIZE).load_icon();
+            emblemIcon.composite(pixbuf, pixbuf.width - finalSize, pixbuf.height - finalSize, finalSize, finalSize, pixbuf.width - finalSize, pixbuf.height - finalSize, 1, 1, GdkPixbuf.InterpType.BILINEAR, 255);
+        }
 
-            if (this.trustedDesktopFile) {
-                pixbuf = this._copyAndResizeIfNeeded(pixbuf);
-                let theme = Gtk.IconTheme.get_default();
-                emblem = Gio.ThemedIcon.new('emblem-default');
-                let emblemIcon = theme.lookup_by_gicon_for_scale(emblem, finalSize / scale, scale, Gtk.IconLookupFlags.FORCE_SIZE).load_icon();
-                emblemIcon.composite(pixbuf, 0, 0, finalSize, finalSize, 0, 0, 1, 1, GdkPixbuf.InterpType.BILINEAR, 255);
-            }
+        if (this.trustedDesktopFile) {
+            pixbuf = this._copyAndResizeIfNeeded(pixbuf);
+            let theme = Gtk.IconTheme.get_default();
+            emblem = Gio.ThemedIcon.new('emblem-default');
+            let emblemIcon = theme.lookup_by_gicon_for_scale(emblem, finalSize / scale, scale, Gtk.IconLookupFlags.FORCE_SIZE).load_icon();
+            emblemIcon.composite(pixbuf, 0, 0, finalSize, finalSize, 0, 0, 1, 1, GdkPixbuf.InterpType.BILINEAR, 255);
         }
         return pixbuf;
     }

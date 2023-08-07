@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop-icons master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
-"PO-Revision-Date: 2019-03-02 18:02+0100\n"
+"POT-Creation-Date: 2021-07-18 14:10+0200\n"
+"PO-Revision-Date: 2021-06-15 18:20+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech <zeten30@gmail.com>\n"
 "Language: cs\n"
@@ -17,435 +17,505 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: askConfirmPopup.js:36
-msgid "Delete"
-msgstr ""
-
-#: askNamePopup.js:35
+#: askNamePopup.js:36
 msgid "OK"
 msgstr "Budiž"
 
+#: askNamePopup.js:37 desktopIconsUtil.js:211 desktopManager.js:1668
+msgid "Cancel"
+msgstr "Zrušit"
+
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Název nové složky"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
-msgstr "Přejmenovat…"
+msgstr "Přejmenovat soubor"
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
-msgstr "Přejmenovat…"
+msgstr "Přejmenovat"
 
-#: desktopIconsUtil.js:79
+#: desktopIconsUtil.js:80
 msgid "Command not found"
-msgstr ""
-
-#: desktopIconsUtil.js:195
-msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
-
-#: desktopIconsUtil.js:196
-msgid "“{0}” is an executable text file."
-msgstr ""
-
-#: desktopIconsUtil.js:200
-#, fuzzy
-msgid "Execute in a terminal"
-msgstr "Otevřít v terminálu"
+msgstr "Příkaz nebyl nalezen"
 
 #: desktopIconsUtil.js:202
+msgid "Do you want to run “{0}”, or display its contents?"
+msgstr "Chcete spustit “{0}” nebo chcete zobrazit obsah?"
+
+#: desktopIconsUtil.js:203
+msgid "“{0}” is an executable text file."
+msgstr "“{0}” je spustitelný soubor."
+
+#: desktopIconsUtil.js:207
+msgid "Execute in a terminal"
+msgstr "Spustit v terminálu"
+
+#: desktopIconsUtil.js:209
 msgid "Show"
-msgstr ""
+msgstr "Zobrazit"
 
-#: desktopIconsUtil.js:206
+#: desktopIconsUtil.js:213
 msgid "Execute"
-msgstr ""
+msgstr "Spustit"
 
-#: desktopManager.js:131
+#: desktopManager.js:137
 msgid "Nautilus File Manager not found"
-msgstr ""
+msgstr "Správce souborů Nautilus nebyl nalezen"
 
-#: desktopManager.js:132
+#: desktopManager.js:138
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
-msgstr ""
+msgstr "Správce Souborů Nautilus je nezbytný pro práci s Desktop Icons NG."
 
-#: desktopManager.js:543
+#: desktopManager.js:592
 msgid "New Folder"
 msgstr "Nová složka"
 
-#: desktopManager.js:547
+#: desktopManager.js:596
 msgid "New Document"
-msgstr ""
+msgstr "Nový Dokument"
 
-#: desktopManager.js:552
+#: desktopManager.js:601
 msgid "Paste"
 msgstr "Vložit"
 
-#: desktopManager.js:556
+#: desktopManager.js:605
 msgid "Undo"
 msgstr "Zpět"
 
-#: desktopManager.js:560
+#: desktopManager.js:609
 msgid "Redo"
 msgstr "Znovu"
 
-#: desktopManager.js:566
+#: desktopManager.js:615
 msgid "Select all"
-msgstr ""
+msgstr "Vybrat vše"
 
-#: desktopManager.js:572
+#: desktopManager.js:623
 msgid "Show Desktop in Files"
 msgstr "Zobrazit plochu v Souborech"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:627 fileItem.js:1002
 msgid "Open in Terminal"
 msgstr "Otevřít v terminálu"
 
-#: desktopManager.js:582
+#: desktopManager.js:633
 msgid "Change Background…"
 msgstr "Změnit pozadí…"
 
-#: desktopManager.js:591
+#: desktopManager.js:642
 msgid "Display Settings"
 msgstr "Zobrazit nastavení"
 
-#: desktopManager.js:598
+#: desktopManager.js:649
 msgid "Desktop Icons settings"
-msgstr ""
+msgstr "Nastavení ikon na ploše"
 
-#: desktopManager.js:609
+#: desktopManager.js:660
 msgid "Scripts"
-msgstr ""
-
-#: desktopManager.js:1127 desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr ""
-
-#: desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr ""
-
-#: desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
-msgstr ""
+msgstr "Skripty"
 
 #: desktopManager.js:1310
-#, fuzzy
 msgid "New folder"
 msgstr "Nová složka"
 
 #: desktopManager.js:1385
 msgid "Can not email a Directory"
-msgstr ""
+msgstr "Nemůžete poslat složku emailem"
 
 #: desktopManager.js:1386
 msgid "Selection includes a Directory, compress the directory to a file first."
+msgstr "Výběr obsahuje Složku, nejdříve musíte zkomprimovat složku do souboru."
+
+#: desktopManager.js:1407
+msgid "Arrange Icons"
 msgstr ""
+
+#: desktopManager.js:1411
+msgid "Arrange By..."
+msgstr ""
+
+#: desktopManager.js:1420
+msgid "Keep Arranged..."
+msgstr ""
+
+#: desktopManager.js:1425
+msgid "Sort Home/Drives/Trash..."
+msgstr ""
+
+#: desktopManager.js:1431
+msgid "Sort by Name"
+msgstr ""
+
+#: desktopManager.js:1433
+msgid "Sort by Name Descending"
+msgstr ""
+
+#: desktopManager.js:1436
+msgid "Sort by Modified Time"
+msgstr ""
+
+#: desktopManager.js:1439
+msgid "Sort by Type"
+msgstr ""
+
+#: desktopManager.js:1442
+msgid "Sort by Size"
+msgstr ""
+
+#: desktopManager.js:1666
+msgid "Select Extract Destination"
+msgstr ""
+
+#: desktopManager.js:1669
+#, fuzzy
+msgid "Select"
+msgstr "Vybrat vše"
 
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: fileItem.js:151
+#: fileItem.js:196
 msgid "Home"
-msgstr ""
+msgstr "Domovská Složka"
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open All..."
-msgstr ""
+msgstr "Otevřít vše..."
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open"
 msgstr "Otevřít"
 
-#: fileItem.js:801
-#, fuzzy
+#: fileItem.js:905
 msgid "Open All With Other Application..."
-msgstr "Otevřít pomocí jiné aplikace"
+msgstr "Otevřít vše v jiné aplikaci..."
 
-#: fileItem.js:801
+#: fileItem.js:905
 msgid "Open With Other Application"
 msgstr "Otevřít pomocí jiné aplikace"
 
-#: fileItem.js:805
+#: fileItem.js:909
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Spustit pomocí dedikované grafické karty"
 
-#: fileItem.js:813
+#: fileItem.js:917
 msgid "Cut"
 msgstr "Vyjmout"
 
-#: fileItem.js:816
+#: fileItem.js:920
 msgid "Copy"
 msgstr "Kopírovat"
 
-#: fileItem.js:820
+#: fileItem.js:924
 msgid "Rename…"
 msgstr "Přejmenovat…"
 
-#: fileItem.js:824
+#: fileItem.js:928
 msgid "Move to Trash"
 msgstr "Přesunout do koše"
 
-#: fileItem.js:828
+#: fileItem.js:932
 msgid "Delete permanently"
-msgstr ""
+msgstr "Odstranit nadobro"
 
-#: fileItem.js:834
-#, fuzzy
+#: fileItem.js:938
 msgid "Don't Allow Launching"
 msgstr "Nepovolit spouštění"
 
-#: fileItem.js:834
+#: fileItem.js:938
 msgid "Allow Launching"
 msgstr "Povolit spouštění"
 
-#: fileItem.js:841
+#: fileItem.js:945
 msgid "Empty Trash"
 msgstr "Vyprázdnit koš"
 
-#: fileItem.js:848
+#: fileItem.js:952
 msgid "Eject"
-msgstr ""
+msgstr "Vysunout"
 
-#: fileItem.js:855
+#: fileItem.js:959
 msgid "Unmount"
-msgstr ""
+msgstr "Odpojit"
 
-#: fileItem.js:870
+#: fileItem.js:974
+msgid "Extract Here"
+msgstr "Rozbalit sem"
+
+#: fileItem.js:977
+msgid "Extract To..."
+msgstr "Rozbalit do…"
+
+#: fileItem.js:982
 msgid "Send to..."
-msgstr ""
+msgstr "Poslat..."
 
-#: fileItem.js:874
+#: fileItem.js:986
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Zkomprimovat {0} soubor"
+msgstr[1] "Zkomprimovat {0} soubory"
+msgstr[2] "Zkomprimovat {0} souborů"
 
-#: fileItem.js:877
+#: fileItem.js:989
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Nová složka s {0} položkou"
+msgstr[1] "Nová složka s {0} položkami"
+msgstr[2] "Nová složka s {0} položkami"
 
-#: fileItem.js:883
-#, fuzzy
+#: fileItem.js:994
 msgid "Common Properties"
 msgstr "Vlastnosti"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Properties"
 msgstr "Vlastnosti"
 
-#: fileItem.js:887
-#, fuzzy
+#: fileItem.js:998
 msgid "Show All in Files"
-msgstr "Zobrazit v Souborech"
+msgstr "Zobrazit vše v Souborech"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show in Files"
 msgstr "Zobrazit v Souborech"
 
-#: preferences.js:88
+#: preferences.js:91
 msgid "Settings"
-msgstr "Nastavení"
+msgstr "Nastavení ikon na ploše"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Size for the desktop icons"
 msgstr "Velikost ikon na pracovní ploše"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Tiny"
-msgstr ""
+msgstr "Drobný"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Small"
-msgstr "malé"
+msgstr "Malé"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Standard"
-msgstr "standardní"
+msgstr "Standardní"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Large"
-msgstr "velké"
+msgstr "Velké"
 
-#: preferences.js:95
+#: preferences.js:99
 msgid "Show the personal folder in the desktop"
 msgstr "Zobrazovat osobní složku na pracovní ploše"
 
-#: preferences.js:96
+#: preferences.js:100
 msgid "Show the trash icon in the desktop"
 msgstr "Zobrazovat ikonu koše na pracovní ploše"
 
-#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:45
 msgid "Show external drives in the desktop"
-msgstr "Zobrazovat osobní složku na pracovní ploše"
+msgstr "Zobrazovat disky připojené k počítači"
 
-#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:50
 msgid "Show network drives in the desktop"
-msgstr "Zobrazovat osobní složku na pracovní ploše."
-
-#: preferences.js:101
-#, fuzzy
-msgid "New icons alignment"
-msgstr "Velikost ikon"
-
-#: preferences.js:102
-msgid "Top-left corner"
-msgstr ""
-
-#: preferences.js:103
-msgid "Top-right corner"
-msgstr ""
-
-#: preferences.js:104
-msgid "Bottom-left corner"
-msgstr ""
+msgstr "Zobrazovat síťové disky připojené k počítači"
 
 #: preferences.js:105
-msgid "Bottom-right corner"
-msgstr ""
+msgid "New icons alignment"
+msgstr "Zarovnání nových ikon"
 
-#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
-msgid "Add new drives to the opposite side of the screen"
-msgstr ""
+#: preferences.js:106
+msgid "Top-left corner"
+msgstr "Levý horní roh"
+
+#: preferences.js:107
+msgid "Top-right corner"
+msgstr "Pravý horní roh"
 
 #: preferences.js:108
-msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgid "Bottom-left corner"
+msgstr "Spodní levý roh"
+
+#: preferences.js:109
+msgid "Bottom-right corner"
+msgstr "Spodní pravý roh"
+
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:55
+msgid "Add new drives to the opposite side of the screen"
+msgstr "Dávat nové disky na opačnou stranu obrazovky"
 
 #: preferences.js:112
+msgid "Highlight the drop place during Drag'n'Drop"
+msgstr "Zvýraznit místo k položení při přetahování souborů"
+
+#: preferences.js:116
 msgid "Settings shared with Nautilus"
-msgstr ""
+msgstr "Nastavení sdílená s Nautilem"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Click type for open files"
-msgstr ""
+msgstr "Typ kliknutí požadovaný pro otevření souboru"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Single click"
-msgstr ""
+msgstr "Jeden klik"
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Double click"
-msgstr ""
-
-#: preferences.js:119
-#, fuzzy
-msgid "Show hidden files"
-msgstr "Zobrazit v Souborech"
-
-#: preferences.js:120
-msgid "Show a context menu item to delete permanently"
-msgstr ""
+msgstr "Dvojklik"
 
 #: preferences.js:123
-msgid "Action to do when launching a program from the desktop"
-msgstr ""
+msgid "Show hidden files"
+msgstr "Zobrazit skryté soubory"
 
 #: preferences.js:124
-msgid "Display the content of the file"
-msgstr ""
+msgid "Show a context menu item to delete permanently"
+msgstr "Zobrazit položku kontextové nabídky, kterou chcete trvale smazat"
 
-#: preferences.js:125
-msgid "Launch the file"
-msgstr ""
-
-#: preferences.js:126
-msgid "Ask what to do"
-msgstr ""
+#: preferences.js:129
+msgid "Action to do when launching a program from the desktop"
+msgstr "Co se má stát když spouštíte spustitelný soubor z plochy"
 
 #: preferences.js:130
-msgid "Show image thumbnails"
-msgstr ""
+msgid "Display the content of the file"
+msgstr "Zobrazit obsah souboru"
 
 #: preferences.js:131
-msgid "Never"
-msgstr ""
+msgid "Launch the file"
+msgstr "Spustit soubor"
 
 #: preferences.js:132
-msgid "Local files only"
-msgstr ""
+msgid "Ask what to do"
+msgstr "Zeptat se co se má stát"
 
-#: preferences.js:133
+#: preferences.js:138
+msgid "Show image thumbnails"
+msgstr "Zobrazit náhledové obrázky"
+
+#: preferences.js:139
+msgid "Never"
+msgstr "Nikdy"
+
+#: preferences.js:140
+msgid "Local files only"
+msgstr "Pouze pro místní soubory"
+
+#: preferences.js:141
 msgid "Always"
-msgstr ""
+msgstr "Vždy"
 
 #: prefs.js:37
 msgid ""
 "To configure Desktop Icons NG, do right-click in the desktop and choose the "
 "last item: 'Desktop Icons settings'"
 msgstr ""
+"Chcete-li nakonfigurovat Desktop Icons NG, klikněte pravým tlačítkem na "
+"plochu a vyberte poslední položku: 'Nastavení ikon na ploše'"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+#: showErrorPopup.js:37
+msgid "Close"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:25
 msgid "Icon size"
 msgstr "Velikost ikon"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:26
 msgid "Set the size for the desktop icons."
 msgstr "Nastavit velikost pro ikony na pracovní ploše."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:30
 msgid "Show personal folder"
 msgstr "Zobrazovat osobní složku"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:31
 msgid "Show the personal folder in the desktop."
 msgstr "Zobrazovat osobní složku na pracovní ploše."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:35
 msgid "Show trash icon"
 msgstr "Zobrazovat koš"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:36
 msgid "Show the trash icon in the desktop."
 msgstr "Zobrazovat ikonu koše na pracovní ploše."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:40
 msgid "New icons start corner"
-msgstr "Velikost ikon"
+msgstr "Místo kam se přidávají nové ikony"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:41
 msgid "Set the corner from where the icons will start to be placed."
-msgstr ""
+msgstr "Vyberte roh do kterého budou ikony pokládány."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:46
 msgid "Show the disk drives connected to the computer."
-msgstr ""
+msgstr "Zobrazovat disky připojené k počítači."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:51
 msgid "Show mounted network volumes in the desktop."
-msgstr "Zobrazovat osobní složku na pracovní ploše."
+msgstr "Zobrazovat připojené síťové disky připojené k počítači."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:56
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
 msgstr ""
+"Při připojení nových disků se jejich ikony budou zobrazovat na opačné straně "
+"obrazovky."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:60
 msgid "Shows a rectangle in the destination place during DnD"
-msgstr ""
+msgstr "Zobrazit čtverec při přetahování ikon"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:61
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
+"Při přetahování ikon se místo kam bude ikona dána obarví poloprůhledným "
+"čtvercem."
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:65
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:66
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:70
+msgid "Keep Icons Arranged"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:71
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:75
+msgid "Arrange Order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:76
+msgid "Icons Arranged by this property"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Odstranit"
+
+#~ msgid "Error while deleting files"
+#~ msgstr "Při odstraňování souborů se vyskytla chyba"
+
+#~ msgid "Are you sure you want to permanently delete these items?"
+#~ msgstr "Jste si jisti že chcete odstranit tyto soubory?"
+
+#~ msgid "If you delete an item, it will be permanently lost."
+#~ msgstr "Pokud odstraníte soubor bude navždy ztracen."
 
 #, fuzzy
 #~ msgid "Show external disk drives in the desktop"
@@ -481,7 +551,7 @@ msgstr ""
 #~ msgstr "Soubor nebo složka s tímto názvem již existuje."
 
 #~ msgid "Huge"
-#~ msgstr "obrovské"
+#~ msgstr "Obrovské"
 
 #~ msgid "Ok"
 #~ msgstr "Ok"

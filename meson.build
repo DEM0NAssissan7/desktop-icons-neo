@@ -1,5 +1,5 @@
-project('desktopicons-neo',
-  version: '2.0',
+project('ding',
+  version: '0.20.0',
   license: 'GPL3'
 )
 
@@ -10,7 +10,7 @@ prefix = get_option('prefix')
 datadir = join_paths (prefix, get_option('datadir'))
 schema_dir = join_paths(datadir, 'glib-2.0', 'schemas')
 
-extensions_dir = join_paths(prefix, 'share', 'gnome-shell', 'extensions', 'desktopicons-neo@darkdemon')
+extensions_dir = join_paths(prefix, 'share', 'gnome-shell', 'extensions', 'ding@rastersoft.com')
 
 install_data([
 #    'createFolderDialog.js',
@@ -21,7 +21,7 @@ install_data([
     'desktopGrid.js',
     'desktopIconsUtil.js',
     'desktopManager.js',
-    'desktopicons-neo.js',
+    'ding.js',
     'emulateX11WindowType.js',
     'enums.js',
     'extension.js',

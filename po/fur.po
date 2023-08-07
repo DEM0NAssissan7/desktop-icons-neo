@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop-icons master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 22:59+0200\n"
+"POT-Creation-Date: 2021-07-18 14:10+0200\n"
 "PO-Revision-Date: 2019-03-05 22:20+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
@@ -17,17 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: askConfirmPopup.js:35 askNamePopup.js:36 desktopIconsUtil.js:204
-msgid "Cancel"
-msgstr "Anule"
-
-#: askConfirmPopup.js:36
-msgid "Delete"
-msgstr ""
-
-#: askNamePopup.js:35
+#: askNamePopup.js:36
 msgid "OK"
 msgstr "Va ben"
+
+#: askNamePopup.js:37 desktopIconsUtil.js:211 desktopManager.js:1668
+msgid "Cancel"
+msgstr "Anule"
 
 #: askRenamePopup.js:40
 #, fuzzy
@@ -44,98 +40,86 @@ msgstr "Cambie non..."
 msgid "Rename"
 msgstr "Cambie non..."
 
-#: desktopIconsUtil.js:79
+#: desktopIconsUtil.js:80
 msgid "Command not found"
 msgstr ""
 
-#: desktopIconsUtil.js:195
+#: desktopIconsUtil.js:202
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
+msgstr "Vuelistu eseguî “{0}” o mostrâ il so contignût?"
 
-#: desktopIconsUtil.js:196
+#: desktopIconsUtil.js:203
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "“{0}” al è un file di test eseguibil."
 
-#: desktopIconsUtil.js:200
+#: desktopIconsUtil.js:207
 #, fuzzy
 msgid "Execute in a terminal"
 msgstr "Vierç in Terminâl"
 
-#: desktopIconsUtil.js:202
+#: desktopIconsUtil.js:209
 msgid "Show"
 msgstr ""
 
-#: desktopIconsUtil.js:206
+#: desktopIconsUtil.js:213
 msgid "Execute"
 msgstr ""
 
-#: desktopManager.js:131
+#: desktopManager.js:137
 msgid "Nautilus File Manager not found"
 msgstr ""
 
-#: desktopManager.js:132
+#: desktopManager.js:138
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
 msgstr ""
 
-#: desktopManager.js:543
+#: desktopManager.js:592
 msgid "New Folder"
 msgstr "Gnove cartele"
 
-#: desktopManager.js:547
+#: desktopManager.js:596
 msgid "New Document"
-msgstr ""
+msgstr "Gnûf Document"
 
-#: desktopManager.js:552
+#: desktopManager.js:601
 msgid "Paste"
 msgstr "Tache"
 
-#: desktopManager.js:556
+#: desktopManager.js:605
 msgid "Undo"
 msgstr "Anule"
 
-#: desktopManager.js:560
+#: desktopManager.js:609
 msgid "Redo"
 msgstr "Torne fâ"
 
-#: desktopManager.js:566
+#: desktopManager.js:615
 msgid "Select all"
-msgstr ""
+msgstr "Selezione dut"
 
-#: desktopManager.js:572
+#: desktopManager.js:623
 msgid "Show Desktop in Files"
 msgstr "Mostre Scritori in File"
 
-#: desktopManager.js:576 fileItem.js:891
+#: desktopManager.js:627 fileItem.js:1002
 msgid "Open in Terminal"
 msgstr "Vierç in Terminâl"
 
-#: desktopManager.js:582
+#: desktopManager.js:633
 msgid "Change Background…"
 msgstr "Cambie sfont…"
 
-#: desktopManager.js:591
+#: desktopManager.js:642
 msgid "Display Settings"
 msgstr "Impostazions visôr"
 
-#: desktopManager.js:598
+#: desktopManager.js:649
 msgid "Desktop Icons settings"
 msgstr ""
 
-#: desktopManager.js:609
+#: desktopManager.js:660
 msgid "Scripts"
-msgstr ""
-
-#: desktopManager.js:1127 desktopManager.js:1175
-msgid "Error while deleting files"
-msgstr ""
-
-#: desktopManager.js:1201
-msgid "Are you sure you want to permanently delete these items?"
-msgstr ""
-
-#: desktopManager.js:1202
-msgid "If you delete an item, it will be permanently lost."
-msgstr ""
+msgstr "Script"
 
 #: desktopManager.js:1310
 #, fuzzy
@@ -150,232 +134,284 @@ msgstr ""
 msgid "Selection includes a Directory, compress the directory to a file first."
 msgstr ""
 
-#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
-#: fileItem.js:151
-msgid "Home"
+#: desktopManager.js:1407
+msgid "Arrange Icons"
 msgstr ""
 
-#: fileItem.js:794
+#: desktopManager.js:1411
+msgid "Arrange By..."
+msgstr ""
+
+#: desktopManager.js:1420
+msgid "Keep Arranged..."
+msgstr ""
+
+#: desktopManager.js:1425
+msgid "Sort Home/Drives/Trash..."
+msgstr ""
+
+#: desktopManager.js:1431
+msgid "Sort by Name"
+msgstr ""
+
+#: desktopManager.js:1433
+msgid "Sort by Name Descending"
+msgstr ""
+
+#: desktopManager.js:1436
+msgid "Sort by Modified Time"
+msgstr ""
+
+#: desktopManager.js:1439
+msgid "Sort by Type"
+msgstr ""
+
+#: desktopManager.js:1442
+msgid "Sort by Size"
+msgstr ""
+
+#: desktopManager.js:1666
+msgid "Select Extract Destination"
+msgstr ""
+
+#: desktopManager.js:1669
+msgid "Select"
+msgstr "Selezione"
+
+#. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
+#: fileItem.js:196
+msgid "Home"
+msgstr "Cjase"
+
+#: fileItem.js:898
 msgid "Open All..."
 msgstr ""
 
-#: fileItem.js:794
+#: fileItem.js:898
 msgid "Open"
 msgstr "Vierç"
 
-#: fileItem.js:801
+#: fileItem.js:905
 #, fuzzy
 msgid "Open All With Other Application..."
 msgstr "Vierç cuntune altre aplicazion"
 
-#: fileItem.js:801
+#: fileItem.js:905
 msgid "Open With Other Application"
 msgstr "Vierç cuntune altre aplicazion"
 
-#: fileItem.js:805
+#: fileItem.js:909
 msgid "Launch using Dedicated Graphics Card"
 msgstr ""
 
-#: fileItem.js:813
+#: fileItem.js:917
 msgid "Cut"
 msgstr "Taie"
 
-#: fileItem.js:816
+#: fileItem.js:920
 msgid "Copy"
 msgstr "Copie"
 
-#: fileItem.js:820
+#: fileItem.js:924
 msgid "Rename…"
 msgstr "Cambie non..."
 
-#: fileItem.js:824
+#: fileItem.js:928
 msgid "Move to Trash"
 msgstr "Sposte te scovacere"
 
-#: fileItem.js:828
+#: fileItem.js:932
 msgid "Delete permanently"
-msgstr ""
+msgstr "Elimine par simpri"
 
-#: fileItem.js:834
+#: fileItem.js:938
 #, fuzzy
 msgid "Don't Allow Launching"
 msgstr "No sta permeti inviament"
 
-#: fileItem.js:834
+#: fileItem.js:938
 msgid "Allow Launching"
 msgstr "Permet inviament"
 
-#: fileItem.js:841
+#: fileItem.js:945
 msgid "Empty Trash"
 msgstr "Disvuede scovacere"
 
-#: fileItem.js:848
+#: fileItem.js:952
 msgid "Eject"
-msgstr ""
+msgstr "Pare fûr"
 
-#: fileItem.js:855
+#: fileItem.js:959
 msgid "Unmount"
-msgstr ""
+msgstr "Dismonte"
 
-#: fileItem.js:870
+#: fileItem.js:974
+msgid "Extract Here"
+msgstr "Tire fûr ca"
+
+#: fileItem.js:977
+msgid "Extract To..."
+msgstr "Tire fûr su…"
+
+#: fileItem.js:982
 msgid "Send to..."
-msgstr ""
+msgstr "Invie a…"
 
-#: fileItem.js:874
+#: fileItem.js:986
 msgid "Compress {0} file"
 msgid_plural "Compress {0} files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: fileItem.js:877
+#: fileItem.js:989
 msgid "New Folder with {0} item"
 msgid_plural "New Folder with {0} items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: fileItem.js:883
+#: fileItem.js:994
 #, fuzzy
 msgid "Common Properties"
 msgstr "Propietâts"
 
-#: fileItem.js:883
+#: fileItem.js:994
 msgid "Properties"
 msgstr "Propietâts"
 
-#: fileItem.js:887
+#: fileItem.js:998
 #, fuzzy
 msgid "Show All in Files"
 msgstr "Mostre in File"
 
-#: fileItem.js:887
+#: fileItem.js:998
 msgid "Show in Files"
 msgstr "Mostre in File"
 
-#: preferences.js:88
+#: preferences.js:91
 msgid "Settings"
 msgstr "Impostazions"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Size for the desktop icons"
 msgstr "Dimension pes iconis dal scritori"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Tiny"
 msgstr ""
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Small"
 msgstr "Piçule"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Standard"
 msgstr "Standard"
 
-#: preferences.js:94
+#: preferences.js:98
 msgid "Large"
 msgstr "Largje"
 
-#: preferences.js:95
+#: preferences.js:99
 msgid "Show the personal folder in the desktop"
 msgstr "Mostre la cartele personâl intal scritori"
 
-#: preferences.js:96
+#: preferences.js:100
 msgid "Show the trash icon in the desktop"
 msgstr "Mostre la icone de scovacere intal scritori"
 
-#: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
+#: preferences.js:101 schemas/org.gnome.shell.extensions.ding.gschema.xml:45
 #, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Mostre la cartele personâl intal scritori"
 
-#: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
+#: preferences.js:102 schemas/org.gnome.shell.extensions.ding.gschema.xml:50
 #, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Mostre la cartele personâl intal scritori."
 
-#: preferences.js:101
+#: preferences.js:105
 #, fuzzy
 msgid "New icons alignment"
 msgstr "Dimension icone"
 
-#: preferences.js:102
+#: preferences.js:106
 msgid "Top-left corner"
 msgstr ""
 
-#: preferences.js:103
+#: preferences.js:107
 msgid "Top-right corner"
 msgstr ""
 
-#: preferences.js:104
+#: preferences.js:108
 msgid "Bottom-left corner"
 msgstr ""
 
-#: preferences.js:105
+#: preferences.js:109
 msgid "Bottom-right corner"
 msgstr ""
 
-#: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
+#: preferences.js:111 schemas/org.gnome.shell.extensions.ding.gschema.xml:55
 msgid "Add new drives to the opposite side of the screen"
 msgstr ""
 
-#: preferences.js:108
+#: preferences.js:112
 msgid "Highlight the drop place during Drag'n'Drop"
 msgstr ""
 
-#: preferences.js:112
+#: preferences.js:116
 msgid "Settings shared with Nautilus"
 msgstr ""
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Click type for open files"
 msgstr ""
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Single click"
 msgstr ""
 
-#: preferences.js:118
+#: preferences.js:122
 msgid "Double click"
 msgstr ""
 
-#: preferences.js:119
+#: preferences.js:123
 #, fuzzy
 msgid "Show hidden files"
 msgstr "Mostre in File"
 
-#: preferences.js:120
+#: preferences.js:124
 msgid "Show a context menu item to delete permanently"
 msgstr ""
 
-#: preferences.js:123
+#: preferences.js:129
 msgid "Action to do when launching a program from the desktop"
 msgstr ""
 
-#: preferences.js:124
+#: preferences.js:130
 msgid "Display the content of the file"
 msgstr ""
 
-#: preferences.js:125
+#: preferences.js:131
 msgid "Launch the file"
 msgstr ""
 
-#: preferences.js:126
+#: preferences.js:132
 msgid "Ask what to do"
 msgstr ""
 
-#: preferences.js:130
+#: preferences.js:138
 msgid "Show image thumbnails"
 msgstr ""
 
-#: preferences.js:131
+#: preferences.js:139
 msgid "Never"
 msgstr ""
 
-#: preferences.js:132
+#: preferences.js:140
 msgid "Local files only"
 msgstr ""
 
-#: preferences.js:133
+#: preferences.js:141
 msgid "Always"
 msgstr ""
 
@@ -385,63 +421,99 @@ msgid ""
 "last item: 'Desktop Icons settings'"
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:18
+#: showErrorPopup.js:37
+msgid "Close"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:25
 msgid "Icon size"
 msgstr "Dimension icone"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:19
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:26
 msgid "Set the size for the desktop icons."
 msgstr "Stabilìs la dimension pes iconis dal scritori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:23
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:30
 msgid "Show personal folder"
 msgstr "Mostre cartele personâl"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:24
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:31
 msgid "Show the personal folder in the desktop."
 msgstr "Mostre la cartele personâl intal scritori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:28
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:35
 msgid "Show trash icon"
 msgstr "Mostre la icone de scovacere"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:29
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:36
 msgid "Show the trash icon in the desktop."
 msgstr "Mostre la icone de scovacere intal scritori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:40
 #, fuzzy
 msgid "New icons start corner"
 msgstr "Dimension icone"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:41
 msgid "Set the corner from where the icons will start to be placed."
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:46
 msgid "Show the disk drives connected to the computer."
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:51
 #, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Mostre la cartele personâl intal scritori."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:49
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:56
 msgid ""
 "When adding drives and volumes to the desktop, add them to the opposite side "
 "of the screen."
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:53
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:60
 msgid "Shows a rectangle in the destination place during DnD"
 msgstr ""
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:61
 msgid ""
 "When doing a Drag'n'Drop operation, marks the place in the grid where the "
 "icon will be put with a semitransparent rectangle."
 msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:65
+msgid "Sort Special Folders - Home/Trash Drives."
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:66
+msgid ""
+"When arranging Icons on desktop, to sort and change the position of the "
+"Home, Trash and mounted Network or External Drives"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:70
+msgid "Keep Icons Arranged"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:71
+msgid "Always keep Icons Arranged by the last arranged order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:75
+msgid "Arrange Order"
+msgstr ""
+
+#: schemas/org.gnome.shell.extensions.ding.gschema.xml:76
+msgid "Icons Arranged by this property"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Elimine"
+
+#~ msgid "If you delete an item, it will be permanently lost."
+#~ msgstr "Se tu eliminis un element, al sarà pierdût par simpri."
 
 #, fuzzy
 #~ msgid "Show external disk drives in the desktop"

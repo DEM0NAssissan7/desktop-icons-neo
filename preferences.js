@@ -1,18 +1,19 @@
-/* LICENSE INFORMATION
- * 
- * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
- * customizations, and optimizations.
- * 
- * Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
- * 
- * This project is based on Desktop Icons NG (https://gitlab.com/rastersoft/desktop-icons-ng),
- * a desktop icons extension for GNOME licensed under the GPL v3.
- * 
- * This project is free and open source software as described in the GPL v3.
- * 
- * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
- * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
- * regarding this project's license.
+/* DING: Desktop Icons New Generation for GNOME Shell
+ *
+ * Copyright (C) 2019 Sergio Costas (rastersoft@gmail.com)
+ * Based on code original (C) Carlos Soriano
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 imports.gi.versions.Gtk = '3.0';
@@ -27,7 +28,7 @@ const Enums = imports.enums;
 
 const Gettext = imports.gettext;
 
-var _ = Gettext.domain('desktopicons-neo').gettext;
+var _ = Gettext.domain('ding').gettext;
 
 var extensionPath;
 
@@ -87,7 +88,7 @@ function showPreferences() {
     this.window = new Gtk.Window({ resizable: false,
                                   window_position: Gtk.WindowPosition.CENTER });
     this.window.connect('destroy', () => {this.window = null});
-    this.window.set_title(_("Desktop Icons settings"));
+    this.window.set_title(_("Settings"));
     DesktopIconsUtil.windowHidePagerTaskbarModal(this.window, true);
     let frame = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL });
     this.window.add(frame);
@@ -107,18 +108,6 @@ function showPreferences() {
                              'bottom-left': _("Bottom-left corner"),
                              'bottom-right': _("Bottom-right corner")
                             }));
-    frame.add(buildFileChooserButton(desktopSettings, 'desktop-directory', _("Desktop directory  >  ") + desktopSettings.get_string('desktop-directory'), _("Set desktop directory")));
-    frame.add(buildSelector(desktopSettings,
-                            'icon-shape',
-                            _("Icon shape"),
-                            {'conform': _("Conform"),
-                             'traditional': _("Traditional"),
-                             'square': _("Square"),
-                             'capsule': _("Capsule"),
-                             'rectangular': _("Rectangular")
-                            }));
-    frame.add(buildSwitcher(desktopSettings, 'curved-corners', _("Curve corners (theming)")));
-    frame.add(buildSwitcher(desktopSettings, 'draw-symbols', _("Draw icon symbols")));
     frame.add(buildSwitcher(desktopSettings, 'add-volumes-opposite', _("Add new drives to the opposite side of the screen")));
     frame.add(buildSwitcher(desktopSettings, 'show-drop-place', _("Highlight the drop place during Drag'n'Drop")));
 
@@ -161,25 +150,6 @@ function buildSwitcher(settings, key, labelText) {
     settings.bind(key, switcher, 'active', 3);
     hbox.pack_start(label, true, true, 0);
     hbox.add(switcher);
-    return hbox;
-}
-
-function buildFileChooserButton(settings, key, labelText, buttonText) {
-    function activateFileChooser(){hbox.add(filechooser)}
-    let hbox = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL, spacing: 10 });
-    let label = new Gtk.Label({ label: labelText, xalign: 0 });
-    let button = new Gtk.Button({ label: buttonText })
-    let fileChooser = new Gtk.FileChooserNative({ title: "Choose a Directory (You MUST restart the extension to see/apply changes)", action: Gtk.FileChooserAction.SELECT_FOLDER, modal: true });
-    button.connect('clicked', () => {
-        fileChooser.show();
-    });
-    fileChooser.connect('response',  (dlg, response) => {
-    	if (response !== Gtk.ResponseType.ACCEPT)
-    	    return;
-    	settings.set_string(key, dlg.get_file().get_path());
-    	});
-    hbox.pack_start(label, true, true, 0);
-    hbox.add(button);
     return hbox;
 }
 
@@ -235,8 +205,4 @@ function getSortOrder() {
 function setSortOrder(order) {
     let x = Object.values(Enums.SortOrder).indexOf(order);
     desktopSettings.set_enum(Enums.SortOrder.ORDER, x);
-}
-
-function get_icon_shape() {
-    return desktopSettings.get_string('icon-shape')
 }

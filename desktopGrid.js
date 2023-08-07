@@ -1,18 +1,19 @@
-/* LICENSE INFORMATION
- * 
- * Desktop Icons: Neo - A desktop icons extension for GNOME with numerous features, 
- * customizations, and optimizations.
- * 
- * Copyright 2021 Abdurahman Elmawi (cooper64doom@gmail.com)
- * 
- * This project is based on Desktop Icons NG (https://gitlab.com/rastersoft/desktop-icons-ng),
- * a desktop icons extension for GNOME licensed under the GPL v3.
- * 
- * This project is free and open source software as described in the GPL v3.
- * 
- * This project (Desktop Icons: Neo) is licensed under the GPL v3. To view the details of this license, 
- * visit https://www.gnu.org/licenses/gpl-3.0.html for the necessary information
- * regarding this project's license.
+/* DING: Desktop Icons New Generation for GNOME Shell
+ *
+ * Copyright (C) 2019 Sergio Costas (rastersoft@gmail.com)
+ * Based on code original (C) Carlos Soriano
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 const Gtk = imports.gi.Gtk;
@@ -25,7 +26,7 @@ const Enums = imports.enums;
 const DesktopIconsUtil = imports.desktopIconsUtil;
 const Signals = imports.signals;
 
-const Gettext = imports.gettext.domain('desktopicons-neo');
+const Gettext = imports.gettext.domain('ding');
 
 const _ = Gettext.gettext;
 
@@ -44,7 +45,6 @@ var DesktopGrid = class {
         this._x = desktopDescription.x;
         this._y = desktopDescription.y;
         let size_divisor = this._zoom;
-        
         let using_X11 = Gdk.Display.get_default().constructor.$gtype.name === 'GdkX11Display';
         if (asDesktop) {
             if (using_X11) {
@@ -161,7 +161,7 @@ var DesktopGrid = class {
     setDropDestination(dropDestination) {
         dropDestination.drag_dest_set(Gtk.DestDefaults.MOTION | Gtk.DestDefaults.DROP, null, Gdk.DragAction.MOVE);
         let targets = new Gtk.TargetList(null);
-        targets.add(Gdk.atom_intern('x-special/desktopicons-neo-icon-list', false), Gtk.TargetFlags.SAME_APP, 0);
+        targets.add(Gdk.atom_intern('x-special/ding-icon-list', false), Gtk.TargetFlags.SAME_APP, 0);
         targets.add(Gdk.atom_intern('x-special/gnome-icon-list', false), 0, 1);
         targets.add(Gdk.atom_intern('text/uri-list', false), 0, 2);
         targets.add(Gdk.atom_intern('text/plain', false), 0, 3);
@@ -219,46 +219,15 @@ var DesktopGrid = class {
         this._window.queue_draw();
     }
 
-    _drawRounded(cr, x, y, width, height, r) {
-	    let pi = Math.PI;
-	    
-        if(width <= r){
-            r = width-1;
-        }
-        if(height <= r){
-            r = height-1;
-        }
-        if(width <= r && height <= r){
-            r = Math.min(width,height);
-        }
-		cr.arc(x + r, y + r, r, pi, 3 * pi / 2);
-		cr.arc(x + width - r, y + r, r, 3 * pi / 2, 0);
-		cr.arc(x + width - r, y + height - r, r, 0, pi / 2);
-		cr.arc(x + r, y + height - r, r, pi / 2, pi);
-		cr.closePath();
-    }
-    
     _doDrawRubberBand(cr) {
-        if (this._desktopManager.rubberBand) {
-            let minX = Math.min(this._desktopManager.rubberBandInitX, this._desktopManager.mouseX);
-            let maxX = Math.max(this._desktopManager.rubberBandInitX, this._desktopManager.mouseX);
-            let minY = Math.min(this._desktopManager.rubberBandInitY, this._desktopManager.mouseY);
-            let maxY = Math.max(this._desktopManager.rubberBandInitY, this._desktopManager.mouseY);
-
-            if ((minX >= (this._x + this._width )) || (minY >= (this._y + this._height)) || (maxX < this._x) || (maxY < this._y)) {
+        if (this._desktopManager.rubberBand && this._desktopManager.selectionRectangle) {
+            if (! this.gridGlobalRectangle.intersect(this._desktopManager.selectionRectangle)[0]) {
                 return;
             }
-            let [xInit, yInit] = this._coordinatesGlobalToLocal(minX, minY);
-            let [xFin, yFin] = this._coordinatesGlobalToLocal(maxX, maxY);
-            this._rubberBandCurveRadius = 4;
-            
-            this._curvedCorners = Prefs.desktopSettings.get_boolean('curved-corners');
-            
-            if(this._curvedCorners){
-            	this._drawRounded(cr, xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit, this._rubberBandCurveRadius);
-            }else{
-            	cr.rectangle(xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit);
-            }
+            let [xInit, yInit] = this._coordinatesGlobalToLocal(this._desktopManager.x1, this._desktopManager.y1);
+            let [xFin, yFin] = this._coordinatesGlobalToLocal(this._desktopManager.x2, this._desktopManager.y2);
+
+            cr.rectangle(xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit);
             Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: this._desktopManager.selectColor.red,
                                                         green: this._desktopManager.selectColor.green,
                                                         blue: this._desktopManager.selectColor.blue,
@@ -266,11 +235,7 @@ var DesktopGrid = class {
             );
             cr.fill();
             cr.setLineWidth(1);
-            if(this._curvedCorners){
-            	this._drawRounded(cr, xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit, this._rubberBandCurveRadius);
-            }else{
-            	cr.rectangle(xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit);
-            }
+            cr.rectangle(xInit + 0.5, yInit + 0.5, xFin - xInit, yFin - yInit);
             Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: this._desktopManager.selectColor.red,
                                                         green: this._desktopManager.selectColor.green,
                                                         blue: this._desktopManager.selectColor.blue,
@@ -281,17 +246,17 @@ var DesktopGrid = class {
         if (this._desktopManager.showDropPlace && (this._selectedList !== null)) {
             for(let [x, y] of this._selectedList) {
                 cr.rectangle(x + 0.5, y + 0.5, this._elementWidth, this._elementHeight);
-                Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: 0.5,
-                                                            green: 0.5,
-                                                            blue: 0.5,
+                Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: 1.0 - this._desktopManager.selectColor.red,
+                                                            green: 1.0 - this._desktopManager.selectColor.green,
+                                                            blue: 1.0 - this._desktopManager.selectColor.blue,
                                                             alpha: 0.4})
                 );
                 cr.fill();
                 cr.setLineWidth(0.5);
                 cr.rectangle(x + 0.5, y + 0.5, this._elementWidth, this._elementHeight);
-                Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: 0.5,
-                                                            green: 0.5,
-                                                            blue: 0.5,
+                Gdk.cairo_set_source_rgba(cr, new Gdk.RGBA({red: 1.0 - this._desktopManager.selectColor.red,
+                                                            green: 1.0 - this._desktopManager.selectColor.green,
+                                                            blue: 1.0 - this._desktopManager.selectColor.blue,
                                                             alpha: 1.0})
                 );
                 cr.stroke();
@@ -338,7 +303,7 @@ var DesktopGrid = class {
 
         let localX = Math.floor(this._width * column / this._maxColumns);
         let localY = Math.floor(this._height * row / this._maxRows);
-        this._container.put(fileItem._container, localX + elementSpacing, localY + elementSpacing);
+        this._container.put(fileItem.container, localX + elementSpacing, localY + elementSpacing);
         this._setGridUse(column, row, true);
         this._fileItems[fileItem.uri] = [column, row, fileItem];
         let [x, y] = this._coordinatesLocalToGlobal(localX + elementSpacing, localY + elementSpacing);
@@ -364,7 +329,7 @@ var DesktopGrid = class {
         if (fileItem.uri in this._fileItems) {
             let [column, row, tmp] = this._fileItems[fileItem.uri];
             this._setGridUse(column, row, false);
-            this._container.remove(fileItem._container);
+            this._container.remove(fileItem.container);
             delete this._fileItems[fileItem.uri];
         }
     }

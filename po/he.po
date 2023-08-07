@@ -53,7 +53,7 @@ msgstr "האם ברצונך להריץ את \"{0}\", או להציג את תוכ
 
 #: ../desktopIconsUtil.js:196
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "„{0}” הוא קובץ טקסט הניתן להפעלה."
 
 #: ../desktopIconsUtil.js:200
 msgid "Execute in a terminal"
@@ -133,7 +133,7 @@ msgstr "האם אכן ברצונך למחוק פריטים אלו לצמיתות
 
 #: ../desktopManager.js:1202
 msgid "If you delete an item, it will be permanently lost."
-msgstr ""
+msgstr "פריט שימחק יאבד לנצח."
 
 #: ../desktopManager.js:1294
 msgid "New folder"
